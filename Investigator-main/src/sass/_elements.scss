@@ -1,0 +1,126 @@
+
+
+
+
+.outlineText{
+    text-shadow: 2px 1px 0 $outlineColor, 2px -1px 0 $outlineColor, -2px 1px 0 $outlineColor, -2px -1px 0 $outlineColor, 2px 0px 0 $outlineColor, 0px 1px 0 $outlineColor, -2px 0px 0 $outlineColor, 0px -1px 0 $outlineColor, 1px 2px 0 $outlineColor, 1px -2px 0 $outlineColor, -1px 2px 0 $outlineColor, -1px -2px 0 $outlineColor, 1px 0px 0 $outlineColor, 0px 2px 0 $outlineColor, -1px 0px 0 $outlineColor, 0px -2px 0 $outlineColor, 1px 1px 0 $outlineColor, 1px -1px 0 $outlineColor, -1px 1px 0 $outlineColor, -1px -1px 0 $outlineColor, 2px 2px 0 $outlineColor, 2px -2px 0 $outlineColor, -2px 2px 0 $outlineColor, -2px -2px 0 $outlineColor, 2px 0px 0 $outlineColor, 0px 2px 0 $outlineColor, -2px 0px 0 $outlineColor, 0px -2px 0 $outlineColor;
+}
+
+.outlineTextWhite{
+  text-shadow: 2px 1px 0 #FFFFFF, 2px -1px 0 #FFFFFF, -2px 1px 0 #FFFFFF, -2px -1px #FFFFFF, 2px 0px 0 #FFFFFF, 0px 1px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -1px 0 #FFFFFF, 1px 2px 0 #FFFFFF, 1px -2px 0 #FFFFFF, -1px 2px 0 #FFFFFF, -1px -2px 0 #FFFFFF, 1px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -1px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF, 1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
+}
+
+.disabled{
+    opacity:0.4;
+   
+  }
+  .disabled:hover {
+    filter: drop-shadow(0px 0px 0px #000000) 
+  }
+  .disabled:active {
+    filter: drop-shadow(0px 0px 0px #000000) 
+  }
+
+  .backdrop-filter{
+    display: flex;
+    text-align:center;
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+   
+  }
+  .filter-one{
+    backdrop-filter: blur(6px);
+  }
+  .filter-two{
+    backdrop-filter: blur(4px);
+  }
+  .filter-three{
+    backdrop-filter: blur(2px);
+  }
+  .filter-four{
+    backdrop-filter: blur(1px);
+  }
+  .filter-five{
+    backdrop-filter: blur(0px);
+  }
+
+
+  .radialwrapper {
+
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border-radius: 1px;
+    
+  
+    box-shadow: inset 0px 0px 20px 32px #FFFFFF;
+  }
+
+  .titleText{
+display: flex;
+justify-content: center;
+
+
+    padding:1vh;
+font-family: 'Special Elite', cursive;
+padding-bottom:1vh;
+font-size: 4.25vw;
+font-weight: 400;
+line-height: 2.49740vh;
+letter-spacing: 0.2em;
+text-align: left;
+background-color:transparent;
+animation-name: fade-in;
+animation-fill-mode:forwards;
+animation-duration:3s;
+
+  }
+
+
+  .introText{
+    display: flex;
+    justify-content: center;
+    margin-left: 8vh;
+    margin-right: 8vh;
+    
+        padding:1vh;
+    font-family: 'Special Elite', cursive;
+    padding-bottom:1vh;
+    font-size: 1.25vw;
+    font-weight: 400;
+    line-height: 2.49740vh;
+    letter-spacing: 0.2em;
+    text-align: left;
+    background-color:transparent;
+    animation-name: fade-in;
+    animation-fill-mode:forwards;
+    animation-duration:1s;
+    
+      }
+
+    .introBigText{
+      margin-left: 8vh;
+      margin-right: 8vh;
+            display: flex;
+            justify-content: center;
+            
+            
+                padding:1vh;
+            font-family: 'Special Elite', cursive;
+            padding-bottom:1vh;
+            font-size: 2.25vw;
+            font-weight: 400;
+            line-height: 5.49740vh;
+            letter-spacing: 0.2em;
+            text-align: left;
+            background-color:transparent;
+            animation-name: fade-in;
+            animation-fill-mode:forwards;
+            animation-duration:1s;
+            
+              }
+    

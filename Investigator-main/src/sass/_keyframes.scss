@@ -1,0 +1,154 @@
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes introhalo {
+  0%{
+    opacity:1
+  }
+  25%{
+    opacity:0
+  }
+  75%{background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    
+  
+  }
+  100%{
+    opacity:1;
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+  }
+}
+
+@keyframes MTWhalo {
+  0%{
+    opacity:1;
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+  }
+  25%{
+    opacity:0;
+  }
+  75%{
+    
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 11.17%, rgba(217, 217, 217, 0.849162) 40.45%, rgba(217, 217, 217, 0.559032) 67.74%, rgba(217, 217, 217, 0) 100%);;
+    
+  
+  }
+  100%{
+    opacity:1;
+    width: 150vw;
+    height: 150vh;
+    background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 11.17%, rgba(217, 217, 217, 0.849162) 40.45%, rgba(217, 217, 217, 0.559032) 67.74%, rgba(217, 217, 217, 0) 100%);;
+  }
+}
+
+@keyframes introhalo {
+  0%{
+    opacity:1;
+  }
+  25%{
+    opacity:0;
+  }
+  75%{background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+    
+  
+  }
+  100%{
+    opacity:1;
+    background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0) 100%);
+  }
+}
+
+
+
+@keyframes pmtwhalotrans {
+  0%{
+    opacity:1;
+  }
+  25%{
+    opacity:0;
+  }
+  50%{
+    opacity:0;
+  }
+  75%{
+  }
+  100%{
+    opacity:1;
+    width: 120vw;
+    height: 120vh;
+}
+}
+
+@keyframes halofourtrans {
+  0%{
+    opacity:1;
+  }
+  25%{
+    opacity:0;
+  }
+  50%{
+    opacity:0;
+  }
+  75%{
+  }
+  100%{
+    opacity:1;
+    width: 100vw;
+    height: 100vh;
+}
+}
+
+@keyframes halofivetrans {
+  0%{
+    opacity:1;
+  }
+  25%{
+    opacity:0;
+  }
+  50%{
+    opacity:0;
+  }
+  75%{
+  }
+  100%{
+    opacity:1;
+    width: 80vw;
+    height: 80vh;
+}
+}
+
+@keyframes halosixtrans {
+  0%{
+    opacity:1;
+  }
+  25%{
+    opacity:0;
+  }
+  50%{
+    opacity:0;
+  }
+  75%{
+  }
+  100%{
+    opacity:1;
+    width: 60vw;
+    height: 60vh;
+}
+}

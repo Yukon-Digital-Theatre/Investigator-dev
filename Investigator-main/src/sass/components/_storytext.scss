@@ -1,0 +1,32 @@
+
+
+.story_container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12vh;
+    
+}
+
+.choiceButton {
+    background-color:transparent;
+  padding:1%;
+  width:fit-content;
+    &:hover{
+      cursor: pointer;
+      text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF;
+      }
+      &:active{
+        text-shadow: #FFFFFF 0px 0px 5px, #FFFFFF 0px 0px 15px, #FFFFFF 0px 0px 20px, #FFFFFF 0px 0px 30px, #FFFFFF -1px -1px 10px, #FFFFFF -1px 1px 10px, #FFFFFF 1px 1px 10px, #FFFFFF 1px -1px 10px;
+      }
+  }
+  
+  
+  

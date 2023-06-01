@@ -1,0 +1,111 @@
+@import './variables';
+@import './elements';
+@import './keyframes';
+@import './components/storytext';
+@import './components/paper';
+@import './components/_wrapup';
+@import './components/_settingsbar';
+
+
+.App {
+  text-align:left;
+  background-color: #2b2205;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  color:#FFFFFF;
+  background-image: url(https://ydtcdemo.files.wordpress.com/2023/05/imgonline-com-ua-textureseamless-sghkkbeka0n9ok-300x195-1.jpg);
+  
+  mix-blend-mode: normal;
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+
+}
+
+
+.BackgroundHalo{
+  box-sizing: border-box;
+  top: 50%;  
+  left: 50%; 
+  background-color: #000000;
+  transform: translate(-50%, -50%); 
+position: absolute;
+width: 100vw;
+height: 100vh;
+display: flex;
+text-align:center;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+ 
+
+background: radial-gradient(47.8% 47.8% at 50% 50%, rgba(210, 209, 209, 0.76) 26.97%, rgba(239, 233, 233, 0.660004) 51.68%, rgba(239, 233, 233, 0.452447) 73.52%, rgba(239, 233, 233, 0.158038) 88.94%, rgba(239, 233, 233, 0) 100%);
+border: 0px solid transparent;
+
+}
+
+
+
+.pmtwhalo{
+width: 150vw;
+height: 150vh;
+background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 11.17%, rgba(217, 217, 217, 0.849162) 40.45%, rgba(217, 217, 217, 0.559032) 67.74%, rgba(217, 217, 217, 0) 100%);;
+animation-name: pmtwhalotrans;
+animation-fill-mode:forwards;
+animation-duration:3s;
+}
+
+.halofour{
+  width: 120vw;
+  height: 120vh;
+  background: radial-gradient(50% 50% at 50% 50%, #D9D9D9 11.17%, rgba(217, 217, 217, 0.849162) 40.45%, rgba(217, 217, 217, 0.559032) 67.74%, rgba(217, 217, 217, 0) 100%);;
+  animation-name: halofourtrans;
+  animation-fill-mode:forwards;
+  animation-duration:3s;
+  }
+
+.introhalo{
+animation-name: introhalo;
+animation-fill-mode:forwards;
+animation-duration:6s;
+}
+
+.MTWhalo{
+  animation-name: MTWhalo;
+  animation-fill-mode:forwards;
+  animation-duration:6s;
+  }
+
+
+.Button {
+  background-color:transparent;
+padding:1%;
+width:fit-content;
+white-space: nowrap;
+  &:hover{
+    cursor: pointer;
+    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF;
+    }
+    &:active{
+      text-shadow: #FFFFFF 0px 0px 5px, #FFFFFF 0px 0px 15px, #FFFFFF 0px 0px 20px, #FFFFFF 0px 0px 30px, #FFFFFF -1px -1px 10px, #FFFFFF -1px 1px 10px, #FFFFFF 1px 1px 10px, #FFFFFF 1px -1px 10px;
+    }
+}
+
+
+svg{
+  filter: drop-shadow(0px 0.1px 1px #ffffff) drop-shadow(0px -0.1px 1px #ffffff) 
+}
+
+
+
+svg:hover {
+  filter: drop-shadow(0px 0px 5px #ffffff) drop-shadow(0px 0px 2px #ffffff) 
+}
+
+svg:active {
+  filter: drop-shadow(0px 0px 10px #FFFFFF) drop-shadow(0px 0.1px 2px #FFFFFF) drop-shadow(0px -0.1px 2px #FFFFFF) 
+}
+
+
+
+
