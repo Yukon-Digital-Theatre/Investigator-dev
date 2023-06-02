@@ -35,12 +35,6 @@ const WorldBackground = () => {
   
   setTogglePlay(true);
   
-  
-  
-  
-  
-  
-  
     }
   
     
@@ -110,8 +104,8 @@ const WorldBackground = () => {
             {narratorMode&& <div className='navbar'>
        {togglePlay?<PauseButton onClick={()=>helperAudio()}/>:<PlayButton onClick={()=>helperAudio()}/>}
        </div>}
-       {audioEnded&&<p className=' introText outlineText Button' >Continue</p>}
-       {narratorTextMode&&<p className=' introText outlineText Button' >Continue</p>}
+       {audioEnded&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
+       {narratorTextMode&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
             </>
     )
   }

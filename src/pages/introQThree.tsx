@@ -61,7 +61,7 @@ useEffect(() => {
   
 
 
-  if(modePicked&&voicePicked){
+  if(voicePicked){
     dispatch(updatePage("IntroQFour"));
   }
 
@@ -77,6 +77,7 @@ const dialogue = narratorAudio[5].audio;
 useEffect(() => {
   setTimeout(() => {
     if(!dialogue.playing()){
+      dialogue.seek(12);
       narratorMode&&dialogue.play();
   }
   },500);
@@ -91,10 +92,7 @@ useEffect(() => {
 
   return (
     <div>
-        <p className='outlineText introBigText'>What features would you like for the characters for this experience</p>
-        <p className='introText Button outlineText disabled' onClick={()=>helper2()}>Audio Only</p>
-    <p className='introText Button outlineText' onClick={()=>helper()}>Text Only</p>
-    <p className='introText Button outlineText disabled' onClick={()=>helper3()}>Both Audio and Text</p>
+      
 
     <p className='outlineText introBigText' style={{"justifyContent":"left"}} >Would you like your characters voice to be</p >
     <p className='introText Button outlineText disabled' onClick={()=>helper4()}>Female</p>
@@ -106,3 +104,11 @@ useEffect(() => {
 }
 
 export default IntroQThree
+
+
+
+
+//<p className='outlineText introBigText'>What features would you like for the characters for this experience</p>
+//<p className='introText Button outlineText disabled' onClick={()=>helper2()}>Audio Only</p>
+//<p className='introText Button outlineText' onClick={()=>helper()}>Text Only</p>
+//<p className='introText Button outlineText disabled' onClick={()=>helper3()}>Both Audio and Text</p>

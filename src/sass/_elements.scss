@@ -114,12 +114,23 @@ animation-duration:3s;
 
   }
 
+  .loadingText{
+  
+    font-family: 'Special Elite', cursive;
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 1.25vw;
+    font-weight: 400;
+    line-height: 2.49740vh;
+    letter-spacing: 0.2em;
+    
+  }
 
   .introText{
     display: flex;
     justify-content: center;
-    margin-left: 8vh;
-    margin-right: 8vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
     
         padding:1vh;
     font-family: 'Special Elite', cursive;
@@ -137,8 +148,8 @@ animation-duration:3s;
       }
 
     .introBigText{
-      margin-left: 8vh;
-      margin-right: 8vh;
+      margin-left: 8vw;
+      margin-right: 8vw;
             display: flex;
             justify-content: center;
             

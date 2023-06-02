@@ -27,7 +27,7 @@ function helper2(){
 function helper3(){
  dispatch(updateNarratorAudioDelivery(true));
  dispatch(updateTextDelivery(false));
-  dispatch(updatePage("IntroQTwo"));
+ 
 
 }
 const dialogue = narratorAudio[1].audio;

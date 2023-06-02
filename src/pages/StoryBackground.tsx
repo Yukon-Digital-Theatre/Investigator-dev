@@ -15,7 +15,7 @@ const StoryBackground = () => {
       const dispatch= useDispatch();
   
       function helper(){
-          dispatch(updatePage("WrapUp"));
+          dispatch(updatePage("MeetTheWeaver"));
       
       }
       const narratorTextMode = useSelector((state:any)=> state.textMode.text);
@@ -111,8 +111,8 @@ const StoryBackground = () => {
             {narratorMode&& <div className='navbar'>
        {togglePlay?<PauseButton onClick={()=>helperAudio()}/>:<PlayButton onClick={()=>helperAudio()}/>}
        </div>}
-       {audioEnded&&<p className=' introText outlineText Button' >Continue</p>}
-       {narratorTextMode&&<p className=' introText outlineText Button' >Continue</p>}
+       {audioEnded&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
+       {narratorTextMode&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
             </>
     )
   }

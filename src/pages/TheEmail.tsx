@@ -152,7 +152,7 @@ function helper2(){
     <div>
       
 
-     <div onClick={()=>helper()}>play/pause</div>
+     
      <div className='navbar'>
      {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
      </div>

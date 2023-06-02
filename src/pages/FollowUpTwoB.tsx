@@ -11,7 +11,7 @@ import { ReactComponent as PauseButton } from '../images/svgs/pause.svg';
 
 const FollowUpTwoB = () => {
     
-  const [audioEnded, setAudioEnded] = useState(false);
+
     const dispatch= useDispatch();
 
     function helper(){
@@ -19,25 +19,69 @@ const FollowUpTwoB = () => {
     
     }
     
+    const dialogue = narratorAudio[19].audio;
+    const dialoguept2 = narratorAudio[20].audio;
     const narratorTextMode = useSelector((state:any)=> state.textMode.text);
     const narratorMode = useSelector((state:any)=> state.narratorAudioMode.audio);
     
+        const [togglePlay, setTogglePlay] = useState(true)
     
-    
-    
-    
-    const dialogue = narratorAudio[19].audio;
-    
+    const [togglePT, setTogglePT] = useState(true)
+    const [audioEnded, setAudioEnded] = useState(false);
     function helperAudio(){
       setTimeout(() => {
         if(!dialoguept2.playing()){
           dialoguept2.play()
+          setTogglePT(false)
       }
       },1000);
     }
     
-    const dialoguept2 = narratorAudio[20].audio;
+
+
+    function helperAudioPP() {
+      
+      
+      if(togglePT){
+      
+      if(dialogue.playing()){
+          dialogue.pause();
+        
+          setTogglePlay(false);
+      }else{
+    dialogue.play();
     
+    setTogglePlay(true);
+    
+    
+      }
+    
+    }else{
+      if(dialoguept2.playing()){
+        dialoguept2.pause();
+      
+        setTogglePlay(false);
+    }else{
+  dialoguept2.play();
+  
+  setTogglePlay(true);
+    }
+    }
+  }
+    
+    useEffect(() => {
+      
+    
+      return () => {
+      
+      }
+    }, [togglePlay])
+    
+ 
+
+
+    
+    dialoguept2.on("end", ()=> helperOnEnd() )
     
     dialogue.on('end', ()=>helperAudio());
     
@@ -53,8 +97,13 @@ const FollowUpTwoB = () => {
         
       }
     }, [])
-
-
+   
+    function helperOnEnd(){
+      dialoguept2.seek(dialoguept2.duration()-0.05);
+      dialoguept2.pause();
+      setTogglePlay(false);
+      setAudioEnded(true);
+    }
 
 
   return (
@@ -62,8 +111,14 @@ const FollowUpTwoB = () => {
     {narratorTextMode&&<div className='lettercontainer'>
 <EndingLetter/>
 <EndingNewsPaper/>
-</div>}
-<p className='Button' onClick={()=>helper()}>Yes</p>
+
+
+    </div>}
+    {narratorMode&& <div className='navbar'>
+       {togglePlay?<PauseButton onClick={()=>helperAudioPP()}/>:<PlayButton onClick={()=>helperAudioPP()}/>}
+       </div>}
+    {audioEnded&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
+       {narratorTextMode&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
     </>
   )
 }
