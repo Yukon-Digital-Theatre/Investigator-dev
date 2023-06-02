@@ -1,7 +1,7 @@
 {
   "name": "invest-app",
   "version": "0.1.0",
-  "homepage": "http://Yukon-Digital-Theatres.github.io/Investigator-dev",
+  "homepage": "http://Yukon-Digital-Theatres.github.io/Investigator-dev/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
