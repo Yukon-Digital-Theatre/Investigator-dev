@@ -14,7 +14,7 @@ import { Button } from '@mui/material';
 const Intro = () => {
 
 const dispatch= useDispatch();
-
+  let intid;
 const [style, setStyle] = useState(false)
 const [loaded, setLoaded] = useState(false)
 dispatch(updateHalo(0));
@@ -25,33 +25,36 @@ dispatch(updateTextDelivery(true));
 
 
 
-useEffect(() => {
-  
-   
 
-   setTimeout(() => {
+
+
+
+
+
+
+
+  
+ let intId=setInterval(() => {
+    
+
+
+    let check=true;
+  backgroundAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)})
+  narratorAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)});
+  maleAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)});
+  femaleAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)});
+  nonBinaryAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)});
+
+  if(check){
+
     setLoaded(true);
-   }, 10000);
+    clearInterval(intId);
+  }
+  console.log(check)
+    
+  }, 500);
 
 
-  
-
-}, [])
-
-
-
-
-
-function queryLoaded() {
-  let count =0;
-  backgroundAudio.map((item)=>{(item.audio.state())==="loaded"&&(count+=1)});
-  narratorAudio.map((item)=>{(item.audio.state())==="loaded"&&(count+=1)});
-  maleAudio.map((item)=>{(item.audio.state())==="loaded"&&(count+=1)});
-  femaleAudio.map((item)=>{(item.audio.state())==="loaded"&&(count+=1)});
-  nonBinaryAudio.map((item)=>{(item.audio.state())==="loaded"&&(count+=1)});
-  console.log(count)
-
-}
 
 
 function helper(){
