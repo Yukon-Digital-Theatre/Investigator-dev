@@ -10,6 +10,7 @@ import { updatePage } from '../reducers/currentPage/currentPageSlice'
 import { femaleChoiceTextData, maleChoiceTextData, nonBinaryChoiceTextData } from '../data/timingData'
 import { ReactComponent as PlayButton } from '../images/svgs/lni_lni-play.svg';
 import { ReactComponent as PauseButton } from '../images/svgs/pause.svg';
+import { narratorAudio } from '../data/narratorAudioData'
 
 
 
@@ -48,20 +49,7 @@ const EndingTwoBAudioOnly = () =>{
 
   const dispatch= useDispatch();
   const voicePref = useSelector((state:any)=> state.voicePref.voice);
-const id=11;
-  let dialogue: Howl;
-  let choiceData;
-
-  if(voicePref==="female"){
-     dialogue=femaleAudio[id].audio;
-     choiceData=femaleChoiceTextData;
-  }else if(voicePref==="male"){
-     dialogue=maleAudio[id].audio;
-     choiceData=maleChoiceTextData;
-  }else{
-     dialogue=nonBinaryAudio[id].audio;
-     choiceData=nonBinaryChoiceTextData;
-  }
+  const dialogue = narratorAudio[11].audio;
 
 
   useEffect(() => {
@@ -166,7 +154,7 @@ function helper2(){
 
     <div>
       
-    {audioTime>=choiceData[id].time&&<Choice id={id}/>}
+   
     <div className='navbar'>
      {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
      </div>
