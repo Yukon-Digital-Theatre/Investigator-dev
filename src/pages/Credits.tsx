@@ -14,7 +14,7 @@ const Credits = () => {
 
   return (
     <div>
-       <div className=' outlineText introText'>CREDITS
+       <div className=' outlineText introText'>
 
 Creator & Co-Artistic Producer: Wren Brian
 </div><div className='outlineText introText'>

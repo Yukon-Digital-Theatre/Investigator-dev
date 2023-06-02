@@ -1,11 +1,14 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
+import { useEffect } from 'react';
+import { narratorAudio } from '../data/narratorAudioData';
 
 const WrapUp = () => {
 
   const dispatch= useDispatch();
 
-
+  const narratorTextMode = useSelector((state:any)=> state.textMode.text);
+  const narratorMode = useSelector((state:any)=> state.narratorAudioMode.audio);
 
   function helper(): void {
     window.open('mailto:ytdigitaltheatrecollective@gmail.com?subject=Sign%20up%20for%20Email%20List&body=I’d%20like%20to%20hear%20when%20more%20Yukon%20Digital%20Theatre%20Collective projects%20are%20ready%20to%20see!');
@@ -36,17 +39,35 @@ const WrapUp = () => {
     dispatch(updatePage("MoreAboutArtists"));
   }
 
+  const dialogue = narratorAudio[21].audio;
+
+  useEffect(() => {
+    setTimeout(() => {
+      if(!dialogue.playing()){
+        narratorMode&&dialogue.play();  }
+    },500);
+  
+    return () => {
+      
+    }
+  }, [])
+  
+
+
   return (
     <div className='wrapup_container'>
+      {narratorTextMode&& <>
     <div className='wrapupText outlineText'>How do you feel about your choices?
     As you leave this world, think of the things you are in contact with right now -  clothes, furniture, the device you are using. Do you know who made them? Where the material came from?
     </div><div className='wrapupText outlineText'>
     When you go out into the world, please keep the outcome of this experience as confidential as possible so others may experience it fresh for themselves.
     </div> 
+    </>}
     <div className='wrapupText outlineText'>
     This experience has been provided free of charge, but if you’d like to support the artists and presenters follow this link to donate.
     </div> 
     <div className='WrapUpButton introText'  onClick={()=>helper5()}>Donate</div>
+    
     <div className='wrapupText outlineText'>
     If you wish to share any thoughts with the artistic team click here
     </div>

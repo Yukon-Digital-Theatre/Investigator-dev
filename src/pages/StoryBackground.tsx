@@ -1,4 +1,4 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { updateHalo } from '../reducers/haloMode/haloModeSlice';
 import { narratorAudio } from '../data/narratorAudioData';
@@ -19,7 +19,8 @@ const StoryBackground = () => {
     
 
 }
-
+const narratorTextMode = useSelector((state:any)=> state.textMode.text);
+const narratorMode = useSelector((state:any)=> state.narratorAudioMode.audio);
 
 const dialogue = narratorAudio[8].audio;
 
@@ -27,7 +28,7 @@ const dialogue = narratorAudio[8].audio;
 useEffect(() => {
   setTimeout(() => {
     if(!dialogue.playing()){
-      dialogue.play();
+      narratorMode&&dialogue.play();
   }
   },500);
 
@@ -36,7 +37,8 @@ useEffect(() => {
   }
 }, [])
   return (
-    <div className='lettercontainer'>
+    <>
+    {narratorTextMode&&<div className='lettercontainer'>
     
       <div className='introText letter'> 
         <p> <b> BACKGROUND </b> </p> 
@@ -65,8 +67,9 @@ useEffect(() => {
 
       <p>Today is November 28, 2021</p>
       </div>
+      </div>}
       <p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>
-      </div>
+      </>
   )
 }
 
