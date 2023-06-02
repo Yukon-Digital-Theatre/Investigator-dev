@@ -13,7 +13,7 @@ function helper(){
 }
 
 function helperTwo(){
-    dispatch(updatePage("IntroQThree"));
+    narratorTextMode?dispatch(updatePage("IntroQFour")):dispatch(updatePage("IntroQThree"));
 
 }
 
