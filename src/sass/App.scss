@@ -77,19 +77,7 @@ animation-duration:6s;
   }
 
 
-.Button {
-  background-color:transparent;
-padding:1%;
-width:fit-content;
-white-space: nowrap;
-  &:hover{
-    cursor: pointer;
-    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF;
-    }
-    &:active{
-      text-shadow: #FFFFFF 0px 0px 5px, #FFFFFF 0px 0px 15px, #FFFFFF 0px 0px 20px, #FFFFFF 0px 0px 30px, #FFFFFF -1px -1px 10px, #FFFFFF -1px 1px 10px, #FFFFFF 1px 1px 10px, #FFFFFF 1px -1px 10px;
-    }
-}
+
 
 
 svg{

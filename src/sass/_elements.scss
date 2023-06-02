@@ -10,6 +10,40 @@
   text-shadow: 2px 1px 0 #FFFFFF, 2px -1px 0 #FFFFFF, -2px 1px 0 #FFFFFF, -2px -1px #FFFFFF, 2px 0px 0 #FFFFFF, 0px 1px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -1px 0 #FFFFFF, 1px 2px 0 #FFFFFF, 1px -2px 0 #FFFFFF, -1px 2px 0 #FFFFFF, -1px -2px 0 #FFFFFF, 1px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -1px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF, 1px 1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, -1px -1px 0 #FFFFFF, 2px 2px 0 #FFFFFF, 2px -2px 0 #FFFFFF, -2px 2px 0 #FFFFFF, -2px -2px 0 #FFFFFF, 2px 0px 0 #FFFFFF, 0px 2px 0 #FFFFFF, -2px 0px 0 #FFFFFF, 0px -2px 0 #FFFFFF;
 }
 
+.Button {
+  background-color:transparent;
+padding:1%;
+width:fit-content;
+white-space: nowrap;
+  &:hover{
+    cursor: pointer;
+    text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF;
+    }
+    &:active{
+      text-shadow: #FFFFFF 0px 0px 5px, #FFFFFF 0px 0px 15px, #FFFFFF 0px 0px 20px, #FFFFFF 0px 0px 30px, #FFFFFF -1px -1px 10px, #FFFFFF -1px 1px 10px, #FFFFFF 1px 1px 10px, #FFFFFF 1px -1px 10px;
+    }
+}
+
+
+.disabledButton{
+  text-decoration: line-through;
+    opacity:0.4;
+    color: gray;
+    background-color:transparent;
+  padding:1%;
+  width:fit-content;
+  white-space: nowrap;
+    &:hover{
+      cursor: pointer;
+      color: rgb(99, 99, 99);
+      
+      }
+      &:active{
+        color: rgb(100, 100, 100);
+      }
+  }
+
+
 .disabled{
     opacity:0.4;
    

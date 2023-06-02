@@ -1,21 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
-    page:"Intro"
+    text:true
 };
 
 export const investigatorDeliveryModeSlice= createSlice({
     name:"investigatorDeliveryMode",
     initialState,
     reducers:{
-        updatePage:(state, action)=>{
-            state.page = action.payload;
+        updateInvTextDelivery:(state, action)=>{
+            state.text = action.payload;
         },
         
     },
 });
 
 
-export const {updatePage}= investigatorDeliveryModeSlice.actions;
+export const {updateInvTextDelivery}= investigatorDeliveryModeSlice.actions;
 
 export default investigatorDeliveryModeSlice.reducer;

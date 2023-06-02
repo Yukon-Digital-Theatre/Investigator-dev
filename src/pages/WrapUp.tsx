@@ -29,7 +29,7 @@ const WrapUp = () => {
   }
   function helper6(): void {
 
-   window.open('mailto:ytdigitaltheatrecollective@gmail.com?subject=Investigator%20Feedback');
+   window.open('mailto:info@youaretheinvestigator.com?subject=Investigator%20Feedback');
   }
   function helper7(): void {
 

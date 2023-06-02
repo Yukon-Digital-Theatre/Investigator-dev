@@ -1,12 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
 import audioCurrentIDReducer  from './reducers/audioCurrentID/audioCurrentTimeID';
-import audioDeliveryModeReducer from './reducers/audioDeliveryMode/audioDeliveryModeSlice';
+import invAudioDeliveryModeReducer from './reducers/invAudioDeliveryMode/invAudioDeliveryModeSlice';
 import currentPageReducer from './reducers/currentPage/currentPageSlice';
 import investigatorDeliveryModeReducer from './reducers/investigatorDeliveryMode/investigatorDeliveryModeSlice';
-import narratorDeliveryModeReducer from './reducers/narratorDeliveryMode/narratorDeliveryModeSlice';
+import narratorAudioDeliveryModeReducer from './reducers/narratorAudioDeliveryMode/narratorAudioDeliveryModeSlice';
 import playPauseReducer from "./reducers/playPause/playPauseSlice"
-import textDeliveryModeReducer  from './reducers/textDeliveryMode/audioDeliveryModeSlice';
+import textDeliveryModeReducer  from './reducers/textDeliveryMode/textDeliveryModeSlice';
 import haloModeReducer from './reducers/haloMode/haloModeSlice';
+import VoicePreferenceReducer from './reducers/voicePreference/voicePreferenceSlice'
 
 
 
@@ -16,12 +17,13 @@ import haloModeReducer from './reducers/haloMode/haloModeSlice';
 export const store = configureStore({
     reducer:{
         audioID: audioCurrentIDReducer,
-        audioMode: audioDeliveryModeReducer,
+        invAudioMode: invAudioDeliveryModeReducer,
         currentPage: currentPageReducer,
-        characterVoice: investigatorDeliveryModeReducer,
-        narratorMode: narratorDeliveryModeReducer,
+        invTextMode: investigatorDeliveryModeReducer,
+        narratorAudioMode: narratorAudioDeliveryModeReducer,
         playPause: playPauseReducer,
         textMode: textDeliveryModeReducer,
         haloMode: haloModeReducer,
+        voicePref: VoicePreferenceReducer,
     }
 });

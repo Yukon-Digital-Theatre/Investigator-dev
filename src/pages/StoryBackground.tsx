@@ -1,6 +1,8 @@
 import { useDispatch } from 'react-redux';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { updateHalo } from '../reducers/haloMode/haloModeSlice';
+import { narratorAudio } from '../data/narratorAudioData';
+import { useEffect } from 'react';
 
 const StoryBackground = () => {
 
@@ -13,7 +15,26 @@ const StoryBackground = () => {
       dispatch(updatePage("MeetTheWeaver"));
     }, 1000);
 
+
+    
+
 }
+
+
+const dialogue = narratorAudio[8].audio;
+
+
+useEffect(() => {
+  setTimeout(() => {
+    if(!dialogue.playing()){
+      dialogue.play();
+  }
+  },500);
+
+  return () => {
+    
+  }
+}, [])
   return (
     <div className='lettercontainer'>
     

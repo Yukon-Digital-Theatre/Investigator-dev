@@ -1,5 +1,8 @@
+import { useEffect } from 'react';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch } from 'react-redux';
+import { narratorAudio } from '../data/narratorAudioData';
+import { useSelector } from 'react-redux';
 
 const IntroQTwo = () => {
     const dispatch= useDispatch();
@@ -10,14 +13,40 @@ function helper(){
 }
 
 function helperTwo(){
-    dispatch(updatePage("IntroQFour"));
+    dispatch(updatePage("IntroQThree"));
 
 }
 
 
+
+
+const narratorTextMode = useSelector((state:any)=> state.textMode.text);
+const narratorMode = useSelector((state:any)=> state.narratorAudioMode.audio);
+const invTextMode = useSelector((state:any)=> state.invTextMode.text);
+const invMode = useSelector((state:any)=> state.invAudioMode.audio);
+const voicePref = useSelector((state:any)=> state.voicePref.voice);
+
+
+
+const dialogue = narratorAudio[2].audio;
+
+
+useEffect(() => {
+  setTimeout(() => {
+    if(!dialogue.playing()){
+      narratorMode&&dialogue.play();
+  }
+  },500);
+
+  return () => {
+    
+  }
+}, [])
+
+
   return (
     <div>
-    <p className='outlineText introBigText'> Welcome to The Investigator, an interactive digital storytelling experience. 
+    {narratorTextMode&&<p className='outlineText introBigText'> Welcome to The Investigator, an interactive digital storytelling experience. 
 
 This story is set out of time and place, in a world similar to our own, but not ours. 
 
@@ -29,9 +58,14 @@ It is recommended you find a private, quiet, and comfortable place to get the mo
 
 You may turn the ambiance soundtrack off or on via the sound button at any time.
 
-Before you continue, would you like general content warnings?</p>
+</p>}<p className='outlineText introBigText'>Before you continue, would you like general content warnings?</p>
     <p className='introText outlineText Button' onClick={()=>helper()}>Yes</p>
     <p className='introText outlineText Button' onClick={()=>helperTwo()}>No</p>
+
+
+
+
+    
     </div>
   )
 }
