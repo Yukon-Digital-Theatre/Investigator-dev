@@ -41,9 +41,7 @@ dispatch(updateTextDelivery(true));
     let check=true;
   backgroundAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)})
   narratorAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)});
-  maleAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)});
-  femaleAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)});
-  nonBinaryAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)});
+
 
   if(check){
 
