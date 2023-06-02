@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { narratorAudio } from '../data/narratorAudioData';
 
 const IntroQFour = () => {
     const dispatch= useDispatch();
-
+    const [audioEnded, setAudioEnded] = useState(false);
 function helper(){
     dispatch(updatePage("IntroQFive"));
 

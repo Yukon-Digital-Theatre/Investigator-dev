@@ -1,12 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { narratorAudio } from '../data/narratorAudioData';
 
 const WrapUp = () => {
 
   const dispatch= useDispatch();
-
+  const [audioEnded, setAudioEnded] = useState(false);
   const narratorTextMode = useSelector((state:any)=> state.textMode.text);
   const narratorMode = useSelector((state:any)=> state.narratorAudioMode.audio);
 

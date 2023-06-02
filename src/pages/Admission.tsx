@@ -6,7 +6,9 @@ import { Howl } from 'howler'
 import { useSelector } from 'react-redux'
 import Choice from '../components/Choice'
 import { femaleAudio, maleAudio, nonBinaryAudio } from '../data/characterAudioData'
-
+import { femaleChoiceTextData, maleChoiceTextData, nonBinaryChoiceTextData } from '../data/timingData'
+import { ReactComponent as PlayButton } from '../images/svgs/lni_lni-play.svg';
+import { ReactComponent as PauseButton } from '../images/svgs/pause.svg';
 
 
 
@@ -43,13 +45,17 @@ const AdmissionAudioOnly = () =>{
   const voicePref = useSelector((state:any)=> state.voicePref.voice);
 const id=7;
   let dialogue: Howl;
-
+  let choiceData;
+  const [audioEnded, setAudioEnded] = useState(false);
   if(voicePref==="female"){
      dialogue=femaleAudio[id].audio;
+     choiceData=femaleChoiceTextData;
   }else if(voicePref==="male"){
      dialogue=maleAudio[id].audio;
+     choiceData=maleChoiceTextData;
   }else{
      dialogue=nonBinaryAudio[id].audio;
+     choiceData=nonBinaryChoiceTextData;
   }
 
 
@@ -108,19 +114,48 @@ useEffect(() => {
  
 
 
+
+const [togglePlay, setTogglePlay] = useState(true)
+
 function helper() {
   if(dialogue.playing()){
       dialogue.pause();
       stopInterval();
+      setTogglePlay(false);
   }else{
 dialogue.play();
 startInterval();
+setTogglePlay(true);
 
 queryAudioTime();
 
 
+
+
+
   }
+
   
+}
+
+useEffect(() => {
+  
+
+  return () => {
+  
+  }
+}, [togglePlay])
+
+
+
+
+dialogue.on("end", ()=> helperOnEnd() )
+  
+
+function helperOnEnd(){
+  dialogue.seek(dialogue.duration()-0.05);
+  dialogue.pause();
+  setTogglePlay(false);
 }
 
   return(
@@ -129,10 +164,11 @@ queryAudioTime();
 
     <div>
       
-    {audioTime>=choiceTextData[id].time&&<Choice id={id}/>}
-     <div onClick={()=>helper()}>play/pause</div>
-    <div>{dialogue.duration()}</div>
-    <div onClick={()=>!dialogue.playing()&&dialogue.seek(834)}>play/pause</div></div>
+    {audioTime>=choiceData[id].time&&<Choice id={id}/>}
+    <div className='navbar'>
+     {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
+     </div>
+     </div>
   )
 
 }

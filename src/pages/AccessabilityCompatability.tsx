@@ -11,7 +11,6 @@ const AccessabilityCompatability = () => {
 
   
 const [style, setStyle] = useState(false)
-dispatch(updateHalo(0));
 
 function helper(){
   setStyle(true);

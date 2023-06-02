@@ -56,7 +56,7 @@ function helper6(){
   setVoicePicked(true)
 }
 const narratorMode = useSelector((state:any)=> state.narratorAudioMode.audio);
-
+const [audioEnded, setAudioEnded] = useState(false);
 useEffect(() => {
   
 

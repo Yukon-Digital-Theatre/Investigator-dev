@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch } from 'react-redux';
 import { narratorAudio } from '../data/narratorAudioData';
@@ -31,7 +31,7 @@ function helper3(){
 
 }
 const dialogue = narratorAudio[1].audio;
-
+const [audioEnded, setAudioEnded] = useState(false);
 
 useEffect(() => {
   setTimeout(() => {
@@ -52,7 +52,7 @@ useEffect(() => {
      
      
     <h1 className ='outlineText introBigText'> To begin the experience, please select your preference for the narration:</h1>
-    <p className='introText Button outlineText disabled' onClick={()=>helper()}>Audio Only</p>
+    <p className='introText Button outlineText' onClick={()=>helper()}>Audio Only</p>
     <p className='introText Button outlineText' onClick={()=>helper2()}>Text Only</p>
     <p className='introText disabledButton outlineText ' onClick={()=>helper3()}>Both Audio and Text</p>
     </div>

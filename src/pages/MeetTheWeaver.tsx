@@ -5,11 +5,15 @@ import { scriptMeetTheWeaver } from '../data/textData';
 import StoryText from '../components/StoryText';
 import { ReactComponent as ArrowButton } from '../images/svgs/lni_lni-chevron-right.svg'
 import { backgroundAudio } from '../data/backgroundAudioData';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { femaleAudio, maleAudio, nonBinaryAudio } from '../data/characterAudioData';
 import { Howl } from 'howler';
 import Choice from '../components/Choice';
 import { choiceTextData } from '../data/textData';
+import { updatePage } from '../reducers/currentPage/currentPageSlice';
+import { femaleChoiceTextData, maleChoiceTextData, nonBinaryChoiceTextData } from '../data/timingData';
+import { ReactComponent as PlayButton } from '../images/svgs/lni_lni-play.svg';
+import { ReactComponent as PauseButton } from '../images/svgs/pause.svg';
 
 
 
@@ -17,7 +21,7 @@ import { choiceTextData } from '../data/textData';
 
 
 const MeetTheWeaver = () => {
-
+ const [audioEnded, setAudioEnded] = useState(false);
   const narratorTextMode = useSelector((state:any)=> state.textMode.text);
   const narratorMode = useSelector((state:any)=> state.narratorAudioMode.audio);
   const invTextMode = useSelector((state:any)=> state.invTextMode.text);
@@ -111,17 +115,22 @@ const MeetTheWeaverTextOnly = () =>{
 
 
 const MeetTheWeaverAudioOnly = () =>{
- 
+  const dispatch= useDispatch();
   const voicePref = useSelector((state:any)=> state.voicePref.voice);
 const id=0;
   let dialogue: Howl;
 
+  let choiceData;
+  const [audioEnded, setAudioEnded] = useState(false);
   if(voicePref==="female"){
      dialogue=femaleAudio[id].audio;
+     choiceData=femaleChoiceTextData;
   }else if(voicePref==="male"){
      dialogue=maleAudio[id].audio;
+     choiceData=maleChoiceTextData;
   }else{
      dialogue=nonBinaryAudio[id].audio;
+     choiceData=nonBinaryChoiceTextData;
   }
 
 
@@ -177,23 +186,53 @@ useEffect(() => {
     
   }
 }, [audioTime])
- 
+
+
+const [togglePlay, setTogglePlay] = useState(true)
 
 
 function helper() {
   if(dialogue.playing()){
       dialogue.pause();
       stopInterval();
+      setTogglePlay(false);
   }else{
 dialogue.play();
 startInterval();
+setTogglePlay(true);
 
 queryAudioTime();
 
 
+
+
+
   }
+
   
 }
+
+useEffect(() => {
+  
+
+  return () => {
+  
+  }
+}, [togglePlay])
+
+
+
+
+  dialogue.on("end", ()=> helperOnEnd() )
+  
+
+  function helperOnEnd(){
+    dialogue.seek(dialogue.duration()-0.05);
+    dialogue.pause();
+    setTogglePlay(false);
+  }
+  
+
 
   return(
 
@@ -201,10 +240,12 @@ queryAudioTime();
 
     <div>
       
-    {audioTime>=choiceTextData[id].time&&<Choice id={id}/>}
-     <div onClick={()=>helper()}>play/pause</div>
-    <div>{dialogue.duration()}</div>
-    <div onClick={()=>!dialogue.playing()&&dialogue.seek(345)}>play/pause</div></div>
+    {audioTime>=choiceData[id].time&&<Choice id={id}/>}
+    <div className='navbar'>
+     {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
+     </div>
+  
+</div>
   )
 
 }
@@ -304,3 +345,9 @@ queryAudioTime();
     <div>----------</div>
   }
   */
+ 
+
+
+
+  
+  

@@ -1,9 +1,14 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import EndingFamilyEmail from '../components/EndingFamilyEmail';
 import EndingReport from '../components/EndingReport';
 import { narratorAudio } from '../data/narratorAudioData';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import { ReactComponent as PlayButton } from '../images/svgs/lni_lni-play.svg';
+import { ReactComponent as PauseButton } from '../images/svgs/pause.svg';
+
+
+
 
 const FollowUpOne = () => {
     
@@ -26,7 +31,7 @@ const FollowUpOne = () => {
     
     
     const dialogue = narratorAudio[16].audio;
-    
+    const [audioEnded, setAudioEnded] = useState(false);
     function helperAudio(){
       setTimeout(() => {
         if(!dialoguept2.playing()){

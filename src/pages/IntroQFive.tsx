@@ -2,11 +2,11 @@ import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateHalo } from '../reducers/haloMode/haloModeSlice';
 import { narratorAudio } from '../data/narratorAudioData';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const IntroQFive = () => {
     const dispatch= useDispatch();
-
+    const [audioEnded, setAudioEnded] = useState(false);
 function helper(){
     dispatch(updatePage("StoryBackground"));
 

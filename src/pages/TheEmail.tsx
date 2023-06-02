@@ -6,7 +6,8 @@ import { narratorAudio } from '../data/narratorAudioData'
 import { useSelector, useDispatch } from 'react-redux'
 import Choice from '../components/Choice'
 import { updatePage } from '../reducers/currentPage/currentPageSlice'
-
+import { ReactComponent as PlayButton } from '../images/svgs/lni_lni-play.svg';
+import { ReactComponent as PauseButton } from '../images/svgs/pause.svg';
 
 
 
@@ -61,7 +62,7 @@ queryAudioTime();
 }, [])
 
 const [audioTime, setAudioTime] = useState(0);
-   
+const [audioEnded, setAudioEnded] = useState(false);
     function queryAudioTime() {
         setAudioTime(dialogue.seek());
     }   
@@ -104,6 +105,10 @@ useEffect(() => {
  
 
 
+
+const [togglePlay, setTogglePlay] = useState(true)
+
+
 function helper() {
   if(dialogue.playing()){
       dialogue.pause();
@@ -115,16 +120,30 @@ startInterval();
 queryAudioTime();
 
 
-  }
 
-  dialogue.on("end", ()=> helper2() )
+
+
+  }
+  setTogglePlay(!togglePlay);
+  
+}
+
+useEffect(() => {
+  
+
+  return () => {
+  
+  }
+}, [togglePlay])
+
+  dialogue.on("end", () => helper2() )
   
 
 function helper2(){
   setTimeout(() => {dispatch(updatePage("Admission"))}, 100);
 }
 
-}
+
 
   return(
 
@@ -134,8 +153,10 @@ function helper2(){
       
 
      <div onClick={()=>helper()}>play/pause</div>
-    <div>{dialogue.duration()}</div>
-    <div onClick={()=>!dialogue.playing()&&dialogue.seek(820)}>play/pause</div></div>
+     <div className='navbar'>
+     {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
+     </div>
+    </div>
   )
 
 }

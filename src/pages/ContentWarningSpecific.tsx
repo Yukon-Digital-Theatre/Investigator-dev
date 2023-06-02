@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { narratorAudio } from '../data/narratorAudioData';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 const ContentWarningSpecific = () => {
     
-    
+  const [audioEnded, setAudioEnded] = useState(false);
     const dispatch= useDispatch();
 
     function helper(){

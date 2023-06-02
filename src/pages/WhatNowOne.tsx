@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { narratorAudio } from '../data/narratorAudioData';
@@ -36,7 +36,7 @@ function helperAudio(){
 
 const dialoguept2 = narratorAudio[15].audio;
 
-
+const [audioEnded, setAudioEnded] = useState(false);
 dialogue.on('end', ()=>helperAudio());
 
 useEffect(() => {

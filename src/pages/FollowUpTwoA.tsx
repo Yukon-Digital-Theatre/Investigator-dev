@@ -1,14 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import EndingICCEmail from '../components/EndingICCEmail';
 import EndingLetter from '../components/EndingLetter';
 import EndingReport from '../components/EndingReport';
 import { narratorAudio } from '../data/narratorAudioData';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import { ReactComponent as PlayButton } from '../images/svgs/lni_lni-play.svg';
+import { ReactComponent as PauseButton } from '../images/svgs/pause.svg';
+
+
 
 const FollowUpTwoA = () => {
     
-    
+  const [audioEnded, setAudioEnded] = useState(false);
     const dispatch= useDispatch();
 
     function helper(){

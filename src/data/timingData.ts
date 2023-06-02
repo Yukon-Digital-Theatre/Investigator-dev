@@ -199,3 +199,48 @@ export const MaleMeetTheWeaverTextTiming =[
     {id:95, speaker:'narrator', text:"Clarify why you are really here, you don’t have all day", enterTime: 364.20, exitTime: 3600},
 
 ]
+
+export const femaleChoiceTextData =[
+    {id:1, text:"Do you want to:", questionOne:"Go along with it, you might learn more ", questionTwo:"Clarify why you are really here, you don’t have all day ", time:345,},
+    {id:2, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:3, text:"Is this steady stream of questions working?", questionOne:"Yes, you don’t want the weaver to shut down. Keep asking simple questions.", questionTwo:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", time:242,},
+    {id:4, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:5, text:"Do you think the weaver is telling the truth?", questionOne:"Yes, you believe the weaver really doesn’t know and you’ll have to break it down to make the weaver realize so that more questions can be answered", questionTwo:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", time:341,},
+    {id:6, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:7, text:"Do you check the email now?", questionOne:"Yes, it might be important ", questionTwo:"No, if it was that important it would be a phone call ", time:290,},
+    {id:8, text:"What do you think? What will you do?", questionOne:"While the weaver made some good points, the weaver is still enough in the wrong to warrant further investigation and maybe a trial, you arrest the weaver.", questionTwo:"The weaver seems genuine and made some good points, this doesn’t feel quite right to you, you let the weaver go", time:834,},
+    {id:9, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:10, text:"Is this the way to do it?", questionOne:"Yes, you still believe the murdered deserve justice and these investigations are worthwhile. You’ll keep investigating and will arrest others.", questionTwo:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk. ", time:49,},
+   
+
+]
+
+export const maleChoiceTextData =[
+    {id:1, text:"Do you want to:", questionOne:"Go along with it, you might learn more ", questionTwo:"Clarify why you are really here, you don’t have all day ", time:360,},
+    {id:2, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:3, text:"Is this steady stream of questions working?", questionOne:"Yes, you don’t want the weaver to shut down. Keep asking simple questions.", questionTwo:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", time:229,},
+    {id:4, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:5, text:"Do you think the weaver is telling the truth?", questionOne:"Yes, you believe the weaver really doesn’t know and you’ll have to break it down to make the weaver realize so that more questions can be answered", questionTwo:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", time:333,},
+    {id:6, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:7, text:"Do you check the email now?", questionOne:"Yes, it might be important ", questionTwo:"No, if it was that important it would be a phone call ", time:267,},
+    {id:8, text:"What do you think? What will you do?", questionOne:"While the weaver made some good points, the weaver is still enough in the wrong to warrant further investigation and maybe a trial, you arrest the weaver.", questionTwo:"The weaver seems genuine and made some good points, this doesn’t feel quite right to you, you let the weaver go", time:713,},
+    {id:9, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:10, text:"Is this the way to do it?", questionOne:"Yes, you still believe the murdered deserve justice and these investigations are worthwhile. You’ll keep investigating and will arrest others.", questionTwo:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk. ", time:49,},
+   
+
+]
+
+export const nonBinaryChoiceTextData =[
+    {id:1, text:"Do you want to:", questionOne:"Go along with it, you might learn more ", questionTwo:"Clarify why you are really here, you don’t have all day ", time:365,},
+    {id:2, text:"non", questionOne:"non", questionTwo:"non", time:1000,},
+    {id:3, text:"Is this steady stream of questions working?", questionOne:"Yes, you don’t want the weaver to shut down. Keep asking simple questions.", questionTwo:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", time:234,},
+    {id:4, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:5, text:"Do you think the weaver is telling the truth?", questionOne:"Yes, you believe the weaver really doesn’t know and you’ll have to break it down to make the weaver realize so that more questions can be answered", questionTwo:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", time:325,},
+    {id:6, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:7, text:"Do you check the email now?", questionOne:"Yes, it might be important ", questionTwo:"No, if it was that important it would be a phone call ", time:266,},
+    {id:8, text:"What do you think? What will you do?", questionOne:"While the weaver made some good points, the weaver is still enough in the wrong to warrant further investigation and maybe a trial, you arrest the weaver.", questionTwo:"The weaver seems genuine and made some good points, this doesn’t feel quite right to you, you let the weaver go", time:699,},
+    {id:9, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
+    {id:10, text:"Is this the way to do it?", questionOne:"Yes, you still believe the murdered deserve justice and these investigations are worthwhile. You’ll keep investigating and will arrest others.", questionTwo:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk. ", time:49,},
+   
+
+]

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch } from 'react-redux';
 import { narratorAudio } from '../data/narratorAudioData';
@@ -17,7 +17,7 @@ function helperTwo(){
 
 }
 
-
+const [audioEnded, setAudioEnded] = useState(false);
 
 
 const narratorTextMode = useSelector((state:any)=> state.textMode.text);

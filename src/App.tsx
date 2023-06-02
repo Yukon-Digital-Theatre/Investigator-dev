@@ -40,6 +40,8 @@ import WhatNowTwoB from './pages/WhatNowTwoB';
 import WorldBackground from './pages/WorldBackground';
 import SettingsBar from './components/SettingsBar';
 import MoreAboutArtists from './pages/MoreAboutArtists';
+import { narratorAudio } from './data/narratorAudioData';
+import { femaleAudio, maleAudio, nonBinaryAudio } from './data/characterAudioData';
 
 
 
@@ -49,8 +51,19 @@ const haloMode = useSelector((state: any)=>state.haloMode.mode);
   const currentPage = useSelector((state: any)=>state.currentPage.page);
 
 
-function displayCurrentPage(){
 
+function tempAudio(){
+
+  narratorAudio.map((item)=>{item.audio.stop()});
+  maleAudio.map((item)=>{item.audio.stop()});
+  femaleAudio.map((item)=>{item.audio.stop()});
+  nonBinaryAudio.map((item)=>{item.audio.stop()});
+}
+
+
+
+function displayCurrentPage(){
+tempAudio();
   if(currentPage==="Intro"){
   return <Intro/>
 }else if (currentPage==="AccessabilityCompatability"){

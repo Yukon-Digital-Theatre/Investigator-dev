@@ -7,6 +7,10 @@ import { useSelector, useDispatch } from 'react-redux'
 import Choice from '../components/Choice'
 import { femaleAudio, maleAudio, nonBinaryAudio } from '../data/characterAudioData'
 import { updatePage } from '../reducers/currentPage/currentPageSlice'
+import { femaleChoiceTextData, maleChoiceTextData, nonBinaryChoiceTextData } from '../data/timingData'
+import { ReactComponent as PlayButton } from '../images/svgs/lni_lni-play.svg';
+import { ReactComponent as PauseButton } from '../images/svgs/pause.svg';
+
 
 
 
@@ -46,13 +50,17 @@ const EndingTwoBAudioOnly = () =>{
   const voicePref = useSelector((state:any)=> state.voicePref.voice);
 const id=11;
   let dialogue: Howl;
+  let choiceData;
 
   if(voicePref==="female"){
      dialogue=femaleAudio[id].audio;
+     choiceData=femaleChoiceTextData;
   }else if(voicePref==="male"){
      dialogue=maleAudio[id].audio;
+     choiceData=maleChoiceTextData;
   }else{
      dialogue=nonBinaryAudio[id].audio;
+     choiceData=nonBinaryChoiceTextData;
   }
 
 
@@ -111,18 +119,37 @@ useEffect(() => {
  
 
 
+const [togglePlay, setTogglePlay] = useState(true)
+const [audioEnded, setAudioEnded] = useState(false);
+
 function helper() {
   if(dialogue.playing()){
       dialogue.pause();
       stopInterval();
+      setTogglePlay(false);
   }else{
 dialogue.play();
 startInterval();
+setTogglePlay(true);
 
 queryAudioTime();
 
 
+
+
+
   }
+
+  
+}
+
+useEffect(() => {
+  
+
+  return () => {
+  
+  }
+}, [togglePlay])
 
   dialogue.on("end", ()=> helper2() )
   
@@ -131,7 +158,7 @@ function helper2(){
   setTimeout(() => {dispatch(updatePage("WhatNowTwoB"))}, 100);
 }
 
-}
+
 
   return(
 
@@ -139,10 +166,11 @@ function helper2(){
 
     <div>
       
-    {audioTime>=choiceTextData[id].time&&<Choice id={id}/>}
-     <div onClick={()=>helper()}>play/pause</div>
-    <div>{dialogue.duration()}</div>
-    <div onClick={()=>!dialogue.playing()&&dialogue.seek(60)}>play/pause</div></div>
+    {audioTime>=choiceData[id].time&&<Choice id={id}/>}
+    <div className='navbar'>
+     {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
+     </div>
+     </div>
   )
 
 }
