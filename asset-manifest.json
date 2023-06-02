@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Investigator-dev/static/css/main.d716bb49.css",
-    "main.js": "/Investigator-dev/static/js/main.9c5eee48.js",
+    "main.css": "/Investigator-dev/static/css/main.f957652c.css",
+    "main.js": "/Investigator-dev/static/js/main.92d89124.js",
     "static/media/THE INVESTIGATOR narrator 09 230407.wav": "/Investigator-dev/static/media/THE INVESTIGATOR narrator 09 230407.61c6f70cf7898e514ed2.wav",
     "static/media/THE INVESTIGATOR non binary 10 230411.wav": "/Investigator-dev/static/media/THE INVESTIGATOR non binary 10 230411.d93166bf76c19548feea.wav",
     "static/media/THE INVESTIGATOR male 10 230411.wav": "/Investigator-dev/static/media/THE INVESTIGATOR male 10 230411.9a7219236f9ed1940da4.wav",
@@ -64,15 +64,15 @@
     "static/media/lni_lni-cog.svg": "/Investigator-dev/static/media/lni_lni-cog.07db73363559f77ebc3a486a4806f596.svg",
     "static/media/lni_lni-volume-medium.svg": "/Investigator-dev/static/media/lni_lni-volume-medium.de86c494434dd2dc7414cd01080cac5b.svg",
     "static/media/lni_lni-volume-mute.svg": "/Investigator-dev/static/media/lni_lni-volume-mute.0303c157e548c8b7625631ba6a147a49.svg",
-    "static/media/pause.svg": "/Investigator-dev/static/media/pause.564afbe7b2f74c998d82b6d57bec1f69.svg",
+    "static/media/pause.svg": "/Investigator-dev/static/media/pause.add01dfe0b0964e7272a63a27d0b71a0.svg",
     "index.html": "/Investigator-dev/index.html",
-    "static/media/lni_lni-play.svg": "/Investigator-dev/static/media/lni_lni-play.7fd1b508ae1de98654653e311d023f23.svg",
+    "static/media/lni_lni-play.svg": "/Investigator-dev/static/media/lni_lni-play.af8c2c96a9715d048c1b40496fcb5cb2.svg",
     "static/media/lni_lni-chevron-right.svg": "/Investigator-dev/static/media/lni_lni-chevron-right.829d5b643f0f56c1e54868dcce4d12bb.svg",
-    "main.d716bb49.css.map": "/Investigator-dev/static/css/main.d716bb49.css.map",
-    "main.9c5eee48.js.map": "/Investigator-dev/static/js/main.9c5eee48.js.map"
+    "main.f957652c.css.map": "/Investigator-dev/static/css/main.f957652c.css.map",
+    "main.92d89124.js.map": "/Investigator-dev/static/js/main.92d89124.js.map"
   },
   "entrypoints": [
-    "static/css/main.d716bb49.css",
-    "static/js/main.9c5eee48.js"
+    "static/css/main.f957652c.css",
+    "static/js/main.92d89124.js"
   ]
 }
