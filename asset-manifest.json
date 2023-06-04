@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Investigator-dev/static/css/main.f957652c.css",
-    "main.js": "/Investigator-dev/static/js/main.0750f67b.js",
+    "main.js": "/Investigator-dev/static/js/main.e32bfc65.js",
     "static/media/THE INVESTIGATOR narrator 09 230407.wav": "/Investigator-dev/static/media/THE INVESTIGATOR narrator 09 230407.61c6f70cf7898e514ed2.wav",
     "static/media/THE INVESTIGATOR non binary 10 230411.wav": "/Investigator-dev/static/media/THE INVESTIGATOR non binary 10 230411.d93166bf76c19548feea.wav",
     "static/media/THE INVESTIGATOR male 10 230411.wav": "/Investigator-dev/static/media/THE INVESTIGATOR male 10 230411.9a7219236f9ed1940da4.wav",
@@ -69,10 +69,10 @@
     "static/media/lni_lni-play.svg": "/Investigator-dev/static/media/lni_lni-play.af8c2c96a9715d048c1b40496fcb5cb2.svg",
     "static/media/lni_lni-chevron-right.svg": "/Investigator-dev/static/media/lni_lni-chevron-right.829d5b643f0f56c1e54868dcce4d12bb.svg",
     "main.f957652c.css.map": "/Investigator-dev/static/css/main.f957652c.css.map",
-    "main.0750f67b.js.map": "/Investigator-dev/static/js/main.0750f67b.js.map"
+    "main.e32bfc65.js.map": "/Investigator-dev/static/js/main.e32bfc65.js.map"
   },
   "entrypoints": [
     "static/css/main.f957652c.css",
-    "static/js/main.0750f67b.js"
+    "static/js/main.e32bfc65.js"
   ]
 }
