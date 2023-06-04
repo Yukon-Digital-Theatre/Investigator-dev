@@ -16,6 +16,7 @@ const dispatch= useDispatch();
 const [style, setStyle] = useState(false)
 const [loaded, setLoaded] = useState(false)
 let loadAmount=0;
+const [ellipses, setEllipses] = useState(true)
 const [loadPercent, setLoadPercent] = useState(0)
 dispatch(updateHalo(0));
 dispatch(updateInvAudioDelivery(true))
@@ -52,11 +53,14 @@ setLoadPercent(loadAmount/29);
 
     setLoaded(true);
     clearInterval(intid);
+  
   }
-
+  
+    
 console.log("Loading...")
   
-  }, 1000);
+  }, 500);
+
 
 
 
@@ -80,7 +84,7 @@ function helper(){
         {loaded && <div className='Button introBigText outlineText' style={style ? { "animationName": "fade-out" } : { "animationName": "fade-in" }} onClick={() => helper()}>Click Here To Begin</div> }
 
 
-{!loaded&&<div className='loadingText outlineText'>Loading...</div>}
+{!loaded&&<div className='loadingText outlineText LoadingAnimation'>Loading</div>}
 {!loaded&&<div className='loadingText outlineText'>{(100*(loadPercent)).toFixed(2)}%</div>}
 
 
