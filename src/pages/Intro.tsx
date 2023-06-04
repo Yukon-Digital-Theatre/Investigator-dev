@@ -1,22 +1,22 @@
 import { useDispatch } from 'react-redux';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
-import { useEffect, useRef, useState } from 'react';
+import { memo, useEffect, useRef, useState } from 'react';
 import { updateHalo } from '../reducers/haloMode/haloModeSlice';
 import { updateInvAudioDelivery } from '../reducers/invAudioDeliveryMode/invAudioDeliveryModeSlice';
 import { updateNarratorAudioDelivery } from '../reducers/narratorAudioDeliveryMode/narratorAudioDeliveryModeSlice';
 import { updateTextDelivery } from '../reducers/textDeliveryMode/textDeliveryModeSlice';
 import { backgroundAudio } from '../data/backgroundAudioData';
-import { maleAudio, femaleAudio, nonBinaryAudio } from '../data/characterAudioData';
 import { narratorAudio } from '../data/narratorAudioData';
 import { Rings } from 'react-loader-spinner'
-import { Button } from '@mui/material';
 
 const Intro = () => {
 
 const dispatch= useDispatch();
-  let intid;
+  let intid: string | number | NodeJS.Timer | undefined;
 const [style, setStyle] = useState(false)
 const [loaded, setLoaded] = useState(false)
+let loadAmount=0;
+const [loadPercent, setLoadPercent] = useState(0)
 dispatch(updateHalo(0));
 dispatch(updateInvAudioDelivery(true))
 dispatch(updateNarratorAudioDelivery(true))
@@ -34,23 +34,29 @@ dispatch(updateTextDelivery(true));
 
 
   
- let intId=setInterval(() => {
+ intid=setInterval(() => {
     
-
+let percent =0;
 
     let check=true;
-  backgroundAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)})
-  narratorAudio.map((item)=>{item.audio.state()==="loading"&&(check=false)});
-
-
+    
+   
+ 
+  narratorAudio.map((item)=>{item.audio.state()==="loading"?(check=false):(percent+=1)});
+  
+if(loadPercent<percent){
+loadAmount=(percent);
+setLoadPercent(loadAmount/29);
+}
   if(check){
 
     setLoaded(true);
-    clearInterval(intId);
+    clearInterval(intid);
   }
-  console.log(check)
-    
-  }, 500);
+
+
+  
+  }, 1000);
 
 
 
@@ -63,22 +69,19 @@ function helper(){
   }, 2000);
 }
 
+
+
+
+
   return (
-    <><div>
+    <>
 
-      <>
-        {loaded ? <div className='Button introBigText outlineText' style={style ? { "animationName": "fade-out" } : { "animationName": "fade-in" }} onClick={() => helper()}>Click Here To Begin</div> : <Rings
-          height="100"
-          width="100"
-          color="#575757"
-          radius="10"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-          ariaLabel="rings-loading" />}</>
+      
+        {loaded && <div className='Button introBigText outlineText' style={style ? { "animationName": "fade-out" } : { "animationName": "fade-in" }} onClick={() => helper()}>Click Here To Begin</div> }
 
-</div>
+
 {!loaded&&<div className='loadingText outlineText'>Loading...</div>}
+{!loaded&&<div className='loadingText outlineText'>{(100*(loadPercent)).toFixed(2)}%</div>}
 
 
 </>
