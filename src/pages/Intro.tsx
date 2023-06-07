@@ -16,7 +16,6 @@ const dispatch= useDispatch();
 const [style, setStyle] = useState(false)
 const [loaded, setLoaded] = useState(false)
 let loadAmount=0;
-const [ellipses, setEllipses] = useState(true)
 const [loadPercent, setLoadPercent] = useState(0)
 dispatch(updateHalo(0));
 dispatch(updateInvAudioDelivery(true))
@@ -44,13 +43,13 @@ function helper(){
 }
 
 
-useEffect(() => {
-  
-
-
-
 
   
+
+
+
+
+
  intid=setInterval(() => {
     
   let percent =0;
@@ -86,11 +85,6 @@ useEffect(() => {
   console.log("Loading...")
     
     }, 100);
-
-  return () => {
-    clearInterval(intid);
-  }
-}, [])
 
 
 

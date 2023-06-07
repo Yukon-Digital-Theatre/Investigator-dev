@@ -5,6 +5,7 @@ import { updateTextDelivery } from '../reducers/textDeliveryMode/textDeliveryMod
 import { useEffect, useState } from 'react';
 import { narratorAudio } from '../data/narratorAudioData';
 import { updateVoicePreference } from '../reducers/voicePreference/voicePreferenceSlice';
+import { femaleAudio, maleAudio, nonBinaryAudio } from '../data/characterAudioData';
 
 const IntroQThree = () => {
 
@@ -44,16 +45,19 @@ function helper3(){
 function helper4(){
   dispatch(updateVoicePreference("female"))
 setVoicePicked(true)
+{femaleAudio.map((item) => { item.audio.load()})}
 }
 
 function helper5(){
   dispatch(updateVoicePreference("male"))
   setVoicePicked(true)
+  {maleAudio.map((item) => { item.audio.load()})}
 }
 
 function helper6(){
   dispatch(updateVoicePreference("nonbinary"))
   setVoicePicked(true)
+  {nonBinaryAudio.map((item) => { item.audio.load()})}
 }
 const narratorMode = useSelector((state:any)=> state.narratorAudioMode.audio);
 const [audioEnded, setAudioEnded] = useState(false);
