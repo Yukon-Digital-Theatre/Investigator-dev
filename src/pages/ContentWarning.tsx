@@ -14,7 +14,7 @@ const ContentWarning = () => {
     }
     
     function helperTwo(){
-        dispatch(updatePage("IntroQFour"));
+      narratorTextMode?dispatch(updatePage("IntroQFour")):dispatch(updatePage("IntroQThree"));
     
     }
 

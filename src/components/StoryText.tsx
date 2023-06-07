@@ -171,7 +171,7 @@ const dispatch = useDispatch();
     setTimeout(() => {
       backgroundAudio[1].audio.pause();
     }, 3000);
-    }else if(item.text==="The weaver keeps weaving. You know it’s time to be more honest."){
+    }else if(item.text==="Continue"&&item.id===121){
       setTimeout(() => {
       dispatch(updatePage("DownToBusiness"))
     }, 1000);
@@ -343,6 +343,12 @@ const dispatch = useDispatch();
       <div style={{'backgroundColor':"transparent",'alignSelf':"flex-start"}as React.CSSProperties}>
       <WeaverBridgeContainer leaving={leaving} className="outlineTextWhite">{item.text}</WeaverBridgeContainer>
       </div>
+    
+    
+    
+    ):item.text === "Continue"?(
+
+      <WeaverContainer leaving={leaving} onAnimationEnd={() => redirect()}></WeaverContainer>
     
     
     

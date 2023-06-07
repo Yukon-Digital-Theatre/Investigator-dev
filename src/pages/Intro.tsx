@@ -34,36 +34,6 @@ dispatch(updateTextDelivery(true));
 
 
 
-  
- intid=setInterval(() => {
-    
-let percent =0;
-
-    let check=true;
-    
-   
- 
-  narratorAudio.map((item)=>{item.audio.state()==="loading"?(check=false):(percent+=1)});
-  
-if(loadPercent<percent){
-loadAmount=(percent);
-setLoadPercent(loadAmount/29);
-}
-  if(check){
-
-    setLoaded(true);
-    clearInterval(intid);
-  
-  }
-  
-    
-console.log("Loading...")
-  
-  }, 500);
-
-
-
-
 
 function helper(){
   setStyle(true);
@@ -72,6 +42,55 @@ function helper(){
 
   }, 2000);
 }
+
+
+useEffect(() => {
+  
+
+
+
+
+  
+ intid=setInterval(() => {
+    
+  let percent =0;
+  
+      let check=true;
+      
+     
+   
+    narratorAudio[0].audio.state()==="loading"?(check=false):(percent+=1);
+    narratorAudio[1].audio.state()==="loading"?(check=false):(percent+=1);
+    narratorAudio[2].audio.state()==="loading"?(check=false):(percent+=1);
+    narratorAudio[3].audio.state()==="loading"?(check=false):(percent+=1);
+    narratorAudio[4].audio.state()==="loading"?(check=false):(percent+=1);
+    narratorAudio[5].audio.state()==="loading"?(check=false):(percent+=1);
+    narratorAudio[6].audio.state()==="loading"?(check=false):(percent+=1);
+    narratorAudio[7].audio.state()==="loading"?(check=false):(percent+=1);
+    narratorAudio[8].audio.state()==="loading"?(check=false):(percent+=1);
+    
+  
+    
+  if(loadPercent<percent){
+  loadAmount=(percent);
+  setLoadPercent(loadAmount/9);
+  }
+    if(check){
+  
+      setLoaded(true);
+      clearInterval(intid);
+    
+    }
+    
+      
+  console.log("Loading...")
+    
+    }, 100);
+
+  return () => {
+    clearInterval(intid);
+  }
+}, [])
 
 
 

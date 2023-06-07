@@ -9,7 +9,7 @@ const ContentWarningSpecific = () => {
     const dispatch= useDispatch();
 
     function helper(){
-        dispatch(updatePage("IntroQThree"));
+      narratorTextMode?dispatch(updatePage("IntroQFour")):dispatch(updatePage("IntroQThree"));
     
     }
     const dialogue = narratorAudio[4].audio;

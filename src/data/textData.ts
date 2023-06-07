@@ -168,8 +168,8 @@ export const scriptMeetTheWeaver =[
         {id:117, speaker:"weaver", text: "Why would I? No one has told me to stop (coughs) The government leaders might have changed but the buildings still need carpets and I can’t afford to stop without other clients (coughs). You can leave your card on – "},
         {id:118, speaker:"investigator", text: "Who gives you the yarn?"},
         {id:119, speaker:"weaver", text: "I really don’t think I can answer any more questions about these. And I shouldn’t. Leave your card, and I’ll get back to you."},
-        {id:120, speaker:"choice", text: "The weaver keeps weaving. You know it’s time to be more honest."}, 
-     
+        {id:120, speaker:"narrator", text: "The weaver keeps weaving. You know it’s time to be more honest."}, 
+        {id:121, speaker:"choice", text: "Continue"}, 
         ]
 
         export const scriptDownToBusiness =[

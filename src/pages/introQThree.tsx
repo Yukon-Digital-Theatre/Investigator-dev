@@ -94,7 +94,7 @@ useEffect(() => {
     <div>
       
 
-    <p className='outlineText introBigText' style={{"justifyContent":"left"}} >Would you like your characters voice to be</p >
+    <p className='outlineText introBigText' style={{"justifyContent":"left"}} >Would you like your character's voice to be</p >
     <p className='introText Button outlineText disabled' onClick={()=>helper4()}>Female</p>
     <p className='introText Button outlineText' onClick={()=>helper5()}>Male</p>
     <p className='introText Button outlineText disabled' onClick={()=>helper6()}>Non Binary</p>
