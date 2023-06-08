@@ -1,13 +1,12 @@
 import { useDispatch } from 'react-redux';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
-import { memo, useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { updateHalo } from '../reducers/haloMode/haloModeSlice';
 import { updateInvAudioDelivery } from '../reducers/invAudioDeliveryMode/invAudioDeliveryModeSlice';
 import { updateNarratorAudioDelivery } from '../reducers/narratorAudioDeliveryMode/narratorAudioDeliveryModeSlice';
 import { updateTextDelivery } from '../reducers/textDeliveryMode/textDeliveryModeSlice';
-import { backgroundAudio } from '../data/backgroundAudioData';
 import { narratorAudio } from '../data/narratorAudioData';
-import { Rings } from 'react-loader-spinner'
+
 
 const Intro = () => {
 
