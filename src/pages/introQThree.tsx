@@ -60,6 +60,7 @@ function helper6(){
   {nonBinaryAudio.map((item) => { item.audio.load()})}
 }
 const narratorMode = useSelector((state:any)=> state.narratorAudioMode.audio);
+const narratorTextMode = useSelector((state:any)=> state.textMode.audio);
 const [audioEnded, setAudioEnded] = useState(false);
 useEffect(() => {
   
@@ -73,19 +74,30 @@ useEffect(() => {
   return () => {
     
   }
-}, [modePicked,voicePicked])
+}, [modePicked, voicePicked])
 
 const dialogue = narratorAudio[5].audio;
-
+const [style, setStyle] = useState(false);
+const [style2, setStyle2] = useState(false);
+const [style3, setStyle3] = useState(false);
 
 useEffect(() => {
   setTimeout(() => {
     if(!dialogue.playing()){
       dialogue.seek(12);
       narratorMode&&dialogue.play();
+      narratorTextMode&&setStyle3(true);
   }
   },500);
-
+  setTimeout(() => {
+    setStyle(true);
+  },3500);
+  setTimeout(() => {
+    setStyle2(true);
+  },5500);
+  setTimeout(() => {
+    setStyle3(true);
+  },7000);
   return () => {
     
   }
@@ -98,10 +110,10 @@ useEffect(() => {
     <div>
       
 
-    <p className='outlineText introBigText' style={{"justifyContent":"left"}} >Would you like your character's voice to be</p >
-    <p className='introText Button outlineText disabled' onClick={()=>helper4()}>Female</p>
-    <p className='introText Button outlineText' onClick={()=>helper5()}>Male</p>
-    <p className='introText Button outlineText disabled' onClick={()=>helper6()}>Non Binary</p>
+    <p className='outlineText introBigText fadeIn' style={{"justifyContent":"left"}} >Would you like your character's voice to be</p >
+    <p className={style?'introText Button outlineText fadeIn':'introText inactiveText'} onClick={()=>helper4()}>Female</p>
+    <p className={style2?'introText Button outlineText fadeIn':'introText inactiveText'} onClick={()=>helper5()}>Male</p>
+    <p className={style3?'introText Button outlineText fadeIn':'introText inactiveText'} onClick={()=>helper6()}>Non Binary</p>
 
     </div>
   )

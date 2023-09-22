@@ -255,7 +255,7 @@ const dispatch = useDispatch();
     setTimeout(() => {
       backgroundAudio[4].audio.pause();
     }, 3000);
-    }else if(item.text==="You Watch"){
+  }else if(item.text==="Continue"&&item.id===4){
       setTimeout(() => {
       dispatch(updatePage("Admission"))
     }, 1000);
@@ -318,6 +318,9 @@ const dispatch = useDispatch();
    <>
    {item.speaker === "narrator"?(
     <NarratorContainer leaving={leaving} className="outlineText">{item.text}</NarratorContainer>
+    
+    
+    
     ):item.speaker === "investigator"?(
       <div style={{'backgroundColor':"transparent",'alignSelf':"flex-end", 'alignContent':"right"}as React.CSSProperties}>
     <InvestigatorContainer leaving={leaving} className="outlineText">{item.text}</InvestigatorContainer>

@@ -7,6 +7,15 @@
       opacity: 1;
     }
   }
+
+  @keyframes inactive {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
   
   @keyframes loading {
     0% {

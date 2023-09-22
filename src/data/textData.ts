@@ -421,7 +421,7 @@ export const scriptMeetTheWeaver =[
             {id:8, speaker:"narrator", text:"The Weaver is on the verge of saying more."},
             {id:9, speaker:"narrator", text:"Do you check the email now?"},
             {id:10, speaker:"choice", text:"Yes, it might be important "},
-            {id:10, speaker:"choice", text:"No, if it was that important it would be a phone call "},
+            {id:11, speaker:"choice", text:"No, if it was that important it would be a phone call "},
 
         ]
 
@@ -431,7 +431,8 @@ export const scriptMeetTheWeaver =[
             {id:2, speaker:"narrator", text:"Subject: More Test Results – Arrest All Weavers"},
             {id:3, speaker:"narrator", text:"The fourth and fifth weavers apprehended had their material test positive for human hair. Assume all weavers are complicit. After brief interrogation arrest them."},
             {id:4, speaker:"narrator", text:"You open your mouth to speak to the weaver, but notice the weaver move."},
-            {id:4, speaker:"choice", text:"You Watch"},
+            {id:5, speaker:"narrator", text:"You Watch"},
+            {id:6, speaker:"choice", text:"Continue"},
         ]
 
       

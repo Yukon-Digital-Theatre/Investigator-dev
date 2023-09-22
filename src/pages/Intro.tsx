@@ -93,7 +93,7 @@ function helper(){
     <>
 
       
-        {loaded && <div className='Button introBigText outlineText' style={style ? { "animationName": "fade-out" } : { "animationName": "fade-in" }} onClick={() => helper()}>Click Here To Begin</div> }
+        {loaded && <div className='Button introBigText outlineText fadeIn' style={style ? { "animationName": "fade-out" } : { "animationName": "fade-in" }} onClick={() => helper()}>Click Here To Begin</div> }
 
 
 {!loaded&&<div className='loadingText outlineText LoadingAnimation'>Loading</div>}

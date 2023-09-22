@@ -60,7 +60,13 @@ function tempAudio(){
   nonBinaryAudio.map((item)=>{item.audio.stop()});
 }
 
-
+function settingsBar(){
+  if(currentPage==="Intro"){
+  }else if (currentPage==="AccessabilityCompatability"){
+  }else if (currentPage==="TitlePage"){
+  }else{return <SettingsBar/>
+  }
+}
 
 function displayCurrentPage(){
 tempAudio();
@@ -219,9 +225,10 @@ function haloblur(){
        <div className={bgblur()}>  
         <div className={bghalo()}>
         <div className={bgblur()}>   
-        <SettingsBar/>
-  
        
+{settingsBar()}
+
+
          {displayCurrentPage()}
           
           </div>
