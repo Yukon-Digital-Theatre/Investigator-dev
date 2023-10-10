@@ -29,7 +29,7 @@ const [style, setStyle] = useState(false);
 const [style2, setStyle2] = useState(false);
 const [style3, setStyle3] = useState(false);
 const [style4, setStyle4] = useState(false);
-const [style5, setStyle5] = useState(true);
+const [style5, setStyle5] = useState(false);
 const [style6, setStyle6] = useState(false);
 
 

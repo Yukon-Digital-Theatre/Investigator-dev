@@ -29,7 +29,9 @@ const voicePref = useSelector((state:any)=> state.voicePref.voice);
 const [style, setStyle] = useState(!narratorMode);
 const [style2, setStyle2] = useState(!narratorMode);
 const [style3, setStyle3] = useState(!narratorMode);
-
+const [style4, setStyle4] = useState(!narratorMode);
+const [style5, setStyle5] = useState(!narratorMode);
+const [style6, setStyle6] = useState(!narratorMode);
 const dialogue = narratorAudio[2].audio;
 
 
@@ -41,6 +43,12 @@ useEffect(() => {
       narratorMode&&dialogue.play();
      
   }
+  },500);
+  setTimeout(() => {
+    setStyle4(true);
+  },500);
+  setTimeout(() => {
+    setStyle5(true);
   },500);
   setTimeout(() => {
     setStyle(true);
@@ -59,12 +67,12 @@ useEffect(() => {
 
   return (
     <div>
-    {narratorTextMode&&<><p className='outlineText introBigText fadeIn'>Welcome to The Investigator, an interactive digital storytelling experience. 
-    </p><p className='outlineText introBigText fadeIn'>
+    {narratorTextMode&&<><p className='outlineText introBigText fadeIn' style={{"justifyContent":"left"}}>Welcome to The Investigator, an interactive digital storytelling experience. 
+    </p><p className={style4?'outlineText introBigText fadeIn':'introBigText inactiveText'} style={{"justifyContent":"left"}}>
 This story is set out of time and place, in a world similar to our own, but not ours. 
 
 You will be taking on the role of an investigator who has been sent to question a weaver. 
-</p><p className='outlineText introBigText fadeIn'>
+</p><p className={style5?'outlineText introBigText fadeIn':'introBigText inactiveText'} style={{"justifyContent":"left"}}>
 This experience will take about 40 to 60 minutes, depending on the choices you make. 
 
 It is recommended you find a private, quiet, and comfortable place to get the most from this experience.
