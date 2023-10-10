@@ -20,14 +20,14 @@ function helper(){
 function helper2(){
   dispatch(updateNarratorAudioDelivery(false));
   dispatch(updateTextDelivery(true));
-  dispatch(updatePage("IntroQTwo"));
+  dispatch(updatePage("WrapUp"));
 
 }
 
 function helper3(){
  dispatch(updateNarratorAudioDelivery(true));
  dispatch(updateTextDelivery(true));
- dispatch(updatePage("IntroQTwo"));
+ dispatch(updatePage("WrapUp"));
 
 }
 const dialogue = narratorAudio[1].audio;

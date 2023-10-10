@@ -8,7 +8,7 @@ import playPauseReducer from "./reducers/playPause/playPauseSlice"
 import textDeliveryModeReducer  from './reducers/textDeliveryMode/textDeliveryModeSlice';
 import haloModeReducer from './reducers/haloMode/haloModeSlice';
 import VoicePreferenceReducer from './reducers/voicePreference/voicePreferenceSlice'
-
+import wrapUpVisitedReducer from './reducers/wrapUpVisited/wrapUpVisitedSlice'
 
 
 
@@ -25,5 +25,6 @@ export const store = configureStore({
         textMode: textDeliveryModeReducer,
         haloMode: haloModeReducer,
         voicePref: VoicePreferenceReducer,
+        wrapUpVisited: wrapUpVisitedReducer,
     }
 });

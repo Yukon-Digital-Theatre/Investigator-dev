@@ -97,19 +97,19 @@ setStyle9(true);
     </div><div className={style?'wrapupText outlineText fadeIn':'wrapupText inactiveText'}>
     When you go out into the world, please keep the outcome of this experience as confidential as possible so others may experience it fresh for themselves.
     </div> 
-    </>}
+  
     <div className={style2?'wrapupText outlineText fadeIn':'wrapupText inactiveText'}>
     This experience has been provided free of charge, but if you’d like to support the artists and presenters follow this link to donate.
     </div> 
-    <div className='WrapUpButton introText fadeIn'  onClick={()=>helper5()}>Donate</div>
+   
     
     <div className={style4?'wrapupText outlineText fadeIn':'wrapupText inactiveText'}>
     If you wish to share any thoughts with the artistic team click here
     </div>
-    <p className='WrapUpButton introText fadeIn' onClick={()=>helper6()}>Share your thoughts</p>
+    
     <div className={style6?'wrapupText outlineText fadeIn':'wrapupText inactiveText'}>
     Explore the links below to read about the artists involved, go back to the history of the world, discover more projects by the Yukon Digital Theatre Collective, or begin again. 
-    </div> 
+    </div>  </>}
     <div className={style?'wrapupText outlineText fadeIn':'wrapupText inactiveText'}>
     This project has been created with the support of Canada Council for the Arts, @YAC Residency Program, and Yukon Government Department of Tourism and Culture.
     </div> 
@@ -117,7 +117,8 @@ setStyle9(true);
       Thank you for participating.
     </div>
 <div className='flexwrapupcontainer'>
-   
+<div className='WrapUpButton introText fadeIn'  onClick={()=>helper5()}>Donate</div>
+<p className='WrapUpButton introText fadeIn' onClick={()=>helper6()}>Share your thoughts</p>
     <p className='WrapUpButton introText fadeIn' onClick={()=>helper2()}>Credits</p>
     <p className='WrapUpButton introText fadeIn' onClick={()=>helper7()}>More About the Artists</p>
     <p className='WrapUpButton introText fadeIn' onClick={()=>helper3()}>World History</p>

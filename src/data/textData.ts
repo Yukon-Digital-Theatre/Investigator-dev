@@ -318,7 +318,7 @@ export const scriptMeetTheWeaver =[
             {id:64, speaker:"weaver", text: "Alright, well, say that your team does find that, that, the report, the tests were right. So? What does that have to do with me? I’m just the weaver. I don’t own the, the yarn, I don’t sell the product, I’m just paid for the output."},
             {id:65, speaker:"investigator", text:"You really don’t believe this is human hair?"},
             {id:66, speaker:"weaver", text:"No, I really don’t think it is."},
-            {id:67, speaker:"", text:"Weaver keeps weaving the hair. "},
+            {id:67, speaker:"narrator", text:"Weaver keeps weaving the hair. "},
             {id:68, speaker:"narrator", text:"You try not to think about the piles of it you saw at Konauzec or the shaved heads in the graves. "},
             {id:69, speaker:"narrator", text: "Was life here in the Capital so sheltered that this is outlandish to the weaver?"},
             {id:70, speaker:"narrator", text: "Do you think the weaver is telling the truth?"},

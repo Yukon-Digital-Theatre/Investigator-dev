@@ -101,8 +101,8 @@ font-family: 'Special Elite', cursive;
 padding-bottom:2vh;
 font-size: 1.3vw;
 font-weight: 400;
-line-height: 2.49740vh;
-letter-spacing: 0.2em;
+line-height: calc(2.6vh + 0.4vw);
+letter-spacing: 0.35em;
 text-align: left;
 background-color:transparent;
 animation-name: fade-in;
@@ -114,14 +114,14 @@ ${ props => props.leaving && css`
 `;
 
 const ButtonContainer = styled.div<{ leaving: boolean }>`
-padding:5vh;
+padding-top:5vh;
 font-family: 'Special Elite', cursive;
 padding-bottom:4vh;
-
+width: 100%;
 font-size: 1.3vw;
 font-weight: 400;
-line-height: 2.49740vh;
-letter-spacing: 0.2em;
+line-height: calc(2.6vh + 0.4vw);
+letter-spacing: 0.35em;
 text-align: left;
 background-color:transparent;
 animation-name: fade-in;
@@ -357,7 +357,7 @@ const dispatch = useDispatch();
     
     ):(
      
-          <div style={{'backgroundColor':"transparent",'alignSelf':"flex-start"}as React.CSSProperties}>
+          <div style={{'backgroundColor':"transparent",'alignSelf':"flex-start",'width':"100%"}as React.CSSProperties}>
         <ButtonContainer leaving = {false} className="choiceButton outlineText" onClick={() => redirect()}>{item.text}</ButtonContainer>
         
         </div>

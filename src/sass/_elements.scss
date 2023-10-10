@@ -209,4 +209,40 @@ pointer-events: none;
                 animation-fill-mode:forwards;
                 animation-duration:1s;
               }
-    
+ div.artistsText{
+                display: flex;
+                justify-content: left;
+                margin-left: 12vw;
+                margin-right: 12vw;
+                
+                    padding:1vh;
+                font-family: 'Special Elite', cursive;
+                padding-bottom:1vh;
+                font-size: 1.25vw;
+                font-weight: 400;
+                line-height: 2.49740vh;
+                letter-spacing: 0.2em;
+                text-align: left;
+                background-color:transparent;
+               
+                
+                  }
+
+                  div.artistsBigText{
+                    display: flex;
+                    justify-content: left;
+                    margin-left: 12vw;
+                    margin-right: 12vw;
+                    
+                        padding:1vh;
+                    font-family: 'Special Elite', cursive;
+                    padding-bottom:1vh;
+                    font-size: 1.75vw;
+                    font-weight: 400;
+                    line-height: 5.49740vh;
+                    letter-spacing: 0.2em;
+                    text-align: left;
+                    background-color:transparent;
+                   
+                    
+                      }
