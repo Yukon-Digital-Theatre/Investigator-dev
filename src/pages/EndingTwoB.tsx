@@ -11,6 +11,7 @@ import { femaleChoiceTextData, maleChoiceTextData, nonBinaryChoiceTextData } fro
 import { ReactComponent as PlayButton } from '../images/svgs/lni_lni-play.svg';
 import { ReactComponent as PauseButton } from '../images/svgs/pause.svg';
 import { narratorAudio } from '../data/narratorAudioData'
+import { EndingTwoBTextTiming } from '../data/tempnonbinary'
 
 
 
@@ -33,7 +34,7 @@ const EndingTwoB = () => {
   
  
   if(narratorMode&&narratorTextMode){
-     return(<div/>)
+     return(<EndingTwoBBoth/>)
     }else if (narratorMode&&!narratorTextMode){
       return(<EndingTwoBAudioOnly/>)
     }else{
@@ -44,6 +45,163 @@ const EndingTwoB = () => {
 }
 
 export default EndingTwoB
+
+const EndingTwoBBoth = () =>{
+
+
+  const voicePref = useSelector((state:any)=> state.voicePref.voice);
+
+
+  let choiceData: any[];
+  const [audioEnded, setAudioEnded] = useState(false);
+ 
+  const dialogue = narratorAudio[11].audio;
+
+
+  const [temp, setTemp]= useState ([EndingTwoBTextTiming[0]]);
+  const [audioTime, setAudioTime] = useState(0);
+ 
+  function queryAudioTime() {
+      setAudioTime(dialogue.seek());
+  }   
+const intervalref = useRef<number | null>(null);
+
+
+useEffect(() => {
+  setTimeout(() => {
+    if(!dialogue.playing()){
+      dialogue.play();
+      startInterval();
+
+queryAudioTime();
+    }
+  },2000);
+  
+return () => { 
+}
+}, [])
+
+const startInterval = () => {
+  if (intervalref.current !== null) return;
+  intervalref.current = window.setInterval(() => {
+    queryAudioTime();
+  }, 100);
+};
+
+
+const stopInterval = () => {
+  if (intervalref.current) {
+    window.clearInterval(intervalref.current);
+    intervalref.current = null;
+  }
+};
+
+
+useEffect(() => {
+  return () => {
+    if (intervalref.current !== null) {
+      window.clearInterval(intervalref.current);
+    }
+  };
+}, []);
+
+
+
+useEffect(() => {
+  console.log(audioTime);
+
+
+return () => {
+  
+}
+}, [audioTime])
+
+
+const [togglePlay, setTogglePlay] = useState(true)
+
+
+function helper() {
+if(dialogue.playing()){
+    dialogue.pause();
+    stopInterval();
+    setTogglePlay(false);
+}else{
+dialogue.play();
+startInterval();
+setTogglePlay(true);
+
+queryAudioTime();
+
+
+
+
+
+}
+
+
+}
+
+useEffect(() => {
+
+
+return () => {
+
+}
+}, [togglePlay])
+
+
+
+
+dialogue.on("end", ()=> helperOnEnd() )
+
+
+function helperOnEnd(){
+  dialogue.seek(dialogue.duration()-0.05);
+  dialogue.pause();
+  setTogglePlay(false);
+}
+
+function helper2(){
+
+  choiceData.map((item,index)=>{
+    if(item.enterTime<=audioTime && audioTime<=item.exitTime){
+      if(!temp.includes(item)){
+      temp.push(item)
+      }
+     
+      
+    }
+    if(temp.length>4){
+    if(temp[0].exitTime<=audioTime){
+      
+      
+        temp.shift();
+        }
+      }
+    
+    
+})
+  
+console.log(temp)
+return (<div/>)
+}
+
+
+return (
+    
+       <div className='story_container'> 
+       
+      {helper2()}
+      
+      <div className='navbar'>
+   {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
+   </div>
+
+  {temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
+
+  </div>
+  )
+}
 
 const EndingTwoBAudioOnly = () =>{
 

@@ -7,9 +7,10 @@ import { useSelector, useDispatch } from 'react-redux'
 import Choice from '../components/Choice'
 import { femaleAudio, maleAudio, nonBinaryAudio } from '../data/characterAudioData'
 import { updatePage } from '../reducers/currentPage/currentPageSlice'
-import { femaleChoiceTextData, maleChoiceTextData, nonBinaryChoiceTextData } from '../data/timingData'
+import { femaleChoiceTextData, femaleKeepGoingTextTiming, maleChoiceTextData, maleKeepGoingTextTiming, nonBinaryChoiceTextData } from '../data/timingData'
 import { ReactComponent as PlayButton } from '../images/svgs/lni_lni-play.svg';
 import { ReactComponent as PauseButton } from '../images/svgs/pause.svg';
+import { nonBinaryKeepGoingTextTiming } from '../data/tempnonbinary'
 
 
 
@@ -34,7 +35,7 @@ const KeepGoing = () => {
   
  
   if(narratorMode&&narratorTextMode){
-     return(<div/>)
+     return(<KeepGoingBoth/>)
     }else if (narratorMode&&!narratorTextMode){
       return(<KeepGoingAudioOnly/>)
     }else{
@@ -45,6 +46,179 @@ const KeepGoing = () => {
 }
 
 export default KeepGoing
+
+const KeepGoingBoth = () =>{
+
+  const dispatch= useDispatch();
+  const voicePref = useSelector((state:any)=> state.voicePref.voice);
+const id=3;
+  let dialogue: Howl;
+  
+
+
+
+
+
+
+
+
+  let choiceData: any[];
+  const [audioEnded, setAudioEnded] = useState(false);
+  if(voicePref==="female"){
+     dialogue=femaleAudio[id].audio;
+     choiceData=femaleKeepGoingTextTiming;
+  }else if(voicePref==="male"){
+     dialogue=maleAudio[id].audio;
+     choiceData=maleKeepGoingTextTiming;
+  }else{
+     dialogue=nonBinaryAudio[id].audio;
+     choiceData=nonBinaryKeepGoingTextTiming;
+  }
+
+  const [temp, setTemp]= useState ([choiceData[0]]);
+  const [audioTime, setAudioTime] = useState(0);
+ 
+  function queryAudioTime() {
+      setAudioTime(dialogue.seek());
+  }   
+const intervalref = useRef<number | null>(null);
+
+
+useEffect(() => {
+  setTimeout(() => {
+    if(!dialogue.playing()){
+      dialogue.play();
+      startInterval();
+
+queryAudioTime();
+    }
+  },2000);
+  
+return () => { 
+}
+}, [])
+
+const startInterval = () => {
+  if (intervalref.current !== null) return;
+  intervalref.current = window.setInterval(() => {
+    queryAudioTime();
+  }, 100);
+};
+
+
+const stopInterval = () => {
+  if (intervalref.current) {
+    window.clearInterval(intervalref.current);
+    intervalref.current = null;
+  }
+};
+
+
+useEffect(() => {
+  return () => {
+    if (intervalref.current !== null) {
+      window.clearInterval(intervalref.current);
+    }
+  };
+}, []);
+
+
+
+useEffect(() => {
+  console.log(audioTime);
+
+
+return () => {
+  
+}
+}, [audioTime])
+
+
+const [togglePlay, setTogglePlay] = useState(true)
+
+
+function helper() {
+if(dialogue.playing()){
+    dialogue.pause();
+    stopInterval();
+    setTogglePlay(false);
+}else{
+dialogue.play();
+startInterval();
+setTogglePlay(true);
+
+queryAudioTime();
+
+
+
+
+
+}
+
+
+}
+
+useEffect(() => {
+
+
+return () => {
+
+}
+}, [togglePlay])
+
+
+
+
+dialogue.on("end", ()=> helperOnEnd() )
+
+
+function helperOnEnd(){
+  dialogue.seek(dialogue.duration()-0.05);
+  dialogue.pause();
+  setTogglePlay(false);
+}
+
+function helper2(){
+
+  choiceData.map((item,index)=>{
+    if(item.enterTime<=audioTime && audioTime<=item.exitTime){
+      if(!temp.includes(item)){
+      temp.push(item)
+      }
+     
+      
+    }
+    if(temp.length>4){
+    if(temp[0].exitTime<=audioTime){
+      
+      
+        temp.shift();
+        }
+      }
+    
+    
+})
+  
+console.log(temp)
+return (<div/>)
+}
+
+
+return (
+    
+       <div className='story_container'> 
+       
+      {helper2()}
+      
+      <div className='navbar'>
+   {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
+   </div>
+
+  {temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
+
+  </div>
+  )
+}
 
 const KeepGoingAudioOnly = () =>{
   const [audioEnded, setAudioEnded] = useState(false);

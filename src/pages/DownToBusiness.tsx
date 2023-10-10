@@ -25,7 +25,7 @@ const DownToBusiness = () => {
 
 
   if(narratorMode&&narratorTextMode){
-    return(<div/>)
+    return(<DownToBusinessBoth/>)
    }else if (narratorMode&&!narratorTextMode){
      return(<DownToBusinessAudioOnly/>)
    }else{
@@ -229,7 +229,7 @@ const DownToBusinessBoth = () =>{
 
   const dispatch= useDispatch();
   const voicePref = useSelector((state:any)=> state.voicePref.voice);
-const id=0;
+const id=2;
   let dialogue: Howl;
   
 
@@ -384,7 +384,7 @@ return (<div/>)
 
 return (
     
-       <div > 
+       <div className='story_container'> 
        
       {helper2()}
       

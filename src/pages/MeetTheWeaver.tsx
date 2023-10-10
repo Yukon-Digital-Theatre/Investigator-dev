@@ -315,7 +315,7 @@ useEffect(() => {
   
   queryAudioTime();
       }
-    },2000);
+    },4000);
     
   return () => { 
   }
@@ -429,7 +429,7 @@ useEffect(() => {
 
  return (
       
-         <div > 
+         <div className='story_container'> 
          
         {helper2()}
         

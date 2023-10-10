@@ -13,21 +13,21 @@ const IntroQOne = () => {
 function helper(){
   dispatch(updateNarratorAudioDelivery(true));
   dispatch(updateTextDelivery(false));
-    dispatch(updatePage("WrapUp"));
+    dispatch(updatePage("IntroQTwo"));
 
 }
 
 function helper2(){
   dispatch(updateNarratorAudioDelivery(false));
   dispatch(updateTextDelivery(true));
-  dispatch(updatePage("WrapUp"));
+  dispatch(updatePage("IntroQTwo"));
 
 }
 
 function helper3(){
  dispatch(updateNarratorAudioDelivery(true));
  dispatch(updateTextDelivery(true));
- dispatch(updatePage("WrapUp"));
+ dispatch(updatePage("IntroQTwo"));
 
 }
 const dialogue = narratorAudio[1].audio;

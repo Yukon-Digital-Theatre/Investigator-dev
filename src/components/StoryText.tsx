@@ -97,6 +97,7 @@ ${ props => props.leaving && css`
 
 const NarratorContainer = styled.div<{ leaving: boolean }>`
 padding:1vh;
+align-self: flex-start;
 font-family: 'Special Elite', cursive;
 padding-bottom:2vh;
 font-size: 1.3vw;

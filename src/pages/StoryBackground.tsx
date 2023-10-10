@@ -15,7 +15,10 @@ const StoryBackground = () => {
       const dispatch= useDispatch();
   
       function helper(){
+        dispatch(updateHalo(2));
+        setTimeout(() => {
           dispatch(updatePage("MeetTheWeaver"));
+        }, 1000);
       
       }
       const narratorTextMode = useSelector((state:any)=> state.textMode.text);
