@@ -26,9 +26,9 @@ const invTextMode = useSelector((state:any)=> state.invTextMode.text);
 const invMode = useSelector((state:any)=> state.invAudioMode.audio);
 const voicePref = useSelector((state:any)=> state.voicePref.voice);
 
-const [style, setStyle] = useState(true);
-const [style2, setStyle2] = useState(true);
-const [style3, setStyle3] = useState(true);
+const [style, setStyle] = useState(!narratorMode);
+const [style2, setStyle2] = useState(!narratorMode);
+const [style3, setStyle3] = useState(!narratorMode);
 
 const dialogue = narratorAudio[2].audio;
 

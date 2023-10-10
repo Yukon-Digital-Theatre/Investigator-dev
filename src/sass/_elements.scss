@@ -168,7 +168,7 @@ pointer-events: none;
       margin-left: 8vw;
       margin-right: 8vw;
             display: flex;
-            justify-content: center;
+            justify-content: left;
             
             
                 padding:1vh;
@@ -246,3 +246,7 @@ pointer-events: none;
                    
                     
                       }
+
+                    .artistHeadshot{
+                      align-self: flex-start;
+                    }
