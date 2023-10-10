@@ -48,6 +48,17 @@
           }
       }
 
+
+      
+      .WrapUpButtonDisabled{
+        padding:1%;
+        width:25vw;
+        margin: 0.5vh;
+        margin-bottom: 2vh;
+        color: transparent;
+        white-space: nowrap;
+        }
+
       .flexwrapupcontainer {
         display: flex;
         flex-direction: row;

@@ -13,14 +13,14 @@ const IntroQOne = () => {
 function helper(){
   dispatch(updateNarratorAudioDelivery(true));
   dispatch(updateTextDelivery(false));
-    dispatch(updatePage("IntroQTwo"));
+    dispatch(updatePage("WrapUp"));
 
 }
 
 function helper2(){
   dispatch(updateNarratorAudioDelivery(false));
   dispatch(updateTextDelivery(true));
-  dispatch(updatePage("IntroQTwo"));
+  dispatch(updatePage("WrapUp"));
 
 }
 

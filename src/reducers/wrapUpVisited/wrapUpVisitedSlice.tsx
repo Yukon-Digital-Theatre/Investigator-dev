@@ -1,25 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-
 const initialState = {
-     visited: false
+    mode:false
 };
 
-
 export const wrapUpVisitedSlice= createSlice({
-    name:"wrapUpVisited",
+    name:"investigatorDeliveryMode",
     initialState,
     reducers:{
-        visit:(state)=>{
-            state.visited = true;
+        updateWrapUpVisited:(state, action)=>{
+            state.mode = action.payload;
         },
-        reset:(state)=>{
-            state.visited = false;
-        },
+        
     },
 });
 
 
-export const {visit,reset}= wrapUpVisitedSlice.actions;
+export const {updateWrapUpVisited}= wrapUpVisitedSlice.actions;
 
 export default wrapUpVisitedSlice.reducer;

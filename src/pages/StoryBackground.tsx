@@ -108,12 +108,16 @@ const StoryBackground = () => {
             <p>Today is November 28, 2021</p>
             </div>
             </div>}
-            {narratorMode&& <div className='navbar'>
-       {togglePlay?<PauseButton onClick={()=>helperAudio()}/>:<PlayButton onClick={()=>helperAudio()}/>}
-       </div>}
-       {audioEnded&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
-       {narratorTextMode&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
-            </>
+            {narratorMode&& <><div className='navbar'>
+              {togglePlay ? <PauseButton onClick={() => helperAudio()} /> : <PlayButton onClick={() => helperAudio()} />}
+            </div><div style={{ "height": "20vh" }}>
+              </div></>}
+       {audioEnded&&     <><div style={{ "height": "20vh" }}>
+            </div><p className='outlineText Button' style={{ "padding": "0" }} onClick={() => helper()}>Continue</p><div style={{ "height": "10vh" }}>
+              </div></>}
+       {narratorTextMode&&     <><div style={{ "height": "10vh" }}>
+            </div><p className='outlineText Button' style={{ "padding": "0" }} onClick={() => helper()}>Continue</p><div style={{ "height": "10vh" }}>
+              </div></>}</>
     )
   }
 export default StoryBackground
