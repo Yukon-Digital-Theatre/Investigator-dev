@@ -1,6 +1,7 @@
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch } from 'react-redux';
-import headshotmisc from '../images/headshot place holder.png'
+import logo1 from '../images/Yukon Gov Logo.png'
+import logo2 from '../images/YAC Residency Logo.png'
 
 const Credits = () => {
     
@@ -40,10 +41,10 @@ Original one act play researched & developed with funding from Canada Council fo
      </div>
 <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"12%"}} ></div>
-     <img src={headshotmisc} className='artistHeadshot'></img>
-     <img src={headshotmisc} className='artistHeadshot'></img>
-     <img src={headshotmisc} className='artistHeadshot'></img>
-     <img src={headshotmisc} className='artistHeadshot'></img>
+     <img src={logo1} alt="logo" className='artistHeadshot'></img>
+     <div style={{"height":"5vh", "width":"5%"}}></div>
+     <img src={logo2} alt="logo" className='artistHeadshot'></img>
+     
      
      </div>
 <div style={{"height":"5vh"}}>

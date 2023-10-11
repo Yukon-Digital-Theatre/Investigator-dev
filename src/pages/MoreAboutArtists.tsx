@@ -1,6 +1,13 @@
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch } from 'react-redux';
 import headshotmisc from '../images/headshot place holder.png'
+import headshotclb from '../images/Carman Lam Brar.jpg'
+import headshotwb from '../images/Wren Brian.jpg'
+import headshotpf from '../images/Patti Flather Headshot 2021.jpg'
+import headshotjw from '../images/Jordy Walker Headshot.jpeg'
+import headshotkg from '../images/Ken Green.jpg'
+import headshotmp from '../images/Meredith Pritchard.jpeg'
+
 
 
 const MoreAboutArtists = () => {
@@ -21,7 +28,7 @@ const MoreAboutArtists = () => {
      </div>
      <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} className='artistHeadshot'></img>
+     <img src={headshotwb} alt="headshot" className='artistHeadshot'></img>
      </div>
      <div className='outlineText artistsBigText'>
       Wren Brian – Creator & Co-Artistic Producer
@@ -32,7 +39,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} className='artistHeadshot'></img>
+     <img src={headshotpf} alt="headshot" className='artistHeadshot'></img>
      </div>
       <div className='outlineText artistsBigText'>
         Patti Flather – Dramaturg & Co-Artistic Producer
@@ -43,7 +50,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} className='artistHeadshot'></img>
+     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
      </div>
       <div className='outlineText artistsBigText'>
         Harrison Sparrow – Developer
@@ -55,7 +62,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} className='artistHeadshot'></img>
+     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
      </div>  
       <div className='outlineText artistsBigText'>
         Jordy Walker – Sound Designer, Composer, Audio Producer
@@ -66,7 +73,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} className='artistHeadshot'></img>
+     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
      </div>
       <div className='outlineText artistsBigText'>
         Meredith Pritchard – Audio Recording Director & Voice Actor
@@ -81,7 +88,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} className='artistHeadshot'></img>
+     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
      </div>
       <div className='outlineText artistsBigText'>
         Christine Genier – Narrator
@@ -91,7 +98,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} className='artistHeadshot'></img>
+     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
      </div><div className='outlineText artistsBigText'>
         Ken Green – Voice Actor
       </div><div className='outlineText artistsText'>
@@ -100,7 +107,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} className='artistHeadshot'></img>
+     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
      </div><div className='outlineText artistsBigText'>
         Carman Lam Brar – Voice Actor
       </div><div className='outlineText artistsText'>
@@ -109,7 +116,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} className='artistHeadshot'></img>
+     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
      </div><div className='outlineText artistsBigText'>
         Ames Val – Voice Actor
       </div><div className='outlineText artistsText'>
