@@ -98,7 +98,7 @@ export const femaleMeetTheWeaverTextTiming =[
 
 ]
 export const nonBinaryMeetTheWeaverTextTiming =[
-    {id:1, speaker:"narrator", text:"You recently came to the city in search of your next job. You are very short on money. Before the end of the war you were working at a hospital near the fighting, they needed the extra help. Since they don’t anymore you have been working odd jobs, trying to find ones that help your country and its citizens recover when you can.",enterTime: 3600, exitTime: 23}, 
+    {id:1, speaker:"narrator", text:"You recently came to the city in search of your next job. You are very short on money. Before the end of the war you were working at a hospital near the fighting, they needed the extra help. Since they don’t anymore you have been working odd jobs, trying to find ones that help your country and its citizens recover when you can.",enterTime: 0, exitTime: 23}, 
     {id:2, speaker:"narrator", text: "After 9 days of searching in the city, you were offered this job, as an investigator. You know you are lucky to have it. It pays well. Going to work this morning you passed many people not so lucky. Today is your first day. It has gone well so far.",enterTime: 23, exitTime: 3600},
     {id:3, speaker:"narrator", text: "After a quick orientation this morning and early afternoon, you have been sent to this address in the south end of the city. The investigation has just begun, you need to get as much information as you can.",enterTime: 45, exitTime: 3600},
     {id:4, speaker:"narrator", text: "It is cold and cloudy, but thankfully it hasn’t rained. This area is filled with older buildings, many not kept up, including this one, the workshop of the weaver. You go down a dark, narrow hallway. You see the unit number sent to you in your assignment email. You take out your phone and double check this is the right unit. It is.",enterTime: 3600, exitTime: 3600},
@@ -242,8 +242,8 @@ export const maleMeetTheWeaverTextTiming =[
     {id:91, speaker:'narrator', text:"You didn’t mean to make the weaver think you wanted a carpet, but the weaver genuinely", enterTime: 351.04, exitTime: 357.72},
     {id:92, speaker:'narrator', text:"seems to believe this is what you’re here for.", enterTime: 355.72, exitTime: 360.30},
     {id:93, speaker:'narrator', text:"Do you want to:", enterTime: 359.30, exitTime: 3600},
-    {id:94, speaker:'narrator', text:"Go along with it, you might learn more", enterTime: 360.98, exitTime: 3600},
-    {id:95, speaker:'narrator', text:"Clarify why you are really here, you don’t have all day", enterTime: 364.20, exitTime: 3600},
+    {id:94, speaker:'choice', text:"Go along with it, you might learn more", enterTime: 360.98, exitTime: 3600},
+    {id:95, speaker:'choice', text:"Clarify why you are really here, you don’t have all day", enterTime: 364.20, exitTime: 3600},
 
 ]
 
@@ -491,7 +491,7 @@ export const femaleGoingWithTheFlowTextTiming =[
     {id:239, speaker:'weaver', text:"I really don’t think I can answer any more of your questions about these.", enterTime: 825.4, exitTime: 830.6},
     {id:240, speaker:'weaver', text:"And I shouldn’t. Leave your card, and I’ll get back to you.", enterTime: 828.6, exitTime: 834.5},
     {id:241, speaker:'narrator', text:"The weaver keeps weaving. You know it’s time to be more honest.", enterTime: 833.5, exitTime: 839.9},
-
+    {id:242, speaker:'choice', text:"Continue", enterTime: 840.5, exitTime: 841.5},
 ]
 export const maleGoingWithTheFlowTextTiming =[
         
@@ -736,6 +736,7 @@ export const maleGoingWithTheFlowTextTiming =[
     {id:239, speaker:'weaver', text:"I really don’t think I can answer any more questions about these. And I", enterTime: 799.4, exitTime: 804.7},
     {id:240, speaker:'weaver', text:"shouldn’t. Leave your card, and I’ll get back to you.", enterTime: 802.7, exitTime: 807},
     {id:241, speaker:'narrator', text:"The weaver keeps weaving. You know it’s time to be more honest.", enterTime: 806, exitTime: 812.3},
+    {id:242, speaker:'choice', text:"Continue", enterTime: 813.5, exitTime: 814.5},
 
 ]
 export const nonBinaryGoingWithTheFlowTextTiming =[
@@ -981,7 +982,7 @@ export const nonBinaryGoingWithTheFlowTextTiming =[
     {id:239, speaker:'weaver', text:"I really don’t think I can answer any more of your questions about these.", enterTime: 827.8, exitTime: 832.5},
     {id:240, speaker:'weaver', text:"And I shouldn’t. Leave your card, and I’ll get back to you.", enterTime: 830.5, exitTime: 835.4},
     {id:241, speaker:'narrator', text:"The weaver keeps weaving. You know it’s time to be more honest.", enterTime: 834.3, exitTime: 840.7},
-
+    {id:242, speaker:'choice', text:"Continue", enterTime: 841, exitTime: 842.5},
 ]
 
  //---//
@@ -1200,6 +1201,7 @@ export const maleKeepGoingTextTiming =[
     {id:43, speaker:'weaver', text:"Rent a little place. Sleep as long as I want. Go wander outside…", enterTime: 140.78, exitTime: 147.08},
     {id:44, speaker:'investigator', text:"You really don’t know what it’s made out of?", enterTime: 145.60, exitTime: 149.80},
     {id:45, speaker:'weaver', text:"No.", enterTime: 148.39, exitTime: 151.17},
+    {id:46, speaker:'choice', text:"Continue", enterTime: 152, exitTime: 153},
 ]  
 export const femaleKeepGoingTextTiming =[
         
@@ -1248,6 +1250,8 @@ export const femaleKeepGoingTextTiming =[
     {id:43, speaker:'weaver', text:"Rent a little place. Sleep as long as I want to. Go wander outside…", enterTime: 162.29, exitTime: 169.55},
     {id:44, speaker:'investigator', text:"You really don’t know what it’s made of?", enterTime: 167.61, exitTime: 171.38},
     {id:45, speaker:'weaver', text:"No.", enterTime: 169.59, exitTime: 172.10},
+    {id:46, speaker:'choice', text:"Continue", enterTime: 172, exitTime: 173},
+
 ]
 
 //---//
@@ -1518,6 +1522,8 @@ export const maleMorePressureTextTiming =[
     {id:33, speaker:'weaver', text:"that too. I’m sure it leads to preying on poor people and, and things like", enterTime: 85.58, exitTime: 91.35},
     {id:34, speaker:'weaver', text:"that, but really, it’s better, at least, I imagine if this is true, it would, in a lot", enterTime: 89.35, exitTime: 95.47},
     {id:35, speaker:'weaver', text:"of ways, be better, more consensual than animals.", enterTime: 93.47, exitTime: 98.38},
+    {id:36, speaker:'choice', text:"Continue", enterTime: 99, exitTime: 100},
+
 ]
 export const femaleMorePressureTextTiming =[
         
@@ -1556,6 +1562,7 @@ export const femaleMorePressureTextTiming =[
     {id:33, speaker:'weaver', text:"that too. I’m sure it leads to preying on poor people and, and things like", enterTime: 98.22, exitTime: 104.40},
     {id:34, speaker:'weaver', text:"that, but really, it’s better, at least, I imagine if this is true, it would, in a lot", enterTime: 102.40, exitTime: 110.47},
     {id:35, speaker:'weaver', text:"of ways, be better, more consensual than animals.", enterTime: 108.47, exitTime: 113.42},
+    {id:36, speaker:'choice', text:"Continue", enterTime: 99, exitTime: 100},
 ]
 
 //---//
@@ -1652,8 +1659,8 @@ export const femaleBreakItDownTextTiming =[
     {id:89, speaker:'narrator', text:"You feel your phone buzz in your pocket. Another email.", enterTime: 279.9, exitTime: 285.8},
     {id:90, speaker:'narrator', text:"The Weaver is on the verge of saying more.", enterTime: 284.7, exitTime: 289.2},
     {id:91, speaker:'narrator', text:"Do you check the email now?", enterTime: 288.9, exitTime: 3600},
-    {id:92, speaker:'narrator', text:"Yes, it might be important", enterTime: 291.4, exitTime: 3600},
-    {id:93, speaker:'narrator', text:"No, if it was that important it would be a phone call", enterTime: 294, exitTime: 3600},
+    {id:92, speaker:'choice', text:"Yes, it might be important", enterTime: 291.4, exitTime: 3600},
+    {id:93, speaker:'choice', text:"No, if it was that important it would be a phone call", enterTime: 294, exitTime: 3600},
    
 
 ]
@@ -1750,8 +1757,8 @@ export const maleBreakItDownTextTiming =[
     {id:89, speaker:'narrator', text:"You feel your phone buzz in your pocket. Another email.", enterTime: 257.3, exitTime: 263.3},
     {id:90, speaker:'narrator', text:"The Weaver is on the verge of saying more.", enterTime: 261.8, exitTime: 266.4},
     {id:91, speaker:'narrator', text:"Do you check the email now?", enterTime: 266.1, exitTime: 3600},
-    {id:92, speaker:'narrator', text:"Yes, it might be important", enterTime: 268.6, exitTime: 3600},
-    {id:93, speaker:'narrator', text:"No, if it was that important it would be a phone call", enterTime: 271.3, exitTime: 3600},
+    {id:92, speaker:'choice', text:"Yes, it might be important", enterTime: 268.6, exitTime: 3600},
+    {id:93, speaker:'choice', text:"No, if it was that important it would be a phone call", enterTime: 271.3, exitTime: 3600},
    
 
 ]
@@ -2428,4 +2435,5 @@ export const theEmailTextTiming =[
     {id:3, speaker:'narrator', text:"The fourth and fifth weavers apprehended had their material test positive for human hair. Assume all weavers are complicit. After brief interrogation arrest them.", enterTime: 7.79, exitTime: 21.72},
     {id:4, speaker:'narrator', text:"You open your mouth to speak to the weaver, but notice the weaver move.", enterTime: 20.40, exitTime: 26.48},
     {id:5, speaker:'narrator', text:"You watch.", enterTime: 25, exitTime: 27.93},
+    {id:6, speaker:'choice', text:"Continue", enterTime: 29, exitTime: 30},
 ]

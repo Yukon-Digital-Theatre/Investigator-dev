@@ -34,7 +34,7 @@ const EndingTwoA = () => {
   
  
   if(narratorMode&&narratorTextMode){
-     return(<div/>)
+     return(<EndingTwoABoth/>)
     }else if (narratorMode&&!narratorTextMode){
       return(<EndingTwoAAudioOnly/>)
     }else{

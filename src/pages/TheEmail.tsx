@@ -30,7 +30,7 @@ const TheEmail = () => {
   
  
   if(narratorMode&&narratorTextMode){
-     return(<div/>)
+     return(<TheEmailAudioOnly/>)
     }else if (narratorMode&&!narratorTextMode){
       return(<TheEmailAudioOnly/>)
     }else{
@@ -44,7 +44,7 @@ export default TheEmail
 
 
 
-const EndingOneBoth = () =>{
+const TheEmailBoth = () =>{
 
 
   const voicePref = useSelector((state:any)=> state.voicePref.voice);

@@ -25,18 +25,18 @@ const invTextMode = useSelector((state:any)=> state.invTextMode.text);
 const invMode = useSelector((state:any)=> state.invAudioMode.audio);
 const voicePref = useSelector((state:any)=> state.voicePref.voice);
 
-const [style, setStyle] = useState(false);
-const [style2, setStyle2] = useState(false);
-const [style3, setStyle3] = useState(false);
-const [style4, setStyle4] = useState(false);
-const [style5, setStyle5] = useState(false);
-const [style6, setStyle6] = useState(false);
+const [style, setStyle] = useState(!narratorMode);
+const [style2, setStyle2] = useState(!narratorMode);
+const [style3, setStyle3] = useState(!narratorMode);
+const [style4, setStyle4] = useState(!narratorMode);
+const [style5, setStyle5] = useState(!narratorMode);
+const [style6, setStyle6] = useState(!narratorMode);
 
 
 useEffect(() => {
   setTimeout(() => {
     if(!dialogue.playing()){
-      dialogue.play();
+      narratorMode&&dialogue.play();
   }
   
   },500);

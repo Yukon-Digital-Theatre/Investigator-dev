@@ -25,13 +25,13 @@ const dialogue = narratorAudio[7].audio;
 
 const narratorTextMode = useSelector((state:any)=> state.textMode.text);
 const narratorMode = useSelector((state:any)=> state.narratorAudioMode.audio);
-const [style, setStyle] = useState(false);
-const [style2, setStyle2] = useState(false);
-const [style3, setStyle3] = useState(false);
+const [style, setStyle] = useState(!narratorMode);
+const [style2, setStyle2] = useState(!narratorMode);
+const [style3, setStyle3] = useState(!narratorMode);
 useEffect(() => {
   setTimeout(() => {
     if(!dialogue.playing()){
-      dialogue.play();
+      narratorMode&&dialogue.play();
   }
   
   },500);
