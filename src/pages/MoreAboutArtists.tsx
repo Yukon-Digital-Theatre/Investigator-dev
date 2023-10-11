@@ -7,6 +7,7 @@ import headshotpf from '../images/Patti Flather Headshot 2021.jpg'
 import headshotjw from '../images/Jordy Walker Headshot.jpeg'
 import headshotkg from '../images/Ken Green.jpg'
 import headshotmp from '../images/Meredith Pritchard.jpeg'
+import headshotcg from '../images/Meredith Pritchard.jpeg'
 
 
 
@@ -62,7 +63,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
+     <img src={headshotjw} alt="headshot" className='artistHeadshot'></img>
      </div>  
       <div className='outlineText artistsBigText'>
         Jordy Walker – Sound Designer, Composer, Audio Producer
@@ -73,7 +74,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
+     <img src={headshotmp} alt="headshot" className='artistHeadshot'></img>
      </div>
       <div className='outlineText artistsBigText'>
         Meredith Pritchard – Audio Recording Director & Voice Actor
@@ -88,7 +89,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
+     <img src={headshotcg} alt="headshot" className='artistHeadshot'></img>
      </div>
       <div className='outlineText artistsBigText'>
         Christine Genier – Narrator
@@ -98,7 +99,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
+     <img src={headshotkg} alt="headshot" className='artistHeadshot'></img>
      </div><div className='outlineText artistsBigText'>
         Ken Green – Voice Actor
       </div><div className='outlineText artistsText'>
@@ -107,7 +108,7 @@ const MoreAboutArtists = () => {
      </div>
       <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"15vw"}} ></div>
-     <img src={headshotmisc} alt="headshot" className='artistHeadshot'></img>
+     <img src={headshotclb} alt="headshot" className='artistHeadshot'></img>
      </div><div className='outlineText artistsBigText'>
         Carman Lam Brar – Voice Actor
       </div><div className='outlineText artistsText'>
