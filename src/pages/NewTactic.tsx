@@ -44,7 +44,7 @@ const NewTacticBoth = () =>{
 
 
   const voicePref = useSelector((state:any)=> state.voicePref.voice);
-const id=8;
+const id=4;
   let dialogue: Howl;
   
 

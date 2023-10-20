@@ -420,8 +420,8 @@ export const scriptMeetTheWeaver =[
             {id:7, speaker:"narrator", text:"You feel your phone buzz in your pocket. Another email."},
             {id:8, speaker:"narrator", text:"The Weaver is on the verge of saying more."},
             {id:9, speaker:"narrator", text:"Do you check the email now?"},
-            {id:10, speaker:"choice", text:"Yes, it might be important "},
-            {id:11, speaker:"choice", text:"No, if it was that important it would be a phone call "},
+            {id:10, speaker:"choice", text:"Yes, it might be important"},
+            {id:11, speaker:"choice", text:"No, if it was that important it would be a phone call"},
 
         ]
 

@@ -30,7 +30,7 @@ const TheEmail = () => {
   
  
   if(narratorMode&&narratorTextMode){
-     return(<TheEmailAudioOnly/>)
+     return(<TheEmailBoth/>)
     }else if (narratorMode&&!narratorTextMode){
       return(<TheEmailAudioOnly/>)
     }else{

@@ -232,7 +232,7 @@ const dispatch = useDispatch();
       setTimeout(() => {
       dispatch(updatePage("BreakItDown"))
     }, 1000);
-    }else if(item.text==="Yes, it might be important "){
+    }else if(item.text==="Yes, it might be important"){
       backgroundAudio[4].audio.fade(1,0,3000);
       dispatch(updateHalo(6));
       setTimeout(() => {
@@ -244,7 +244,7 @@ const dispatch = useDispatch();
     setTimeout(() => {
       backgroundAudio[4].audio.pause();
     }, 3000);
-    }else if(item.text==="No, if it was that important it would be a phone call "){
+    }else if(item.text==="No, if it was that important it would be a phone call"){
       backgroundAudio[4].audio.fade(1,0,3000);
       dispatch(updateHalo(6));
       setTimeout(() => {
