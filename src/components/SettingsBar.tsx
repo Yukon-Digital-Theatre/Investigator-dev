@@ -44,7 +44,7 @@ backgroundAudio.map((item)=>{item.audio.mute(toggleMute)});
     <div className='settingsbar'>
 <SettingsContainer>
 
-  <Cog/>
+  
     {!toggleMute?<Volume onClick={()=>setToggleMute(true)}/>:<Mute onClick={()=>setToggleMute(false)}/>}
     </SettingsContainer>
 

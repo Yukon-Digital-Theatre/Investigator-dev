@@ -1,4 +1,4 @@
-import  { useEffect } from 'react'
+import  { useEffect, useState } from 'react'
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch } from 'react-redux';
 import { updateHalo } from '../reducers/haloMode/haloModeSlice';
@@ -11,7 +11,7 @@ const TitlePage = () => {
     const dialogue = narratorAudio[0].audio;
 
     const dispatch= useDispatch();
-  
+    const [style, setStyle] = useState(false);
     useEffect(() => {
         if(!audio.playing()){
             audio.play();
@@ -20,6 +20,8 @@ const TitlePage = () => {
           if(!dialogue.playing()){
             dialogue.play();
         }
+        setStyle(true);
+      
         }, 2500);
   
     
@@ -45,7 +47,9 @@ const TitlePage = () => {
     
       return (
         <div>
-        <div className='titleText outlineText'>The Investigator</div>
+              <p className={style?'mainTitleText outlineText fadeIn':'mainTitleText inactiveText'} >The Investigator</p>
+
+
         </div>
     
       )

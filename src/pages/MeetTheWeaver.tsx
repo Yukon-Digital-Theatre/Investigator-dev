@@ -300,6 +300,7 @@ useEffect(() => {
 
     const [temp, setTemp]= useState ([choiceData[0]]);
     const [audioTime, setAudioTime] = useState(0);
+    const [style, setStyle] = useState(false);
    
     function queryAudioTime() {
         setAudioTime(dialogue.seek());
@@ -315,6 +316,7 @@ useEffect(() => {
   
   queryAudioTime();
       }
+      setStyle(true);
     },4000);
     
   return () => { 
@@ -428,18 +430,19 @@ useEffect(() => {
   
 
  return (
-      
-         <div className='story_container'> 
-         
-        {helper2()}
-        
-        <div className='navbar'>
-     {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
-     </div>
-
-    {temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
   
+<div className='story_container'> 
+       
+       {helper2()}
+       
+       <div className='navbar'>
+    {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
     </div>
+ 
+    <p className={style?'fadeIn':'inactiveText'}>
+    {temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
+    </p>
+   </div>
     )
   }
   

@@ -1,6 +1,6 @@
 export const femaleMeetTheWeaverTextTiming =[  
 
-    {id:1, speaker:'narrator', text:"You recently came to the city in search of your next job. You are very short on money.", enterTime: 0, exitTime: 7.25},
+    {id:1, speaker:'narrator', text:"You recently came to the city in search of your next job. You are very short on money.", enterTime: 0.1, exitTime: 7.25},
     {id:2, speaker:'narrator', text:"Before the end of the war you were working at a hospital near the fighting, they needed", enterTime: 5.25, exitTime: 12.61},
     {id:3, speaker:'narrator', text:"the extra help. Since they don’t anymore you have been working odd jobs, trying to find", enterTime: 10.61, exitTime: 18.95},
     {id:4, speaker:'narrator', text:"ones that help your country and its citizens recover when you can.", enterTime: 16.95, exitTime: 22.99},
@@ -94,11 +94,11 @@ export const femaleMeetTheWeaverTextTiming =[
     {id:92, speaker:'narrator', text:"seems to believe this is what you’re here for.", enterTime: 340.91, exitTime: 345.55},
     {id:93, speaker:'narrator', text:"Do you want to:", enterTime: 344.50, exitTime: 3600},
     {id:94, speaker:'choice', text:"Go along with it, you might learn more", enterTime: 346.0, exitTime: 3600},
-    {id:95, speaker:'choice', text:"Clarify why you are really here, you don’t have all day", enterTime: 346.1, exitTime: 3600},
+    {id:95, speaker:'choice', text:"Clarify why you are really here, you don’t have all day", enterTime: 346.01, exitTime: 3600},
 
 ]
 export const nonBinaryMeetTheWeaverTextTiming =[
-    {id:1, speaker:'narrator', text:"You recently came to the city in search of your next job. You are very short on money.", enterTime: 0, exitTime: 7},
+    {id:1, speaker:'narrator', text:"You recently came to the city in search of your next job. You are very short on money.", enterTime: 0.1, exitTime: 7},
     {id:2, speaker:'narrator', text:"Before the end of the war you were working at a hospital near the fighting, they needed", enterTime: 5.75, exitTime: 12.61},
     {id:3, speaker:'narrator', text:"the extra help. Since they don’t anymore you have been working odd jobs, trying to find", enterTime: 10.61, exitTime: 18.91},
     {id:4, speaker:'narrator', text:"ones that help your country and its citizens recover when you can.", enterTime: 16.91, exitTime: 22.99},
@@ -192,11 +192,11 @@ export const nonBinaryMeetTheWeaverTextTiming =[
     {id:92, speaker:'narrator', text:"seems to believe this is what you’re here for.", enterTime: 355.72, exitTime: 360.30},
     {id:93, speaker:'narrator', text:"Do you want to:", enterTime: 359.30, exitTime: 3600},
     {id:94, speaker:'choice', text:"Go along with it, you might learn more", enterTime: 360.98, exitTime: 3600},
-    {id:95, speaker:'choice', text:"Clarify why you are really here, you don’t have all day", enterTime: 364.20, exitTime: 3600},
+    {id:95, speaker:'choice', text:"Clarify why you are really here, you don’t have all day", enterTime: 361.00, exitTime: 3600},
 ]
 export const maleMeetTheWeaverTextTiming =[
 
-    {id:1, speaker:'narrator', text:"You recently came to the city in search of your next job. You are very short on money.", enterTime: 0, exitTime: 7},
+    {id:1, speaker:'narrator', text:"You recently came to the city in search of your next job. You are very short on money.", enterTime: 0.1, exitTime: 7},
     {id:2, speaker:'narrator', text:"Before the end of the war you were working at a hospital near the fighting, they needed", enterTime: 5.75, exitTime: 12.61},
     {id:3, speaker:'narrator', text:"the extra help. Since they don’t anymore you have been working odd jobs, trying to find", enterTime: 10.61, exitTime: 18.91},
     {id:4, speaker:'narrator', text:"ones that help your country and its citizens recover when you can.", enterTime: 16.91, exitTime: 22.99},
@@ -290,59 +290,10 @@ export const maleMeetTheWeaverTextTiming =[
     {id:92, speaker:'narrator', text:"seems to believe this is what you’re here for.", enterTime: 355.72, exitTime: 360.30},
     {id:93, speaker:'narrator', text:"Do you want to:", enterTime: 359.30, exitTime: 3600},
     {id:94, speaker:'choice', text:"Go along with it, you might learn more", enterTime: 360.98, exitTime: 3600},
-    {id:95, speaker:'choice', text:"Clarify why you are really here, you don’t have all day", enterTime: 364.20, exitTime: 3600},
+    {id:95, speaker:'choice', text:"Clarify why you are really here, you don’t have all day", enterTime: 361.00, exitTime: 3600},
 
 ]
-export const nonBinaryMeetTheWeaverTextTimingTemp =[
-    {id:1, speaker:"narrator", text:"You recently came to the city in search of your next job. You are very short on money. Before the end of the war you were working at a hospital near the fighting, they needed the extra help. Since they don’t anymore you have been working odd jobs, trying to find ones that help your country and its citizens recover when you can.",enterTime: 0, exitTime: 23}, 
-    {id:2, speaker:"narrator", text: "After 9 days of searching in the city, you were offered this job, as an investigator. You know you are lucky to have it. It pays well. Going to work this morning you passed many people not so lucky. Today is your first day. It has gone well so far.",enterTime: 23, exitTime: 3600},
-    {id:3, speaker:"narrator", text: "After a quick orientation this morning and early afternoon, you have been sent to this address in the south end of the city. The investigation has just begun, you need to get as much information as you can.",enterTime: 45, exitTime: 3600},
-    {id:4, speaker:"narrator", text: "It is cold and cloudy, but thankfully it hasn’t rained. This area is filled with older buildings, many not kept up, including this one, the workshop of the weaver. You go down a dark, narrow hallway. You see the unit number sent to you in your assignment email. You take out your phone and double check this is the right unit. It is.",enterTime: 3600, exitTime: 3600},
-    {id:5, speaker:"narrator", text: "You put your phone away and steady your nerves, fiddling with your watch for a moment. An expensive gift you bought for yourself on your first visit to this city, the Capital, years before the war. You miss that time. But there will be good times again. Rebuilding and healing has started. This investigation is part of it. You open the door.",enterTime: 3600, exitTime: 3600},
-    {id:6, speaker:"narrator", text: "The weaver is at their loom working on a small carpet square. The yarn has various dark and grey shades in it. There are piles of small carpet squares around the room. No more than one foot square each. Spools of yarn, boxes, some tables, and various weaving tools. A larger loom off to the side, the weaver works on a smaller loom in the middle of the room.Mask over the weaver’s mouth. Working quickly, mechanically. You go unnoticed. You say:",enterTime: 3600, exitTime: 3600},
-    {id:7, speaker:"investigator", text: "Excuse me?",enterTime: 3600, exitTime: 3600},
-    {id:8, speaker:"weaver", text: "Oh! Hello. I’m, I’m sorry, (coughs) I didn’t hear you come in",enterTime: 3600, exitTime: 3600},
-    {id:9, speaker:"investigator", text: "Sorry",enterTime: 3600, exitTime: 3600},
-    {id:10, speaker:"weaver", text: "It’s alright. The liquor store is the next building over if",enterTime: 3600, exitTime: 3600},
-    {id:11, speaker:"investigator", text: "That’s not what I’m looking for",enterTime: 3600, exitTime: 3600},
-    {id:12, speaker:"weaver", text: "Oh, okay. Sorry, I wasn’t trying to assume anything. That’s just, that’s mostly what people are looking for down this street. Although now that I look at you, you’re not from around here are you?",enterTime: 3600, exitTime: 3600},
-    {id:13, speaker:"investigator", text: "What gave me away?",enterTime: 3600, exitTime: 3600},
-    {id:14, speaker:"weaver", text: "No umbrella. It rains a lot this time of year, it will probably rain tonight or maybe even snow. So what brought you to the Capital?",enterTime: 3600, exitTime: 3600},
-    {id:15, speaker:"investigator", text: "Just moved here, for work",enterTime: 3600, exitTime: 3600},
-    {id:16, speaker:"weaver", text: "That’s how most of us got here, I made the move from my family’s farm, out near Cenoh, a long time ago, before the war even. (coughs) Where are you from?",enterTime: 3600, exitTime: 3600},
-    {id:17, speaker:"investigator", text: "Gikana",enterTime: 3600, exitTime: 3600},
-    {id:18, speaker:"weaver", text: "Oh, that’s out east near the border isn’t it?",enterTime: 3600, exitTime: 3600},
-    {id:19, speaker:"investigator", text: "Yes",enterTime: 3600, exitTime: 3600},
-    {id:20, speaker:"weaver", text: "Well welcome to the Capital. What brought you to this neighbourhood?",enterTime: 3600, exitTime: 3600},
-    {id:21, speaker:"investigator", text: "Well I’m here for you",enterTime: 3600, exitTime: 3600},
-    {id:22, speaker:"weaver", text: "You, you came here to see me?",enterTime: 3600, exitTime: 3600},
-    {id:23, speaker:"investigator", text: "Yes (Sounds of weaving stop.)",enterTime: 3600, exitTime: 3600},
-    {id:24, speaker:"weaver", text: "What for?",enterTime: 3600, exitTime: 3600},
-    {id:25, speaker:"investigator", text: "I wanted to speak with you about your carpets… ",enterTime: 3600, exitTime: 3600},
-    {id:26, speaker:"weaver", text: "(coughs) Well, I, that’s great. I haven’t had anyone ask me about my carpets in a long time. Why me?",enterTime: 3600, exitTime: 3600},
-    {id:27, speaker:"investigator", text: "You’re a carpet weaver aren’t you?",enterTime: 3600, exitTime: 3600},
-    {id:28, speaker:"weaver", text: "Well, I’m a weaver, yes, and one of the things I can weave are carpets, but also scarves, shawls, dish towels, tablecloths, lots of things, but well…I’ve mostly been taking contracts, like production contracts I suppose is what they’re called, and those aren’t, well…",enterTime: 3600, exitTime: 3600},
-    {id:29, speaker:"investigator", text: "They are carpets aren’t they?",enterTime: 3600, exitTime: 3600},
-    {id:30, speaker:"weaver", text: "Yes of course they’re carpets, but I mean they aren’t my design and, it’s just been a long time since someone has asked me to design something for them. (coughs) Oh, can I get you something to drink? Eat?",enterTime: 3600, exitTime: 3600},
-    {id:31, speaker:"investigator", text: "No thanks, I – ",enterTime: 3600, exitTime: 3600},
-    {id:32, speaker:"weaver", text: "Are you sure? (coughs)",enterTime: 3600, exitTime: 3600},
-    {id:33, speaker:"investigator", text: "Yes",enterTime: 3600, exitTime: 3600},
-    {id:34, speaker:"weaver", text: "Oh I’m not sick, just, just little bits of fibre dust, gets in the lungs, especially during the actual weaving part. I’m, I’m sorry there’s not a comfortable…",enterTime: 3600, exitTime: 3600},
-    {id:35, speaker:"investigator", text: "Don’t worry about it / I – ",enterTime: 3600, exitTime: 3600},
-    {id:36, speaker:"weaver", text: "Okay, thank you, thank you for understanding. Sorry, can I ask what time it is?",enterTime: 3600, exitTime: 3600},
-    {id:37, speaker:"investigator", text: "Am I keeping you",enterTime: 3600, exitTime: 3600},
-    {id:38, speaker:"weaver", text: "No, no, stay as long as you want, I just, (coughs) I have a quota to reach by the end of the day with this job. And usually I can tell the time by looking at the sky through that window there, but on days like today, who knows where the sun is. That’s a lovely watch by the way",enterTime: 3600, exitTime: 3600},
-    {id:39, speaker:"investigator", text: "Thank you. It’s just after three",enterTime: 3600, exitTime: 3600},
-    {id:40, speaker:"weaver", text: "Already? Wow, okay. I can’t believe, sometimes the time drags, and sometimes it speeds by, umm, do, do you mind if I keep weaving? Trust me, I can listen and talk and weave all at the same time. The weaving really doesn’t take much, it’s not like threading heddles and sleying, and it’s just, I can’t...this needs to get done and my rule is if I do enough of my quota before sunset I go for a little wander outside. Do you mind?",enterTime: 3600, exitTime: 3600},
-    {id:41, speaker:"investigator", text: "If you need to…",enterTime: 3600, exitTime: 3600},
-    {id:42, speaker:"weaver", text: "I do, it’s just I don’t work, I don’t get paid, thank you so much for understanding. I really appreciate it. I really, really do. (coughs)",enterTime: 3600, exitTime: 3600},
-    {id:43, speaker:"investigator", text: "Should, should I put on a mask?",enterTime: 3600, exitTime: 3600},
-    {id:44, speaker:"weaver", text: "Oh no, you’re far enough away that you shouldn’t breathe in too many bits of fibre. (coughs) I was fine for the first few months, it’s just after time, the lungs can get irritated. The eyes too, but for a quick talk we’ll both be fine. Now, your carpet! What type of carpet are you looking for?",enterTime: 3600, exitTime: 3600},
-    {id:45, speaker:"narrator", text: "You didn’t mean to make the weaver think you wanted a carpet, but the weaver genuinely seems to believe this is what you’re here for. ",enterTime: 3600, exitTime: 3600},
-    {id:46, speaker:"narrator", text: "Do you want to:",enterTime: 3600, exitTime: 3600},
-    {id:47, speaker:"choice", text: "Go along with it, you might learn more",enterTime: 3600, exitTime: 3600},
-    {id:48, speaker:"choice", text: "Clarify why you are really here, you don’t have all day",enterTime: 0, exitTime: 3600},
-]
+
 //---//
 export const femaleGoingWithTheFlowTextTiming =[
         
@@ -591,7 +542,7 @@ export const femaleGoingWithTheFlowTextTiming =[
 ]
 export const maleGoingWithTheFlowTextTiming =[
         
-    {id:1, speaker:'investigator', text:"What you’re weaving is nice", enterTime: 0, exitTime: 3.9},
+    {id:1, speaker:'investigator', text:"What you’re weaving is nice", enterTime: 0.1, exitTime: 3.9},
     {id:2, speaker:'weaver', text:"These? But…well, they’re a style, they are nice, but they’re everywhere these", enterTime: 1.9, exitTime: 9.2},
     {id:3, speaker:'weaver', text:"days. And honestly, while they’re durable enough, there are better, more", enterTime: 7.2, exitTime: 12.6},
     {id:4, speaker:'weaver', text:"attractive options. Knotted carpets are more durable for instance, but I", enterTime: 10.6, exitTime: 16.64},
@@ -1162,7 +1113,7 @@ export const femaleDownToBusinessTextTiming =[
     {id:76, speaker:'narrator', text:"About what happened during the war?", enterTime: 237.9, exitTime: 242.2},
     {id:77, speaker:'narrator', text:"Is this steady stream of questions working?", enterTime: 241.3, exitTime: 3600},
     {id:78, speaker:'choice', text:"Yes, you don’t want the weaver to shut down. Keep asking simple questions.", enterTime: 244.6, exitTime: 3600},
-    {id:79, speaker:'choice', text:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", enterTime: 250.7, exitTime: 3600},
+    {id:79, speaker:'choice', text:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", enterTime: 244.61, exitTime: 3600},
    
 ]
 export const maleDownToBusinessTextTiming =[
@@ -1245,7 +1196,7 @@ export const maleDownToBusinessTextTiming =[
     {id:76, speaker:'narrator', text:"About what happened during the war?", enterTime: 224.8, exitTime: 229.1},
     {id:77, speaker:'narrator', text:"Is this steady stream of questions working?", enterTime: 228.2, exitTime: 3600},
     {id:78, speaker:'choice', text:"Yes, you don’t want the weaver to shut down. Keep asking simple questions.", enterTime: 231.4, exitTime: 3600},
-    {id:79, speaker:'choice', text:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", enterTime: 237.6, exitTime: 3600},
+    {id:79, speaker:'choice', text:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", enterTime: 231.41, exitTime: 3600},
    
 ]
 
@@ -1462,7 +1413,7 @@ export const femaleNewTacticTextTiming =[
     {id:107, speaker:'narrator', text:"Was life here in the Capital so sheltered that this is outlandish to the weaver?", enterTime: 333.4, exitTime: 340.9},
     {id:108, speaker:'narrator', text:"Do you think the weaver is telling the truth?.", enterTime: 340.7, exitTime: 3600},
     {id:109, speaker:'choice', text:"Yes, you believe the weaver really doesn’t know and you’ll have to break it down to make the weaver realize so that more questions can be answered", enterTime: 344.5, exitTime: 3600},
-    {id:110, speaker:'choice', text:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", enterTime: 354.4, exitTime: 3600},
+    {id:110, speaker:'choice', text:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", enterTime: 344.51, exitTime: 3600},
 
 ]
 export const maleNewTacticTextTiming =[
@@ -1576,7 +1527,7 @@ export const maleNewTacticTextTiming =[
     {id:107, speaker:'narrator', text:"Was life here in the Capital so sheltered that this is outlandish to the weaver?", enterTime: 324.7, exitTime: 331.8},
     {id:108, speaker:'narrator', text:"Do you think the weaver is telling the truth?.", enterTime: 331.3, exitTime: 3600},
     {id:109, speaker:'choice', text:"Yes, you believe the weaver really doesn’t know and you’ll have to break it down to make the weaver realize so that more questions can be answered", enterTime: 336.1, exitTime: 3600},
-    {id:110, speaker:'choice', text:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", enterTime: 345.4, exitTime: 3600},
+    {id:110, speaker:'choice', text:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", enterTime: 336.11, exitTime: 3600},
 
 ]
 
@@ -1756,7 +1707,7 @@ export const femaleBreakItDownTextTiming =[
     {id:90, speaker:'narrator', text:"The Weaver is on the verge of saying more.", enterTime: 284.7, exitTime: 289.2},
     {id:91, speaker:'narrator', text:"Do you check the email now?", enterTime: 288.9, exitTime: 3600},
     {id:92, speaker:'choice', text:"Yes, it might be important", enterTime: 291.4, exitTime: 3600},
-    {id:93, speaker:'choice', text:"No, if it was that important it would be a phone call", enterTime: 294, exitTime: 3600},
+    {id:93, speaker:'choice', text:"No, if it was that important it would be a phone call", enterTime: 291.41, exitTime: 3600},
    
 
 ]
@@ -1854,7 +1805,7 @@ export const maleBreakItDownTextTiming =[
     {id:90, speaker:'narrator', text:"The Weaver is on the verge of saying more.", enterTime: 261.8, exitTime: 266.4},
     {id:91, speaker:'narrator', text:"Do you check the email now?", enterTime: 266.1, exitTime: 3600},
     {id:92, speaker:'choice', text:"Yes, it might be important", enterTime: 268.6, exitTime: 3600},
-    {id:93, speaker:'choice', text:"No, if it was that important it would be a phone call", enterTime: 271.3, exitTime: 3600},
+    {id:93, speaker:'choice', text:"No, if it was that important it would be a phone call", enterTime: 268.61, exitTime: 3600},
    
 
 ]
@@ -2040,7 +1991,7 @@ export const femaleAdmissionTextTiming =[
     {id:176, speaker:'narrator', text:"What do you think?", enterTime: 833.5, exitTime: 836.6},
     {id:177, speaker:'narrator', text:"What will you do?", enterTime: 835.2, exitTime: 3600},
     {id:178, speaker:'choice', text:"While the weaver made some good points, the weaver is still enough in the wrong to warrant further investigation and maybe a trial, you arrest the weaver.", enterTime: 836.8, exitTime: 3600},
-    {id:179, speaker:'choice', text:"The weaver seems genuine and made some good points, this doesn’t feel quite right to you, you let the weaver go", enterTime: 847.6, exitTime: 3600},
+    {id:179, speaker:'choice', text:"The weaver seems genuine and made some good points, this doesn’t feel quite right to you, you let the weaver go", enterTime: 836.81, exitTime: 3600},
 ]
 export const maleAdmissionTextTiming =[
         
@@ -2222,7 +2173,7 @@ export const maleAdmissionTextTiming =[
     {id:176, speaker:'narrator', text:"What do you think?", enterTime: 712.4, exitTime: 715.42},
     {id:177, speaker:'narrator', text:"What will you do?", enterTime: 714, exitTime: 717.19},
     {id:178, speaker:'choice', text:"While the weaver made some good points, the weaver is still enough in the wrong to warrant further investigation and maybe a trial, you arrest the weaver.", enterTime: 716, exitTime: 3600},
-    {id:179, speaker:'choice', text:"The weaver seems genuine and made some good points, this doesn’t feel quite right to you, you let the weaver go", enterTime: 726.34, exitTime: 3600},
+    {id:179, speaker:'choice', text:"The weaver seems genuine and made some good points, this doesn’t feel quite right to you, you let the weaver go", enterTime: 716.01, exitTime: 3600},
 ]
 export const nonBinaryAdmissionTextTiming =[
         
@@ -2404,7 +2355,7 @@ export const nonBinaryAdmissionTextTiming =[
     {id:176, speaker:'narrator', text:"What do you think?", enterTime: 697.8, exitTime: 700.9},
     {id:177, speaker:'narrator', text:"What will you do?", enterTime: 699.3, exitTime: 3600},
     {id:178, speaker:'choice', text:"While the weaver made some good points, the weaver is still enough in the wrong to warrant further investigation and maybe a trial, you arrest the weaver.", enterTime: 701.4, exitTime: 3600},
-    {id:179, speaker:'choice', text:"The weaver seems genuine and made some good points, this doesn’t feel quite right to you, you let the weaver go", enterTime: 711.9, exitTime: 3600},
+    {id:179, speaker:'choice', text:"The weaver seems genuine and made some good points, this doesn’t feel quite right to you, you let the weaver go", enterTime: 701.41, exitTime: 3600},
 ]
 
 
@@ -2427,7 +2378,7 @@ export const femaleEndingTwoTextTiming =[
     {id:14, speaker:'narrator', text:"You took this job to help bring justice to them.", enterTime: 41.7, exitTime: 47.5},
     {id:15, speaker:'narrator', text:"Is this the way to do it?", enterTime: 47.8, exitTime: 3600},
     {id:16, speaker:'choice', text:"Yes, you still believe the murdered deserve justice and these investigations are worthwhile. You’ll keep investigating and will arrest others.", enterTime: 50.4, exitTime: 3600},
-    {id:17, speaker:'choice', text:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk.", enterTime: 61.5, exitTime: 3600},
+    {id:17, speaker:'choice', text:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk.", enterTime: 50.41, exitTime: 3600},
 
 
 ]
@@ -2449,7 +2400,7 @@ export const nonBinaryEndingTwoTextTiming =[
     {id:14, speaker:'narrator', text:"You took this job to help bring justice to them.", enterTime: 41.8, exitTime: 48},
     {id:15, speaker:'narrator', text:"Is this the way to do it?", enterTime: 47, exitTime: 3600},
     {id:16, speaker:'choice', text:"Yes, you still believe the murdered deserve justice and these investigations are worthwhile. You’ll keep investigating and will arrest others.", enterTime: 50.5, exitTime: 3600},
-    {id:17, speaker:'choice', text:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk.", enterTime: 61.5, exitTime: 3600},
+    {id:17, speaker:'choice', text:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk.", enterTime: 50.51, exitTime: 3600},
 
 
 ]
@@ -2471,7 +2422,7 @@ export const maleEndingTwoTextTiming =[
     {id:14, speaker:'narrator', text:"You took this job to help bring justice to them.", enterTime: 42, exitTime: 47.8},
     {id:15, speaker:'narrator', text:"Is this the way to do it?", enterTime: 48.2, exitTime: 3600},
     {id:16, speaker:'choice', text:"Yes, you still believe the murdered deserve justice and these investigations are worthwhile. You’ll keep investigating and will arrest others.", enterTime: 50.7, exitTime: 3600},
-    {id:17, speaker:'choice', text:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk.", enterTime: 61.7, exitTime: 3600},
+    {id:17, speaker:'choice', text:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk.", enterTime: 50.71, exitTime: 3600},
 
 
 ]

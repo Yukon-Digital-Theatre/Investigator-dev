@@ -239,7 +239,7 @@ const id=2;
 
 
 
-
+  const [style, setStyle] = useState(false);
   let choiceData: any[];
   const [audioEnded, setAudioEnded] = useState(false);
   if(voicePref==="female"){
@@ -271,6 +271,9 @@ useEffect(() => {
 queryAudioTime();
     }
   },2000);
+  setTimeout(() => {
+    setStyle(true);
+  },3500);
   
 return () => { 
 }
@@ -384,16 +387,17 @@ return (<div/>)
 
 return (
     
-       <div className='story_container'> 
+  <div className='story_container'> 
        
-      {helper2()}
-      
-      <div className='navbar'>
-   {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
+       {helper2()}
+       
+       <div className='navbar'>
+    {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
+    </div>
+ 
+    <p className={style?'fadeIn':'inactiveText'}>
+    {temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
+    </p>
    </div>
-
-  {temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
-
-  </div>
   )
 }

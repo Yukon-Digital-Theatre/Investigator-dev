@@ -2,6 +2,8 @@ import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useDispatch } from 'react-redux';
 import logo1 from '../images/Yukon Gov Logo.png'
 import logo2 from '../images/YAC Residency Logo.png'
+import logo3 from '../images/CCA_RGB_colour_e.jpg'
+import logo4 from '../images/YDTC Mountain Logo Light-100.jpg'
 
 const Credits = () => {
     
@@ -41,11 +43,14 @@ Original one act play researched & developed with funding from Canada Council fo
      </div>
 <div style={{"width":"100vw", 'display':'flex'}}>
     <div style={{"width":"12%"}} ></div>
-     <img src={logo1} alt="logo" className='artistHeadshot'></img>
-     <div style={{"height":"5vh", "width":"5%"}}></div>
-     <img src={logo2} alt="logo" className='artistHeadshot'></img>
-     
-     
+     <img src={logo1} alt="logo" className='artistHeadshot' style={{"height":"14.2vh"}}></img>
+     <div style={{"height":"5vh", "width":"1%"}}></div>
+     <img src={logo2} alt="logo" className='artistHeadshot' style={{"height":"14.2vh"}}></img>
+     <div style={{"height":"5vh", "width":"1%"}}></div>
+     <img src={logo3} alt="logo" className='artistHeadshot' style={{"height":"14.2vh"}}></img>
+     <div style={{"height":"5vh", "width":"1%"}}></div>
+     <img src={logo4} alt="logo" className='artistHeadshot' style={{"height":"14.2vh"}}></img>
+     <div style={{"width":"12%"}} ></div>
      </div>
 <div style={{"height":"5vh"}}>
      </div>

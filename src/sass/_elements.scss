@@ -126,6 +126,24 @@ animation-duration:3s;
 
   }
 
+  .mainTitleText{
+    display: flex;
+    justify-content: center;
+    
+    
+        padding:1vh;
+    font-family: 'Special Elite', cursive;
+    padding-bottom:1vh;
+    font-size: 4.25vw;
+    font-weight: 400;
+    line-height: 2.49740vh;
+    letter-spacing: 0.2em;
+    text-align: left;
+    background-color:transparent;
+ 
+    
+      }
+
   .loadingText{
   
     font-family: 'Special Elite', cursive;
@@ -212,7 +230,7 @@ pointer-events: none;
  div.artistsText{
                 display: flex;
                 justify-content: left;
-                margin-left: 12vw;
+                margin-left: 2vw;
                 margin-right: 12vw;
                 
                     padding:1vh;
@@ -231,7 +249,7 @@ pointer-events: none;
                   div.artistsBigText{
                     display: flex;
                     justify-content: left;
-                    margin-left: 12vw;
+                    margin-left: 2vw;
                     margin-right: 12vw;
                     
                         padding:1vh;

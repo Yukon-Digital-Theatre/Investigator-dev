@@ -10,7 +10,7 @@ import { updateHalo } from "../reducers/haloMode/haloModeSlice";
 
 const WeaverContainer = styled.div<{ leaving: boolean }>`
 font-family: 'Noto Serif', serif;
-font-size: 1.2vw;
+font-size: 1.225vw;
 font-weight: 1000;
 line-height: 3.22581vh;
 color: #000000;
@@ -24,6 +24,7 @@ animation-name: fade-in;
 animation-fill-mode:forwards;
 animation-duration:1s;
 text-align: left;
+
 ${ props => props.leaving && css`
     animation-name:fade-out;
   `};
@@ -32,7 +33,7 @@ ${ props => props.leaving && css`
 const WeaverBridgeContainer = styled.div<{ leaving: boolean }>`
 font-family: 'Noto Serif', serif;
 color: #000000;
-font-size: 1.2vw;
+font-size: 1.225vw;
 font-weight: 1000;
 line-height: 3.22581vh;
 letter-spacing: 0.05em;
