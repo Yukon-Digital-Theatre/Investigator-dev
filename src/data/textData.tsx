@@ -45,8 +45,8 @@ export const scriptMeetTheWeaver =[
         {id:44, speaker:"weaver", text: "Oh no, you’re far enough away that you shouldn’t breathe in too many bits of fibre. (coughs) I was fine for the first few months, it’s just after time, the lungs can get irritated. The eyes too, but for a quick talk we’ll both be fine. Now, your carpet! What type of carpet are you looking for?"},
         {id:45, speaker:"narrator", text: "You didn’t mean to make the weaver think you wanted a carpet, but the weaver genuinely seems to believe this is what you’re here for. "},
         {id:46, speaker:"narrator", text: "Do you want to:"},
-        {id:47, speaker:"choice", text: "Go along with it, you might learn more "},
-        {id:48, speaker:"choice", text: "Clarify why you are really here, you don’t have all day "},
+        {id:47, speaker:"choice", text: "Go along with it, you might learn more"},
+        {id:48, speaker:"choice", text: "Clarify why you are really here, you don’t have all day"},
     ]
 
     export const scriptGoingWithTheFlow =[

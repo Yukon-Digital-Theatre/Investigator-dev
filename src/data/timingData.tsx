@@ -93,8 +93,8 @@ export const femaleMeetTheWeaverTextTiming =[
     {id:91, speaker:'narrator', text:"You didn’t mean to make the weaver think you wanted a carpet, but the weaver genuinely", enterTime: 336.30, exitTime: 342.92},
     {id:92, speaker:'narrator', text:"seems to believe this is what you’re here for.", enterTime: 340.91, exitTime: 345.55},
     {id:93, speaker:'narrator', text:"Do you want to:", enterTime: 344.50, exitTime: 3600},
-    {id:94, speaker:'choice', text:"Go along with it, you might learn more", enterTime: 346.09, exitTime: 3600},
-    {id:95, speaker:'choice', text:"Clarify why you are really here, you don’t have all day ", enterTime: 346.09, exitTime: 3600},
+    {id:94, speaker:'choice', text:"Go along with it, you might learn more", enterTime: 346.0, exitTime: 3600},
+    {id:95, speaker:'choice', text:"Clarify why you are really here, you don’t have all day", enterTime: 346.1, exitTime: 3600},
 
 ]
 export const nonBinaryMeetTheWeaverTextTiming =[
@@ -340,8 +340,8 @@ export const nonBinaryMeetTheWeaverTextTimingTemp =[
     {id:44, speaker:"weaver", text: "Oh no, you’re far enough away that you shouldn’t breathe in too many bits of fibre. (coughs) I was fine for the first few months, it’s just after time, the lungs can get irritated. The eyes too, but for a quick talk we’ll both be fine. Now, your carpet! What type of carpet are you looking for?",enterTime: 3600, exitTime: 3600},
     {id:45, speaker:"narrator", text: "You didn’t mean to make the weaver think you wanted a carpet, but the weaver genuinely seems to believe this is what you’re here for. ",enterTime: 3600, exitTime: 3600},
     {id:46, speaker:"narrator", text: "Do you want to:",enterTime: 3600, exitTime: 3600},
-    {id:47, speaker:"choice", text: "Go along with it, you might learn more ",enterTime: 3600, exitTime: 3600},
-    {id:48, speaker:"choice", text: "Clarify why you are really here, you don’t have all day ",enterTime: 0, exitTime: 3600},
+    {id:47, speaker:"choice", text: "Go along with it, you might learn more",enterTime: 3600, exitTime: 3600},
+    {id:48, speaker:"choice", text: "Clarify why you are really here, you don’t have all day",enterTime: 0, exitTime: 3600},
 ]
 //---//
 export const femaleGoingWithTheFlowTextTiming =[
@@ -2480,7 +2480,7 @@ export const maleEndingTwoTextTiming =[
 
 
 export const femaleChoiceTextData =[
-    {id:1, text:"Do you want to:", questionOne:"Go along with it, you might learn more ", questionTwo:"Clarify why you are really here, you don’t have all day ", time:345,},
+    {id:1, text:"Do you want to:", questionOne:"Go along with it, you might learn more", questionTwo:"Clarify why you are really here, you don’t have all day", time:345,},
     {id:2, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
     {id:3, text:"Is this steady stream of questions working?", questionOne:"Yes, you don’t want the weaver to shut down. Keep asking simple questions.", questionTwo:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", time:242,},
     {id:4, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
@@ -2495,7 +2495,7 @@ export const femaleChoiceTextData =[
 ]
 
 export const maleChoiceTextData =[
-    {id:1, text:"Do you want to:", questionOne:"Go along with it, you might learn more ", questionTwo:"Clarify why you are really here, you don’t have all day ", time:360,},
+    {id:1, text:"Do you want to:", questionOne:"Go along with it, you might learn more", questionTwo:"Clarify why you are really here, you don’t have all day", time:360,},
     {id:2, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
     {id:3, text:"Is this steady stream of questions working?", questionOne:"Yes, you don’t want the weaver to shut down. Keep asking simple questions.", questionTwo:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", time:229,},
     {id:4, text:"non", questionOne:"non", questionTwo:"non", time:3600,},
@@ -2510,7 +2510,7 @@ export const maleChoiceTextData =[
 ]
 
 export const nonBinaryChoiceTextData =[
-    {id:1, text:"Do you want to:", questionOne:"Go along with it, you might learn more ", questionTwo:"Clarify why you are really here, you don’t have all day ", time:365,},
+    {id:1, text:"Do you want to:", questionOne:"Go along with it, you might learn more", questionTwo:"Clarify why you are really here, you don’t have all day", time:365,},
     {id:2, text:"non", questionOne:"non", questionTwo:"non", time:1000,},
     {id:3, text:"Is this steady stream of questions working?", questionOne:"Yes, you don’t want the weaver to shut down. Keep asking simple questions.", questionTwo:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", time:234,},
     {id:4, text:"non", questionOne:"non", questionTwo:"non", time:3600,},

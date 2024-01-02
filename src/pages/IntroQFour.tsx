@@ -54,7 +54,7 @@ useEffect(() => {
   },36900);
   setTimeout(() => {
     setStyle5(true);
-  },39300);
+  },300);
   setTimeout(() => {
     setStyle6(true);
   },40500);

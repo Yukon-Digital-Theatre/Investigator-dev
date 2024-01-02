@@ -28,10 +28,10 @@ const [audioEnded, setAudioEnded] = useState(false);
 
 
 const dialogue = narratorAudio[14].audio;
-const [style, setStyle] = useState(false);
-const [style2, setStyle2] = useState(false);
-const [style3, setStyle3] = useState(false);
-const [style4, setStyle4] = useState(false);
+const [style, setStyle] = useState(!narratorMode);
+const [style2, setStyle2] = useState(!narratorMode);
+const [style3, setStyle3] = useState(!narratorMode);
+const [style4, setStyle4] = useState(!narratorMode);
 function helperAudio(){
   setTimeout(() => {
     if(!dialoguept2.playing()){

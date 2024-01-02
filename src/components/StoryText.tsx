@@ -149,7 +149,7 @@ const StoryText = ({item, leaving}:props) => {
 const dispatch = useDispatch();
 
   function redirect(){
-    if(item.text==="Go along with it, you might learn more "){
+    if(item.text==="Go along with it, you might learn more"){
       backgroundAudio[1].audio.fade(1,0,3000);
       dispatch(updateHalo(3));
       setTimeout(() => {
@@ -160,7 +160,7 @@ const dispatch = useDispatch();
       setTimeout(() => {
         backgroundAudio[1].audio.pause();
       }, 3000);
-    }else if(item.text==="Clarify why you are really here, you don’t have all day "){
+    }else if(item.text==="Clarify why you are really here, you don’t have all day"){
       backgroundAudio[1].audio.fade(1,0,3000);
       dispatch(updateHalo(3));
       setTimeout(() => {
@@ -256,7 +256,7 @@ const dispatch = useDispatch();
     setTimeout(() => {
       backgroundAudio[4].audio.pause();
     }, 3000);
-  }else if(item.text==="Continue"&&item.id===4){
+  }else if(item.text==="Continue"&&item.id===6){
       setTimeout(() => {
       dispatch(updatePage("Admission"))
     }, 1000);
