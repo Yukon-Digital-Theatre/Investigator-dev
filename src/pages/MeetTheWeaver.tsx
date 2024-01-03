@@ -439,9 +439,11 @@ useEffect(() => {
     {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
     </div>
  
-    <p className={style?'fadeIn':'inactiveText'}>
+    <div className={style?'fadeIn':'inactiveText'} style={{'backgroundColor':"transparent",'display':"flex",'width':"100%", 'flex-direction': 'column',
+    'justify-content': 'flex-end',
+    'align-items': 'center'}as React.CSSProperties}>
     {temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
-    </p>
+    </div>
    </div>
     )
   }

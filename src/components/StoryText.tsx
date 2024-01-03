@@ -177,6 +177,10 @@ const dispatch = useDispatch();
       setTimeout(() => {
       dispatch(updatePage("DownToBusiness"))
     }, 1000);
+  }else if(item.text==="Continue"&&item.id===242){
+    setTimeout(() => {
+    dispatch(updatePage("DownToBusiness"))
+  }, 1000);
     }else if(item.text==="Yes, you don’t want the weaver to shut down. Keep asking simple questions."){
       backgroundAudio[2].audio.fade(1,0,3000);
       dispatch(updateHalo(4));
@@ -205,6 +209,10 @@ const dispatch = useDispatch();
       setTimeout(() => {
       dispatch(updatePage("NewTactic"))
     }, 1000);
+  }else if(item.text==="Continue"&&item.id===46){
+    setTimeout(() => {
+    dispatch(updatePage("NewTactic"))
+  }, 1000);
     }else if(item.text==="No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession."){
       backgroundAudio[3].audio.fade(1,0,3000);
       dispatch(updateHalo(5));
@@ -233,6 +241,10 @@ const dispatch = useDispatch();
       setTimeout(() => {
       dispatch(updatePage("BreakItDown"))
     }, 1000);
+  }else if(item.text==="Continue"&&item.id===36){
+    setTimeout(() => {
+    dispatch(updatePage("BreakItDown"))
+  }, 1000);
     }else if(item.text==="Yes, it might be important"){
       backgroundAudio[4].audio.fade(1,0,3000);
       dispatch(updateHalo(6));
