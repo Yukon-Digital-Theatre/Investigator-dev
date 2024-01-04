@@ -15,6 +15,8 @@ const TitlePage = () => {
     useEffect(() => {
         if(!audio.playing()){
             audio.play();
+        }else{
+          audio.mute(false);
         }
         setTimeout(() => {
           if(!dialogue.playing()){

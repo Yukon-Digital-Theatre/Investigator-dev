@@ -62,7 +62,8 @@ const id=8;
   const [audioEnded, setAudioEnded] = useState(false);
  
   const dialogue = narratorAudio[9].audio;
-
+ 
+  choiceData=theEmailTextTiming;
 
   const [temp, setTemp]= useState ([theEmailTextTiming[0]]);
   const [audioTime, setAudioTime] = useState(0);

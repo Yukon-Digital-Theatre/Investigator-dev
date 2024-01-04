@@ -46,4 +46,6 @@
 
   .lettercontainer{
     overflow-y: scroll;
+    overflow-x: hidden;
+    width: calc(100vw);
   }

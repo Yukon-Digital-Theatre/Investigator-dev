@@ -218,7 +218,7 @@ export const maleMeetTheWeaverTextTiming =[
     {id:20, speaker:'narrator', text:"You open the door.", enterTime: 110.20, exitTime: 113.74},
     {id:21, speaker:'narrator', text:"The weaver is at their loom working on a small carpet square. The yarn has various dark", enterTime: 114, exitTime: 122.40},
     {id:22, speaker:'narrator', text:"and grey shades in it. There are piles of small carpet squares around the room. No more", enterTime: 120.40, exitTime: 129.34},
-    {id:23, speaker:'narrator', text:"than one foot square each. Spools of yarn, boxes, some tables, and various weaving", enterTime: 217.34, exitTime: 136.37},
+    {id:23, speaker:'narrator', text:"than one foot square each. Spools of yarn, boxes, some tables, and various weaving", enterTime: 127.34, exitTime: 136.37},
     {id:24, speaker:'narrator', text:"tools. A larger loom off to the side, the weaver works on a smaller loom in the middle of", enterTime: 135.37, exitTime: 143.22},
     {id:25, speaker:'narrator', text:"the room. Mask over the weaver’s mouth. Working quickly, mechanically.", enterTime: 141.22, exitTime: 149.02},
     {id:26, speaker:'narrator', text:"You go unnoticed", enterTime: 149.20, exitTime: 152.51},
@@ -538,7 +538,7 @@ export const femaleGoingWithTheFlowTextTiming =[
     {id:239, speaker:'weaver', text:"I really don’t think I can answer any more of your questions about these.", enterTime: 825.4, exitTime: 830.6},
     {id:240, speaker:'weaver', text:"And I shouldn’t. Leave your card, and I’ll get back to you.", enterTime: 828.6, exitTime: 834.5},
     {id:241, speaker:'narrator', text:"The weaver keeps weaving. You know it’s time to be more honest.", enterTime: 833.5, exitTime: 839.9},
-    {id:242, speaker:'choice', text:"Continue", enterTime: 840.5, exitTime: 841.5},
+    {id:242, speaker:'choice', text:"Continue", enterTime: 838.5, exitTime: 841.5},
 ]
 export const maleGoingWithTheFlowTextTiming =[
         
@@ -783,7 +783,7 @@ export const maleGoingWithTheFlowTextTiming =[
     {id:239, speaker:'weaver', text:"I really don’t think I can answer any more questions about these. And I", enterTime: 799.4, exitTime: 804.7},
     {id:240, speaker:'weaver', text:"shouldn’t. Leave your card, and I’ll get back to you.", enterTime: 802.7, exitTime: 807},
     {id:241, speaker:'narrator', text:"The weaver keeps weaving. You know it’s time to be more honest.", enterTime: 806, exitTime: 812.3},
-    {id:242, speaker:'choice', text:"Continue", enterTime: 813.5, exitTime: 814.5},
+    {id:242, speaker:'choice', text:"Continue", enterTime: 811.2, exitTime: 814.5},
 
 ]
 export const nonBinaryGoingWithTheFlowTextTiming =[
@@ -2477,10 +2477,10 @@ export const nonBinaryChoiceTextData =[
 
 export const theEmailTextTiming =[
         
-    {id:1, speaker:'narrator', text:"The email is from your boss again.", enterTime: 0, exitTime: 3.31},
+    {id:1, speaker:'narrator', text:"The email is from your boss again.", enterTime: 0.1, exitTime: 3.31},
     {id:2, speaker:'narrator', text:"Subject: More Test Results – Arrest All Weavers", enterTime: 2.12, exitTime: 8.89},
     {id:3, speaker:'narrator', text:"The fourth and fifth weavers apprehended had their material test positive for human hair. Assume all weavers are complicit. After brief interrogation arrest them.", enterTime: 7.79, exitTime: 21.72},
     {id:4, speaker:'narrator', text:"You open your mouth to speak to the weaver, but notice the weaver move.", enterTime: 20.40, exitTime: 26.48},
     {id:5, speaker:'narrator', text:"You watch.", enterTime: 25, exitTime: 27.93},
-    {id:6, speaker:'choice', text:"Continue", enterTime: 29, exitTime: 30},
+    {id:6, speaker:'choice', text:"Continue", enterTime: 27.2, exitTime: 30},
 ]

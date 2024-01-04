@@ -1,4 +1,4 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useState } from 'react';
 import { updateHalo } from '../reducers/haloMode/haloModeSlice';
@@ -46,7 +46,9 @@ function helper(){
   
 
 
+const wrapUpVisited = useSelector((state: any)=>state.wrapUpVisited.mode);
 
+if(!wrapUpVisited){
 
 
  intid=setInterval(() => {
@@ -85,7 +87,9 @@ function helper(){
     
     }, 100);
 
-
+  }else{
+    setLoaded(true);
+  }
 
 
 

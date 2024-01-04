@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { narratorAudio } from '../data/narratorAudioData';
 import { updateTextDelivery } from '../reducers/textDeliveryMode/textDeliveryModeSlice';
 import { updateNarratorAudioDelivery } from '../reducers/narratorAudioDeliveryMode/narratorAudioDeliveryModeSlice';
+import { backgroundAudio } from '../data/backgroundAudioData';
 
 
 

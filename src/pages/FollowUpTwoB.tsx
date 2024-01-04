@@ -110,13 +110,16 @@ const FollowUpTwoB = () => {
     <>
     {narratorTextMode&&<div className='lettercontainer'>
 <EndingLetter/>
+<div style={{ "height": "10vh" }}></div>
 <EndingNewsPaper/>
+<div style={{ "height": "1vh" }}></div>
 
 
     </div>}
-    {narratorMode&& <div className='navbar'>
-       {togglePlay?<PauseButton onClick={()=>helperAudioPP()}/>:<PlayButton onClick={()=>helperAudioPP()}/>}
-       </div>}
+    {narratorMode&& <><div className='navbar'>
+        {togglePlay ? <PauseButton onClick={() => helperAudioPP()} /> : <PlayButton onClick={() => helperAudioPP()} />}
+      </div><div style={{ "height": "20vh" }}></div></>
+}
     {audioEnded&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
        {narratorTextMode&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
     </>

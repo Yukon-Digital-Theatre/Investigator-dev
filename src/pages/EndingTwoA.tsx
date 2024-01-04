@@ -56,7 +56,7 @@ const EndingTwoABoth = () =>{
   const [audioEnded, setAudioEnded] = useState(false);
  
   const dialogue = narratorAudio[10].audio;
-
+  choiceData = EndingTwoATextTiming;
 
   const [temp, setTemp]= useState ([EndingTwoATextTiming[0]]);
   const [audioTime, setAudioTime] = useState(0);

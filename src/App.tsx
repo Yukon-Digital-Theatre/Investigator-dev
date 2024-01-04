@@ -196,21 +196,21 @@ function bgblur(){
 
 function haloblur(){
   if(haloMode===0){
-    return 'backdrop-filter'
+    return 'backdrop-filter-background'
   }else if(haloMode===1){
-    return 'backdrop-filter'
+    return 'backdrop-filter-background'
   }else if(haloMode===2){
-    return 'backdrop-filter'
+    return 'backdrop-filter-background'
   }else if(haloMode===3){
-    return 'backdrop-filter filter-one'
+    return 'backdrop-filter-background filter-one'
   }else if(haloMode===4){
-    return 'backdrop-filter filter-two'
+    return 'backdrop-filter-background filter-two'
   }else if(haloMode===5){
-    return 'backdrop-filter filter-three'
+    return 'backdrop-filter-background filter-three'
   }else if(haloMode===6){
-    return 'backdrop-filter filter-four'
+    return 'backdrop-filter-background filter-four'
   }else if(haloMode===7){
-    return 'backdrop-filter filter-five'
+    return 'backdrop-filter-background filter-five'
   }
 }
 
@@ -222,20 +222,22 @@ function haloblur(){
   return (
    
     <div className="App">
+          <div className={haloblur()}>   
+        </div>
        <div className={bgblur()}>  
         <div className={bghalo()}>
-        <div className={bgblur()}>   
+        <div className={bgblur()}>  
        
 {settingsBar()}
 
 
          {displayCurrentPage()}
-          
-          </div>
+         </div>
+         </div>
        
             </div>
-        </div>
-       
+        
+        
     </div>
 
   );
