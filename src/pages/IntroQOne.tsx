@@ -49,13 +49,13 @@ useEffect(() => {
   },4700);
   setTimeout(() => {
     setStyle(true);
-  },9700);
+  },5000);
   setTimeout(() => {
     setStyle2(true);
-  },11000);
+  },6300);
   setTimeout(() => {
     setStyle3(true);
-  },13000);
+  },8300);
   return () => {
   }
 }, [])
@@ -68,7 +68,7 @@ useEffect(() => {
      
     <h1 className ='outlineText introBigText fadeIn'> To begin the experience, please select your preference.
     </h1>
-    <h1 className ={style4?'outlineText introBigText fadeIn':'introBigText inactiveText'}>You may change your delivery preference by clicking the gear icon at any time.</h1>
+ 
     <p className={style?'introText Button outlineText fadeIn':'introText inactiveText'} onClick={()=>helper()}>Audio Only</p>
     <p className={style2?'introText Button outlineText fadeIn':'introText inactiveText'} onClick={()=>helper2()}>Text Only</p>
     <p className={style3?'introText Button outlineText fadeIn':'introText inactiveText'} onClick={()=>helper3()}>Both Audio and Text</p>
