@@ -69,16 +69,9 @@ useEffect(() => {
 
 
   if(voicePicked){
-    backgroundAudio[1].audio.fade(1,0,3000);
-    dispatch(updateHalo(3));
-    setTimeout(() => {
-    dispatch(updatePage("GoingWithTheFlow"))
-    backgroundAudio[2].audio.play();
-    backgroundAudio[2].audio.fade(0,1,2000);
-    }, 1000);
-    setTimeout(() => {
-      backgroundAudio[1].audio.pause();
-    }, 3000);
+ 
+    dispatch(updatePage("IntroQFour"))
+   
   }
 
 

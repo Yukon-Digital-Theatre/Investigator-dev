@@ -7,7 +7,7 @@ import headshotpf from '../images/Patti Flather Headshot 2021.jpg'
 import headshotjw from '../images/Jordy Walker Headshot.jpeg'
 import headshotkg from '../images/Ken Green.jpg'
 import headshotmp from '../images/Meredith Pritchard.jpeg'
-import headshotcg from '../images/Meredith Pritchard.jpeg'
+import headshotcg from '../images/Christine Genier.png'
 
 
 
@@ -60,13 +60,13 @@ const MoreAboutArtists = () => {
       <div style={{"width":"100vw", 'display':'flex', "height":"max-content"}}>
             <div style={{"width":"12vw","height":"5vh"}} ></div>
             <div style={{"width":"20vw","height":"max-content"}} >
-            <img src={headshotmisc} alt="headshot" className='artistHeadshot' style={{"width":"20vw"}}></img>
+            <div className='artistHeadshot' style={{"width":"20vw"}}></div>
             </div>
             <div  style={{"width":"87vw","height":"max-content"}} >
               <div className='outlineText artistsBigText'>
               Harrison Sparrow – Developer
               </div><div className='outlineText artistsText'>
-              Bio not submitted yet.              </div>
+              Harrison is an undergraduate at the University of Calgary graduating with a Bachelor of Science in Software Engineering. Most of the work he has done has involved back-end functionality, with some experience in front-end and UI/UX design. This project allowed him to explore a more artistic approach to front-end development in comparison to the functionality first approach he has used in the past.              </div>
             </div>
       </div>
       <div style={{"height":"10vh"}}></div>
@@ -111,7 +111,7 @@ const MoreAboutArtists = () => {
       <div style={{"width":"100vw", 'display':'flex', "height":"max-content"}}>
             <div style={{"width":"12vw","height":"5vh"}} ></div>
             <div style={{"width":"20vw","height":"max-content"}} >
-            <img src={headshotmisc} alt="headshot" className='artistHeadshot' style={{"width":"20vw"}}></img>
+            <img src={headshotcg} alt="headshot" className='artistHeadshot' style={{"width":"20vw"}}></img>
             </div>
             <div  style={{"width":"87vw","height":"max-content"}} >
               <div className='outlineText artistsBigText'>
@@ -157,13 +157,13 @@ const MoreAboutArtists = () => {
       <div style={{"width":"100vw", 'display':'flex', "height":"max-content"}}>
             <div style={{"width":"12vw","height":"5vh"}} ></div>
             <div style={{"width":"20vw","height":"max-content"}} >
-            <img src={headshotmisc} alt="headshot" className='artistHeadshot' style={{"width":"20vw"}}></img>
+            <div className='artistHeadshot' style={{"width":"20vw"}}></div>
             </div>
             <div  style={{"width":"87vw","height":"max-content"}} >
               <div className='outlineText artistsBigText'>
               Ames Val – Voice Actor
               </div><div className='outlineText artistsText'>
-              Bio not submitted yet.
+             
        </div>
             </div>
       </div>
