@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Investigator-dev/static/css/main.8b563b73.css",
-    "main.js": "/Investigator-dev/static/js/main.6544681d.js",
+    "main.js": "/Investigator-dev/static/js/main.a1164d4a.js",
     "static/media/THE INVESTIGATOR female 18 230531 small.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR female 18 230531 small.b5596a727be0dc4e9084.mp3",
     "static/media/THE INVESTIGATOR non binary 11 230407 small.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR non binary 11 230407 small.b29778a20cbfdce0f6d6.mp3",
     "static/media/THE INVESTIGATOR female 11 230407 small.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR female 11 230407 small.99a28ea7b70cd91e2aea.mp3",
@@ -61,6 +61,7 @@
     "static/media/THE INVESTIGATOR narrator 04 230407.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR narrator 04 230407.ddf39d28374a3b75e767.mp3",
     "static/media/THE INVESTIGATOR narrator 02 230407.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR narrator 02 230407.51d1e90b70fe3a73970e.mp3",
     "static/media/Wren Brian.jpg": "/Investigator-dev/static/media/Wren Brian.fde4d0aa4b4383553a92.jpg",
+    "static/media/Christine Genier.png": "/Investigator-dev/static/media/Christine Genier.675e76857de428505cf0.png",
     "static/media/THE INVESTIGATOR narrator 25 230407.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR narrator 25 230407.8f0dfbc519af7ce83bd9.mp3",
     "static/media/Carman Lam Brar.jpg": "/Investigator-dev/static/media/Carman Lam Brar.feddf69d0450f7d05447.jpg",
     "static/media/THE INVESTIGATOR narrator 24 230407.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR narrator 24 230407.5758fa9329646f3636fb.mp3",
@@ -78,10 +79,10 @@
     "static/media/lni_lni-play.svg": "/Investigator-dev/static/media/lni_lni-play.af8c2c96a9715d048c1b40496fcb5cb2.svg",
     "static/media/lni_lni-chevron-right.svg": "/Investigator-dev/static/media/lni_lni-chevron-right.829d5b643f0f56c1e54868dcce4d12bb.svg",
     "main.8b563b73.css.map": "/Investigator-dev/static/css/main.8b563b73.css.map",
-    "main.6544681d.js.map": "/Investigator-dev/static/js/main.6544681d.js.map"
+    "main.a1164d4a.js.map": "/Investigator-dev/static/js/main.a1164d4a.js.map"
   },
   "entrypoints": [
     "static/css/main.8b563b73.css",
-    "static/js/main.6544681d.js"
+    "static/js/main.a1164d4a.js"
   ]
 }
