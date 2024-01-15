@@ -54,7 +54,7 @@ Original one act play researched & developed with funding from Canada Council fo
      </div>
 <div style={{"height":"5vh"}}>
      </div>
-<p className='outlineText Button'  style={{"margin":"0% 0% 0% 12%"}} onClick={()=>helper()}>Go Back To Menu</p>
+<div className='Button outlineText introText'  style={{"margin":"0% 0% 0% 12%"}} onClick={()=>helper()}>Go Back To Menu</div>
 <div style={{"height":"10vh"}}>
      </div>
     </div>

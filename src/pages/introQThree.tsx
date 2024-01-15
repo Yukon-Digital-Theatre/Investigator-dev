@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react';
 import { narratorAudio } from '../data/narratorAudioData';
 import { updateVoicePreference } from '../reducers/voicePreference/voicePreferenceSlice';
 import { femaleAudio, maleAudio, nonBinaryAudio } from '../data/characterAudioData';
+import { backgroundAudio } from '../data/backgroundAudioData';
+import { updateHalo } from '../reducers/haloMode/haloModeSlice';
 
 const IntroQThree = () => {
 
@@ -67,7 +69,16 @@ useEffect(() => {
 
 
   if(voicePicked){
-    dispatch(updatePage("IntroQFour"));
+    backgroundAudio[1].audio.fade(1,0,3000);
+    dispatch(updateHalo(3));
+    setTimeout(() => {
+    dispatch(updatePage("GoingWithTheFlow"))
+    backgroundAudio[2].audio.play();
+    backgroundAudio[2].audio.fade(0,1,2000);
+    }, 1000);
+    setTimeout(() => {
+      backgroundAudio[1].audio.pause();
+    }, 3000);
   }
 
 

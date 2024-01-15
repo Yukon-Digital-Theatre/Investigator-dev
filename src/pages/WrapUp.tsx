@@ -24,7 +24,7 @@ const [style9, setStyle9] = useState(wrapUpVisited||!narratorMode);
 
 
   function helper(): void {
-    window.open('mailto:ytdigitaltheatrecollective@gmail.com?subject=Sign%20up%20for%20Email%20List&body=I’d%20like%20to%20hear%20when%20more%20Yukon%20Digital%20Theatre%20Collective projects%20are%20ready%20to%20see!');
+    window.open('https://yukondigitaltheatrecollective.com/');
   }
   function helper2(): void {
     dispatch(updatePage("Credits"));
@@ -42,7 +42,7 @@ const [style9, setStyle9] = useState(wrapUpVisited||!narratorMode);
   }
   function helper5(): void {
 
-    window.open('https://www.canadahelps.org/en/dn/80843');
+    window.open('https://www.zeffy.com/en-CA/donation-form/af9b641f-c844-43ac-9e69-a489866ed83b');
   }
   function helper6(): void {
 

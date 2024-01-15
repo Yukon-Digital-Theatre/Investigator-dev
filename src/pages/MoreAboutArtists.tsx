@@ -173,7 +173,7 @@ const MoreAboutArtists = () => {
 
 
    
-<p className='outlineText Button' style={{"margin":"0% 0% 0% 12%"}} onClick={()=>helper()}>Go Back To Menu</p>
+<p className='outlineText Button artistsText' style={{"margin":"0% 0% 0% 12%"}} onClick={()=>helper()}>Go Back To Menu</p>
 <div style={{"height":"10vh"}}>
      </div>
 
