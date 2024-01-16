@@ -59,15 +59,18 @@ const id=2;
      choiceData=nonBinaryChoiceTextData;
   }
   useEffect(() => {
-    if(!dialogue.playing()){
-      dialogue.play();
-      startInterval();
-
-queryAudioTime();
-    }
+    setTimeout(() => {
+      if(!dialogue.playing()){
+        dialogue.play();
+        startInterval();
+  
+  queryAudioTime();
+      }
+    },2000);
+    
   return () => { 
   }
-}, [])
+  }, [])
 
 const [audioTime, setAudioTime] = useState(0);
    

@@ -117,7 +117,12 @@ const MoreAboutArtists = () => {
               <div className='outlineText artistsBigText'>
               Christine Genier – Narrator
               </div><div className='outlineText artistsText'>
-              Christine Genier is a Woman of the Wolf Clan and a citizen of the Ta’an Kwäch’än Council. She is a broadcaster, journalist, writer, poet, performer, apprentice language keeper, culture keeper, aspiring matriarch, mother, daughter, sister, and wife. In her work, Christine shares a lived experience that spans over four decades of bridging culture and recovering the Indigenous Space with those prepared to engage. Her audio story Between The Cutoffs was featured at the Nakai Theatre Pivot Festival in 2020. Christine is a co-writer and performer in the acclaimed Dreaming Roots show which premiered at the Yukon Arts Centre in 2022; she recently shared her writing and led a workshop at the first ever Yukon Words Festival.
+              Born and raised on her ancestral lands, Christine Genier is a Wolf Clan citizen of the Ta’an Kwäch’än Council. She is a writer, poet, performer, a collector of stories, and a language and culture worker. 
+Christine parlayed her theatre training into a career in broadcasting, where she stayed firmly planted for almost two decades. 
+Her story collection work has been published with Inuit Arts Quarterly as well as local community publications. 
+She wrote a poem which received 5 upvotes and two comments once on a writing prompt subreddit. She was pretty excited about that. 
+She shares a lived experience that spans over four decades of bridging culture and recovering the Indigenous Space with those prepared to engage.
+
        </div>
             </div>
       </div>

@@ -1609,7 +1609,7 @@ export const femaleMorePressureTextTiming =[
     {id:33, speaker:'weaver', text:"that too. I’m sure it leads to preying on poor people and, and things like", enterTime: 98.22, exitTime: 104.40},
     {id:34, speaker:'weaver', text:"that, but really, it’s better, at least, I imagine if this is true, it would, in a lot", enterTime: 102.40, exitTime: 110.47},
     {id:35, speaker:'weaver', text:"of ways, be better, more consensual than animals.", enterTime: 108.47, exitTime: 113.42},
-    {id:36, speaker:'choice', text:"Continue", enterTime: 99, exitTime: 100},
+    {id:36, speaker:'choice', text:"Continue", enterTime: 114, exitTime: 120},
 ]
 
 //---//

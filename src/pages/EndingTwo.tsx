@@ -79,19 +79,7 @@ const id=9;
 const intervalref = useRef<number | null>(null);
 
 
-useEffect(() => {
-  setTimeout(() => {
-    if(!dialogue.playing()){
-      dialogue.play();
-      startInterval();
 
-queryAudioTime();
-    }
-  },2000);
-  
-return () => { 
-}
-}, [])
 
 const startInterval = () => {
   if (intervalref.current !== null) return;
@@ -198,23 +186,42 @@ console.log(temp)
 return (<div/>)
 }
 
+const [style, setStyle] = useState(false);
+useEffect(() => {
+  setTimeout(() => {
+    if(!dialogue.playing()){
+      dialogue.play();
+      startInterval();
+
+queryAudioTime();
+    }
+    setStyle(true);
+  },2000);
+  
+return () => { 
+}
+}, [])
+
 
 return (
     
-       <div className='story_container'> 
+  <div className='story_container'> 
        
-      {helper2()}
-      
-      <div className='navbar'>
-   {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
-   </div>
+  {helper2()}
+  
 
-  {temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
 
-  </div>
+<div className={style?'fadeIn':'inactiveText'} style={{'backgroundColor':"transparent",'display':"flex",'width':"100%", 'flexDirection': 'column',
+'justifyContent': 'flex-end',
+'alignItems': 'center'}as React.CSSProperties}>
+{temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
+</div>
+<div className='navbar'>
+{togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
+</div>
+</div>
   )
 }
-
 
 const EndingTwoAudioOnly = () =>{
  
@@ -236,16 +243,18 @@ const id=9;
 
 
   useEffect(() => {
-    if(!dialogue.playing()){
-      dialogue.play();
-      startInterval();
-
-queryAudioTime();
-    }
+    setTimeout(() => {
+      if(!dialogue.playing()){
+        dialogue.play();
+        startInterval();
+  
+  queryAudioTime();
+      }
+    },2000);
+    
   return () => { 
   }
-}, [])
-
+  }, [])
 const [audioTime, setAudioTime] = useState(0);
    
     function queryAudioTime() {
@@ -405,94 +414,3 @@ return (
 
 
 
-
-
-
-/*
-    const audio=nonBinaryAudio[9].audio;
-    const [audioTime, setAudioTime] = useState(0);
-    let temp: textTiming[] =[]
-    let leaving: number [] =[]
-    
-    
-    function queryAudioTime() {
-        
-        setAudioTime(audio.seek());
-        audio.on('end', function(){
-            console.log("ENDED");
-            audio.seek(audio.duration()-0.01);
-            
-        })
-        
-    }   
-    
-  const intervalref = useRef<number | null>(null);
-
-  
-  const startInterval = () => {
-    if (intervalref.current !== null) return;
-    intervalref.current = window.setInterval(() => {
-      queryAudioTime();
-    }, 100);
-  };
-
-  
-  const stopInterval = () => {
-    if (intervalref.current) {
-      window.clearInterval(intervalref.current);
-      intervalref.current = null;
-    }
-  };
-
- 
-  useEffect(() => {
-    return () => {
-      if (intervalref.current !== null) {
-        window.clearInterval(intervalref.current);
-      }
-    };
-  }, []);
-
-useEffect(() => {
-    console.log(audioTime);
-
-  return () => {
-    
-  }
-}, [audioTime])
-
-
-
-
-  function helper() {
-    
-    if(audio.playing()){
-        audio.pause();
-        stopInterval();
-    }else{
-audio.play();
-startInterval();
-
-
-    }
-    
-  }
-
-  function helper2(){
-    
-    nonBinaryEndingTwoTextTiming.map((item,index)=>{
-      if(item.enterTime<=audioTime && audioTime<=item.exitTime+1){
-        temp.push(item)
-        
-      }
-      
-      
-  })
-  console.log(temp)
-}
-
-
-
-
-
-*/

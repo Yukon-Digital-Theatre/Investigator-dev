@@ -67,19 +67,6 @@ const EndingTwoABoth = () =>{
 const intervalref = useRef<number | null>(null);
 
 
-useEffect(() => {
-  setTimeout(() => {
-    if(!dialogue.playing()){
-      dialogue.play();
-      startInterval();
-
-queryAudioTime();
-    }
-  },2000);
-  
-return () => { 
-}
-}, [])
 
 const startInterval = () => {
   if (intervalref.current !== null) return;
@@ -187,19 +174,40 @@ return (<div/>)
 }
 
 
+const [style, setStyle] = useState(false);
+useEffect(() => {
+  setTimeout(() => {
+    if(!dialogue.playing()){
+      dialogue.play();
+      startInterval();
+
+queryAudioTime();
+    }
+    setStyle(true);
+  },2000);
+  
+return () => { 
+}
+}, [])
+
+
 return (
     
-       <div className='story_container'> 
+  <div className='story_container'> 
        
-      {helper2()}
-      
-      <div className='navbar'>
-   {togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
-   </div>
+  {helper2()}
+  
 
-  {temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
 
-  </div>
+<div className={style?'fadeIn':'inactiveText'} style={{'backgroundColor':"transparent",'display':"flex",'width':"100%", 'flexDirection': 'column',
+'justifyContent': 'flex-end',
+'alignItems': 'center'}as React.CSSProperties}>
+{temp.map((item, index) => { return <StoryText key={item.id} item={item} leaving={temp.length > 8 && index === 0} />; })}
+</div>
+<div className='navbar'>
+{togglePlay?<PauseButton onClick={()=>helper()}/>:<PlayButton onClick={()=>helper()}/>}
+</div>
+</div>
   )
 }
 
@@ -211,14 +219,17 @@ const dialogue = narratorAudio[10].audio;
   const [audioEnded, setAudioEnded] = useState(false);
   
   useEffect(() => {
+  setTimeout(() => {
     if(!dialogue.playing()){
       dialogue.play();
       startInterval();
 
 queryAudioTime();
     }
-  return () => { 
-  }
+  },2000);
+  
+return () => { 
+}
 }, [])
 
 const [audioTime, setAudioTime] = useState(0);
