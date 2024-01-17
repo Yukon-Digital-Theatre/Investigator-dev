@@ -116,7 +116,7 @@ const StoryBackground = () => {
               {togglePlay ? <PauseButton onClick={() => helperAudio()} /> : <PlayButton onClick={() => helperAudio()} />}
             </div><div style={{ "height": "20vh" }}>
               </div></>}
-       {audioEnded&&     <><div style={{ "height": "20vh" }}>
+       {(audioEnded&&!narratorTextMode) &&   <><div style={{ "height": "20vh" }}>
             </div><p className='outlineText Button ' style={{ "padding": "0" }} onClick={() => helper()}>Continue</p><div style={{ "height": "10vh" }}>
               </div></>}
        {narratorTextMode&&     <><div style={{ "height": "10vh" }}>
