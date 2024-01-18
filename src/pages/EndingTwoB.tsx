@@ -56,7 +56,7 @@ const EndingTwoBBoth = () =>{
   const [audioEnded, setAudioEnded] = useState(false);
  
   const dialogue = narratorAudio[11].audio;
-
+  choiceData = EndingTwoBTextTiming;
 
   const [temp, setTemp]= useState ([EndingTwoBTextTiming[0]]);
   const [audioTime, setAudioTime] = useState(0);
@@ -65,7 +65,6 @@ const EndingTwoBBoth = () =>{
       setAudioTime(dialogue.seek());
   }   
 const intervalref = useRef<number | null>(null);
-
 
 
 
@@ -174,6 +173,7 @@ console.log(temp)
 return (<div/>)
 }
 
+
 const [style, setStyle] = useState(false);
 useEffect(() => {
   setTimeout(() => {
@@ -189,7 +189,6 @@ queryAudioTime();
 return () => { 
 }
 }, [])
-
 
 return (
     

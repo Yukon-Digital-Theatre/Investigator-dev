@@ -42,6 +42,7 @@ import SettingsBar from './components/SettingsBar';
 import MoreAboutArtists from './pages/MoreAboutArtists';
 import { narratorAudio } from './data/narratorAudioData';
 import { femaleAudio, maleAudio, nonBinaryAudio } from './data/characterAudioData';
+import { backgroundAudio } from './data/backgroundAudioData';
 
 
 
@@ -54,10 +55,21 @@ const haloMode = useSelector((state: any)=>state.haloMode.mode);
 
 function tempAudio(){
 
-  narratorAudio.map((item)=>{item.audio.stop()});
-  maleAudio.map((item)=>{item.audio.stop()});
-  femaleAudio.map((item)=>{item.audio.stop()});
-  nonBinaryAudio.map((item)=>{item.audio.stop()});
+  narratorAudio.map((item)=>{item.audio.pause()});
+  maleAudio.map((item)=>{item.audio.pause()});
+  femaleAudio.map((item)=>{item.audio.pause()});
+  nonBinaryAudio.map((item)=>{item.audio.pause()});
+}
+
+function tempCheckAudio(){
+
+  narratorAudio.map((item)=>{console.log(item.id, item.audio.playing())});
+  maleAudio.map((item)=>{console.log(item.id, item.audio.playing())});
+  femaleAudio.map((item)=>{console.log(item.id, item.audio.playing())});
+  nonBinaryAudio.map((item)=>{console.log(item.id, item.audio.playing())});
+  backgroundAudio.map((item)=>{console.log(item.id, item.audio.playing())});
+  backgroundAudio.map((item)=>{console.log(item.id, item.audio.state())});
+  backgroundAudio.map((item)=>{console.log(item.id, item.audio)});
 }
 
 function settingsBar(){
@@ -70,6 +82,7 @@ function settingsBar(){
 
 function displayCurrentPage(){
 tempAudio();
+tempCheckAudio();
   if(currentPage==="Intro"){
   return <Intro/>
 }else if (currentPage==="AccessabilityCompatability"){

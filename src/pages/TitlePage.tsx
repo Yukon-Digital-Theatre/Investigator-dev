@@ -13,6 +13,8 @@ const TitlePage = () => {
     const dispatch= useDispatch();
     const [style, setStyle] = useState(false);
     useEffect(() => {
+      audio.volume(100);
+      audio.mute(false);
         if(!audio.playing()){
             audio.play();
         }else{

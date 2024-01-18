@@ -303,7 +303,7 @@ const dispatch = useDispatch();
         dispatch(updatePage("EndingTwoA"))
        
       }, 1000);
-    }else if(item.text==="No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk. "){
+    }else if(item.text==="No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk."){
       setTimeout(() => {
         dispatch(updatePage("EndingTwoB"))
        

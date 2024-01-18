@@ -553,7 +553,7 @@ export const scriptMeetTheWeaver =[
             {id:13, speaker:"narrator", text:"You took this job to help bring justice to them. "},
             {id:14, speaker:"narrator", text:"Is this the way to do it?	"},
             {id:15, speaker:"choice", text: "Yes, you still believe the murdered deserve justice and these investigations are worthwhile. You’ll keep investigating and will arrest others."},
-            {id:16, speaker:"choice", text: "No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk. "},
+            {id:16, speaker:"choice", text: "No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk."},
         ]
 
         export const scriptEndingTwoA =[
@@ -594,7 +594,7 @@ export const scriptMeetTheWeaver =[
             {id:7, text:"Do you check the email now?", questionOne:"Yes, it might be important ", questionTwo:"No, if it was that important it would be a phone call "},
             {id:8, text:"What do you think? What will you do?", questionOne:"While the weaver made some good points, the weaver is still enough in the wrong to warrant further investigation and maybe a trial, you arrest the weaver.", questionTwo:"The weaver seems genuine and made some good points, this doesn’t feel quite right to you, you let the weaver go"},
             {id:9, text:"non", questionOne:"non", questionTwo:"non"},
-            {id:10, text:"Is this the way to do it?", questionOne:"Yes, you still believe the murdered deserve justice and these investigations are worthwhile. You’ll keep investigating and will arrest others.", questionTwo:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk. "},
+            {id:10, text:"Is this the way to do it?", questionOne:"Yes, you still believe the murdered deserve justice and these investigations are worthwhile. You’ll keep investigating and will arrest others.", questionTwo:"No, you care about justice, but don’t want to be part of it anymore. You might not find another job as well paying as this, but you’ll take that risk."},
            
         
         ]
