@@ -63,10 +63,6 @@ function tempAudio(){
 
 function tempCheckAudio(){
 
-  narratorAudio.map((item)=>{console.log(item.id, item.audio.playing())});
-  maleAudio.map((item)=>{console.log(item.id, item.audio.playing())});
-  femaleAudio.map((item)=>{console.log(item.id, item.audio.playing())});
-  nonBinaryAudio.map((item)=>{console.log(item.id, item.audio.playing())});
   backgroundAudio.map((item)=>{console.log(item.id, item.audio.playing())});
   backgroundAudio.map((item)=>{console.log(item.id, item.audio.state())});
   backgroundAudio.map((item)=>{console.log(item.id, item.audio)});
