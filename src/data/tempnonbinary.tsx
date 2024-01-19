@@ -241,7 +241,7 @@ export const nonBinaryNewTacticTextTiming =[
     {id:105, speaker:'narrator', text:"Weaver keeps weaving the hair.", enterTime: 314.9, exitTime: 318.9},
     {id:106, speaker:'narrator', text:"You try not to think about the piles of it you saw at Konauzec or the shaved heads in the graves.", enterTime: 317.8, exitTime: 325.6},
     {id:107, speaker:'narrator', text:"Was life here in the Capital so sheltered that this is outlandish to the weaver?", enterTime: 324.7, exitTime: 331.8},
-    {id:108, speaker:'narrator', text:"Do you think the weaver is telling the truth?.", enterTime: 331.3, exitTime: 3600},
+    {id:108, speaker:'narrator', text:"Do you think the weaver is telling the truth?", enterTime: 331.3, exitTime: 3600},
     {id:109, speaker:'choice', text:"Yes, you believe the weaver really doesn’t know and you’ll have to break it down to make the weaver realize so that more questions can be answered", enterTime: 336.1, exitTime: 3600},
     {id:110, speaker:'choice', text:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", enterTime: 345.4, exitTime: 3600},
 
