@@ -134,7 +134,7 @@ export const nonBinaryKeepGoingTextTiming =[
 
 export const nonBinaryNewTacticTextTiming =[
         
-    {id:1, speaker:'investigator', text:"Best guess, what is the yarn made of?", enterTime: 0, exitTime: 5.3},
+    {id:1, speaker:'investigator', text:"Best guess, what is the yarn made of?", enterTime: 0.2, exitTime: 5.3},
     {id:2, speaker:'weaver', text:"What good would guessing do? (coughs)", enterTime: 3.9, exitTime: 7.7},
     {id:3, speaker:'investigator', text:"I need your educated guess. Last question.", enterTime: 6.1, exitTime: 11.5},
     {id:4, speaker:'weaver', text:"Well, well it’s definitely a mix. This, this is rough, so probably some type of", enterTime: 10, exitTime: 17},
@@ -243,7 +243,7 @@ export const nonBinaryNewTacticTextTiming =[
     {id:107, speaker:'narrator', text:"Was life here in the Capital so sheltered that this is outlandish to the weaver?", enterTime: 324.7, exitTime: 331.8},
     {id:108, speaker:'narrator', text:"Do you think the weaver is telling the truth?", enterTime: 331.3, exitTime: 3600},
     {id:109, speaker:'choice', text:"Yes, you believe the weaver really doesn’t know and you’ll have to break it down to make the weaver realize so that more questions can be answered", enterTime: 336.1, exitTime: 3600},
-    {id:110, speaker:'choice', text:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", enterTime: 345.4, exitTime: 3600},
+    {id:110, speaker:'choice', text:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", enterTime: 336.12, exitTime: 3600},
 
 ]
 
@@ -290,7 +290,7 @@ export const nonBinaryMorePressureTextTiming =[
 export const nonBinaryBreakItDownTextTiming =[
         
       
-    {id:1, speaker:'investigator', text:"You said you’d heard of those places, you", enterTime: 0, exitTime: 3.7},
+    {id:1, speaker:'investigator', text:"You said you’d heard of those places, you", enterTime: 0.2, exitTime: 3.7},
     {id:2, speaker:'investigator', text:"know there have been massacres there. The", enterTime: 1.7, exitTime: 5.6},
     {id:3, speaker:'investigator', text:"old government collected their hair after", enterTime: 3.6, exitTime: 8},
     {id:4, speaker:'investigator', text:"murdering them", enterTime: 6, exitTime: 9.1},
@@ -459,7 +459,7 @@ export const nonBinaryEndingOneTextTiming =[
 
 
 export const EndingTwoATextTiming =[
-    {id:1, speaker:"narrator", text:"You look at your watch. ",enterTime: 0, exitTime: 1.8},
+    {id:1, speaker:"narrator", text:"You look at your watch. ",enterTime: 0.2, exitTime: 1.8},
     {id:2, speaker:"narrator", text:"This took longer than expected. You’ll try to keep it shorter next time.",enterTime: 1.8, exitTime: 6.7},
     {id:3, speaker:"narrator", text:"You remember to take out an evidence bag. ",enterTime: 7.1, exitTime: 10.5},
     {id:4, speaker:"narrator", text:"You don’t want to touch the carpet squares, but you need to take one.",enterTime: 10.6, exitTime: 14.8},
@@ -473,7 +473,7 @@ export const EndingTwoATextTiming =[
 ]
  
 export const EndingTwoBTextTiming =[
-    {id:1, speaker:"narrator", text:"You look at your watch.",enterTime: 0, exitTime: 2},
+    {id:1, speaker:"narrator", text:"You look at your watch.",enterTime: 0.2, exitTime: 2},
     {id:2, speaker:"narrator", text:"You might have to finally sell it if you go through with this and can’t find another job. ",enterTime: 1.9, exitTime: 7.1},
     {id:3, speaker:"narrator", text:"You won’t go to the next address.",enterTime: 7.2, exitTime: 10},
     {id:4, speaker:"narrator", text:"You’ll go back to the office and turn in your notice. ",enterTime: 10, exitTime: 13.8},

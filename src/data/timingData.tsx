@@ -1028,8 +1028,8 @@ export const nonBinaryGoingWithTheFlowTextTiming =[
     {id:238, speaker:'investigator', text:"Who gives you the yarn?", enterTime: 825.6, exitTime: 828.8},
     {id:239, speaker:'weaver', text:"I really don’t think I can answer any more of your questions about these.", enterTime: 827.8, exitTime: 832.5},
     {id:240, speaker:'weaver', text:"And I shouldn’t. Leave your card, and I’ll get back to you.", enterTime: 830.5, exitTime: 835.4},
-    {id:241, speaker:'narrator', text:"The weaver keeps weaving. You know it’s time to be more honest.", enterTime: 834.3, exitTime: 840.7},
-    {id:242, speaker:'choice', text:"Continue", enterTime: 841, exitTime: 842.5},
+    {id:241, speaker:'narrator', text:"The weaver keeps weaving. You know it’s time to be more honest.", enterTime: 834.3, exitTime: 839.7},
+    {id:242, speaker:'choice', text:"Continue", enterTime: 839, exitTime: 842.5},
 ]
 
  //---//
@@ -1248,7 +1248,7 @@ export const maleKeepGoingTextTiming =[
     {id:43, speaker:'weaver', text:"Rent a little place. Sleep as long as I want. Go wander outside…", enterTime: 140.78, exitTime: 147.08},
     {id:44, speaker:'investigator', text:"You really don’t know what it’s made out of?", enterTime: 145.60, exitTime: 149.80},
     {id:45, speaker:'weaver', text:"No.", enterTime: 148.39, exitTime: 151.17},
-    {id:46, speaker:'choice', text:"Continue", enterTime: 152, exitTime: 153},
+    {id:46, speaker:'choice', text:"Continue", enterTime: 149, exitTime: 153},
 ]  
 export const femaleKeepGoingTextTiming =[
         
