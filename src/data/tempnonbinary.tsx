@@ -39,7 +39,7 @@ export const nonBinaryDownToBusinessTextTiming =[
     {id:37, speaker:'weaver', text: "always before noon, but it’s been just over two weeks since the last one, it", enterTime: 93.7, exitTime: 99.6},
     {id:38, speaker:'weaver', text:"took them three weeks once (coughs). Payment is middle of the month.", enterTime: 97.6, exitTime: 103.5},
     {id:39, speaker:'investigator', text:"How heavy is each package of yarn?", enterTime: 101.8, exitTime: 106.4},
-    {id:40, speaker:'weaver', text:"Each package is 20 kilos. (coughs)", enterTime: 105, exitTime: 101.2},
+    {id:40, speaker:'weaver', text:"Each package is 20 kilos. (coughs)", enterTime: 105, exitTime: 108.2},
     {id:41, speaker:'investigator', text:"You finish it in two weeks?", enterTime: 108.2, exitTime: 112},
     {id:42, speaker:'weaver', text:"Not really. I try to finish it in two weeks, but never really do. It’s piled up a", enterTime: 111.1, exitTime: 116.6},
     {id:43, speaker:'weaver', text:"bit recently, I can probably keep going for another five to seven days with", enterTime: 114.6, exitTime: 120.4},

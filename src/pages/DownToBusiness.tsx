@@ -197,8 +197,22 @@ function helperOnEnd(){
     if(temp.length>4){
     temp.shift();
     }
+
+
+
+
+
     setTimeout(() => {
-    }, 1000);
+
+      if(currentScriptIndex===(scriptLength-2)){
+        setDisabled(false);
+    setCurrentScriptIndex(scriptLength);
+    setTemp((temp)=>[...temp, scriptDownToBusiness[currentScriptIndex+1]]);
+    if(temp.length>4){
+    temp.shift();
+  }
+}
+    }, 1);
     
    
     }

@@ -380,7 +380,15 @@ const BreakItDownTextOnly = () => {
     temp.shift();
     }
     setTimeout(() => {
-    }, 1000);
+      if(currentScriptIndex===(scriptLength-2)){
+        setDisabled(false);
+    setCurrentScriptIndex(scriptLength);
+    setTemp((temp)=>[...temp, scriptBreakItDown[currentScriptIndex+1]]);
+    if(temp.length>4){
+    temp.shift();
+    }
+      }
+    }, 1);
     
    
     }

@@ -120,7 +120,7 @@ const FollowUpTwoB = () => {
         {togglePlay ? <PauseButton onClick={() => helperAudioPP()} /> : <PlayButton onClick={() => helperAudioPP()} />}
       </div><div style={{ "height": "20vh" }}></div></>
 }
-    {audioEnded&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
+    {(audioEnded&&!narratorTextMode)&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
        {narratorTextMode&&<p className=' introText outlineText Button' onClick={()=>helper()}>Continue</p>}
     </>
   )

@@ -562,8 +562,7 @@ export const scriptMeetTheWeaver =[
             {id:3, speaker:"narrator", text:"You remember to take out an evidence bag. "},
             {id:4, speaker:"narrator", text:"You don’t want to touch the carpet squares, but you need to take one. Even if you let the weaver go, this is still evidence of the whole operation."},
             {id:5, speaker:"narrator", text:"That done, you look up the next address. "},
-            {id:6, speaker:"narrator", text:"That done, you look up the next address. "},
-            {id:7, speaker:"narrator", text:"You leave as quickly as you can."},
+            {id:6, speaker:"narrator", text:"You leave as quickly as you can."},
             {id:7777, speaker:"choice", text:"What now?"},
         ]
          
