@@ -78,7 +78,7 @@ export const nonBinaryDownToBusinessTextTiming =[
     {id:76, speaker:'narrator', text:"About what happened during the war?", enterTime: 224.8, exitTime: 229.1},
     {id:77, speaker:'narrator', text:"Is this steady stream of questions working?", enterTime: 228.2, exitTime: 3600},
     {id:78, speaker:'choice', text:"Yes, you don’t want the weaver to shut down. Keep asking simple questions.", enterTime: 231.4, exitTime: 3600},
-    {id:79, speaker:'choice', text:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", enterTime: 237.6, exitTime: 3600},
+    {id:79, speaker:'choice', text:"No, it’s time to ask harder questions, you’ll risk the weaver shutting down.", enterTime: 231.6, exitTime: 3600},
    
 ]
 
@@ -313,7 +313,7 @@ export const nonBinaryBreakItDownTextTiming =[
     {id:21, speaker:'weaver', text:"No, that’s not... I just, I don’t understand", enterTime: 42.6, exitTime: 47.3},
     {id:22, speaker:'investigator', text:"How much does a cone weigh?", enterTime: 44.7, exitTime: 48.9},
     {id:23, speaker:'weaver', text:"One kilo", enterTime: 47.9, exitTime: 50.6},
-    {id:24, speaker:'imv', text:"How much hair does an average person have", enterTime: 48.7, exitTime: 53.5},
+    {id:24, speaker:'investigator', text:"How much hair does an average person have", enterTime: 48.7, exitTime: 53.5},
     {id:25, speaker:'weaver', text:"I don’t know", enterTime: 51.5, exitTime: 54.3},
     {id:26, speaker:'investigator', text:"Guess", enterTime: 52.3, exitTime: 55.1},
     {id:27, speaker:'weaver', text:"On, on average… the average person, I’d think maybe, maybe about,", enterTime: 53.8, exitTime: 60.5},
@@ -377,12 +377,12 @@ export const nonBinaryBreakItDownTextTiming =[
     {id:85, speaker:'investigator', text:"they did.", enterTime: 242.9, exitTime: 245.9},
     {id:86, speaker:'narrator', text:"The Weaver is speechless, searching for words.", enterTime: 245.7, exitTime: 250.6},
     {id:87, speaker:'narrator', text:"You’re caught in the memories, especially the smell", enterTime: 249.4, exitTime: 254.3},
-    {id:87, speaker:'narrator', text:"You try to shake free and focus on the Weaver", enterTime: 253.4, exitTime: 258.4},
+    {id:88, speaker:'narrator', text:"You try to shake free and focus on the Weaver", enterTime: 253.4, exitTime: 258.4},
     {id:89, speaker:'narrator', text:"You feel your phone buzz in your pocket. Another email.", enterTime: 257.3, exitTime: 263.3},
     {id:90, speaker:'narrator', text:"The Weaver is on the verge of saying more.", enterTime: 261.8, exitTime: 266.4},
     {id:91, speaker:'narrator', text:"Do you check the email now?", enterTime: 266.1, exitTime: 3600},
     {id:92, speaker:'choice', text:"Yes, it might be important", enterTime: 268.6, exitTime: 3600},
-    {id:93, speaker:'choice', text:"No, if it was that important it would be a phone call", enterTime: 271.3, exitTime: 3600},
+    {id:93, speaker:'choice', text:"No, if it was that important it would be a phone call", enterTime: 268.7, exitTime: 3600},
    
 
    
