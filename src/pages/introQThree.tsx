@@ -70,7 +70,7 @@ useEffect(() => {
 
   if(voicePicked){
  
-    dispatch(updatePage("BreakItDown"))
+    dispatch(updatePage("IntroQFour"))
    
   }
 
