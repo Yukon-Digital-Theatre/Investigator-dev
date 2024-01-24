@@ -3,7 +3,7 @@ import { updatePage } from '../reducers/currentPage/currentPageSlice';
 import { useEffect, useState } from 'react';
 import { narratorAudio } from '../data/narratorAudioData';
 import { updateWrapUpVisited } from '../reducers/wrapUpVisited/wrapUpVisitedSlice';
-
+import logo1 from '../images/YTDC Mountain Logo DK.png'
 
 const WrapUp = () => {
 
@@ -134,7 +134,13 @@ setStyle9(true);
     <p className={style8?'WrapUpButton introText fadeIn' :'introText inactiveText WrapUpButtonDisabled'} onClick={()=>helper4()}>Back to the Beginning</p>
      
     </div>
-    
+    <div className={style7?'introText outlineText fadeIn':'introText inactiveText'}>
+    <div style={{"width":"100vw", 'display':'flex', 'position':'absolute', 'bottom':'0px'}}>
+    <div style={{"width":"50%"}} ></div>
+     <img src={logo1} alt="logo" className='artistHeadshot' style={{"height":"13.2vh"}}></img>
+     <div style={{"width":"50%"}} ></div>
+     </div>
+     </div>
     </div>
   )
 }

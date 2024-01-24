@@ -45,7 +45,9 @@
   }
 
   .lettercontainer{
+    margin-top: 1vh;
     overflow-y: scroll;
     overflow-x: hidden;
     width: calc(100vw);
+    max-height: calc(99vh - 170px);
   }
