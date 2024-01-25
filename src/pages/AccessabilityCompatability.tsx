@@ -32,13 +32,13 @@ function helper(){
   return (
     <div    >
 
-<p className='introBigText outlineText fadeIn' style={style?{"animationName":"fade-out"}:{"animationName":"fade-in"}}> Please note this website is a work in progress. 
+<p className='introBigText outlineText fadeIn' style={style?{"animationName":"fade-out"}:{"animationName":"fade-in"}}> This experience is designed to be used on a desktop or laptop computer in full screen mode, and should be compatible with Chrome, Edge and Firefox.
 
 
 </p> 
-<p className='introText outlineText fadeIn' style={style?{"animationName":"fade-out"}:{"animationName":"fade-in"}}> It is a beta version and isn’t quite looking how we want yet and some features may not be available yet, but we’ll be making changes and hopefully getting everything working quick as we can. Feel free to view it now, and again later to see our progress or wait a bit longer to view the experience later when it’ll be more polished.
+<p className='introText outlineText fadeIn' style={style?{"animationName":"fade-out"}:{"animationName":"fade-in"}}>  While most will complete the experience within 60 minutes, if certain choices are selected it could take up to 70 mintues. The experience is over when you reach an end menu. 
 
-</p> <p className='introText outlineText fadeIn' style={style?{"animationName":"fade-out"}:{"animationName":"fade-in"}}>We invite feedback on your experience using it. Both what you like and didn’t like, but also if you encountered any glitches by emailing:
+</p> <p className='introText outlineText fadeIn' style={style?{"animationName":"fade-out"}:{"animationName":"fade-in"}}>. If you get stuck along the way or experience other issues please email so we can correct the glitch: 
 
 </p>
 

@@ -131,341 +131,340 @@ export const nonBinaryKeepGoingTextTiming =[
     {id:45, speaker:'weaver', text:"No.", enterTime: 160.79, exitTime: 161.7},
     {id:46, speaker:'choice', text:"Continue", enterTime: 161.5, exitTime: 162},
 ]
-
 export const nonBinaryNewTacticTextTiming =[
 
 
         
 
 
-    {id:1, speaker:'investigator', text:"Best guess, what is the yarn made of?", enterTime: 0.2, exitTime: 5.3},
+    {id:1, speaker:'investigator', text:"Best guess, what is the yarn made of?", enterTime: 0.8, exitTime: 3.6},
 
 
-    {id:2, speaker:'weaver', text:"What good would guessing do? (coughs)", enterTime: 1.9, exitTime: 8},
+    {id:2, speaker:'weaver', text:"What good would guessing do? (coughs)", enterTime: 3.5, exitTime: 6.4},
 
 
-    {id:3, speaker:'investigator', text:"I need your educated guess. Last question.", enterTime: 4.3, exitTime: 11},
+    {id:3, speaker:'investigator', text:"I need your educated guess. Last question.", enterTime: 6.2, exitTime: 9.4},
 
 
-    {id:4, speaker:'weaver', text:"Well, well it’s definitely a mix. This, this is rough, so probably some type of", enterTime: 7.6, exitTime: 17.1},
+    {id:4, speaker:'weaver', text:"Well, well it’s definitely a mix. This, this is rough, so probably some type of", enterTime: 9.3, exitTime: 15.4},
 
 
-    {id:5, speaker:'weaver', text:"poor quality wool, some plant or vegetable fibre too. Cotton is common.", enterTime: 13.1, exitTime: 22.5},
+    {id:5, speaker:'weaver', text:"poor quality wool, some plant or vegetable fibre too. Cotton is common.", enterTime: 15, exitTime: 20.7},
 
 
-    {id:6, speaker:'weaver', text:"Honestly, it’s probably a mix of the cheapest fibres they could find. It’s", enterTime: 18.5, exitTime: 26.5},
+    {id:6, speaker:'weaver', text:"Honestly, it’s probably a mix of the cheapest fibres they could find. It’s", enterTime: 20.3, exitTime: 24.6},
 
 
-    {id:7, speaker:'weaver', text:"meant for office carpet, not palaces or other places people with money go.", enterTime: 22.5, exitTime: 30.9},
+    {id:7, speaker:'weaver', text:"meant for office carpet, not palaces or other places people with money go.", enterTime: 24.2, exitTime: 29.2},
 
 
-    {id:8, speaker:'weaver', text:"Seems to me anyways. (coughs)", enterTime: 26.9, exitTime: 33.4},
+    {id:8, speaker:'weaver', text:"Seems to me anyways. (coughs)", enterTime: 28.8, exitTime: 31.5},
 
 
-    {id:9, speaker:'investigator', text:"You believe it’s just wool or plant fibre", enterTime: 29.4, exitTime: 35.5},
+    {id:9, speaker:'investigator', text:"You believe it’s just wool or plant fibre", enterTime: 31.1, exitTime: 33.71},
 
 
-    {id:10, speaker:'weaver', text:"I, I believe it’s wool and plant fibre as much as I can believe something I", enterTime: 32.1, exitTime: 39.8},
+    {id:10, speaker:'weaver', text:"I, I believe it’s wool and plant fibre as much as I can believe something I", enterTime: 33.7, exitTime: 38},
 
 
-    {id:11, speaker:'weaver', text:"have no way of knowing. (coughs) Really, what I believe is that I don’t know,", enterTime: 37.8, exitTime: 44.5},
+    {id:11, speaker:'weaver', text:"have no way of knowing. (coughs) Really, what I believe is that I don’t know,", enterTime: 37.4, exitTime: 42.8},
 
 
-    {id:12, speaker:'weaver', text:"and frankly, don’t care what the yarn is made of.", enterTime: 40.5, exitTime: 47},
+    {id:12, speaker:'weaver', text:"and frankly, don’t care what the yarn is made of.", enterTime: 42.4, exitTime: 45.1},
 
 
-    {id:13, speaker:'investigator', text:"Have you heard of a place called Konauzec?", enterTime: 43, exitTime: 49},
+    {id:13, speaker:'investigator', text:"Have you heard of a place called Konauzec?", enterTime: 44.9, exitTime: 47.2},
 
 
-    {id:14, speaker:'narrator', text:"(Weaver slows their weaving for a second before continuing.)", enterTime: 45.6, exitTime: 51},
+    {id:14, speaker:'narrator', text:"(Weaver slows their weaving for a second before continuing.)", enterTime: 46.8, exitTime: 48.2},
 
 
-    {id:15, speaker:'weaver', text:"What does that have to do with anything?", enterTime: 46, exitTime: 51.5},
+    {id:15, speaker:'weaver', text:"What does that have to do with anything?", enterTime: 47.8, exitTime: 49.7},
 
 
-    {id:16, speaker:'investigator', text:"Humour me", enterTime: 47.5, exitTime: 52.4},
+    {id:16, speaker:'investigator', text:"Humour me", enterTime: 49.3, exitTime: 50.5},
 
 
-    {id:17, speaker:'weaver', text:"I’ve heard of Konauzec, but I’ve never been there if that’s what you’re asking.", enterTime: 48.5, exitTime: 55.9},
+    {id:17, speaker:'weaver', text:"I’ve heard of Konauzec, but I’ve never been there if that’s what you’re asking.", enterTime: 50.4, exitTime: 54.2},
 
 
-    {id:18, speaker:'investigator', text:"What about Vukelongo?", enterTime: 52, exitTime: 57.5},
+    {id:18, speaker:'investigator', text:"What about Vukelongo?", enterTime: 53.8, exitTime: 55.5},
 
 
-    {id:19, speaker:'weaver', text:"Never been there either. (coughs)", enterTime: 53.5, exitTime: 59.8},
+    {id:19, speaker:'weaver', text:"Never been there either. (coughs)", enterTime: 55.2, exitTime: 58},
 
 
-    {id:20, speaker:'investigator', text:"What about anywhere over the Hurauk", enterTime: 56, exitTime: 61.8},
+    {id:20, speaker:'investigator', text:"What about anywhere over the Hurauk", enterTime: 57.7, exitTime: 60},
 
 
-    {id:21, speaker:'investigator', text:"border?", enterTime: 57.8, exitTime: 62.5},
+    {id:21, speaker:'investigator', text:"border?", enterTime: 59.6, exitTime: 60.8},
 
 
-    {id:22, speaker:'weaver', text:"Honestly I almost never leave this building, let alone this city. I moved here", enterTime: 58.7, exitTime: 66.8},
+    {id:22, speaker:'weaver', text:"Honestly I almost never leave this building, let alone this city. I moved here", enterTime: 60.6, exitTime: 64.9},
 
 
-    {id:23, speaker:'weaver', text:"years ago straight from my parents’ farm shortly after my apprenticeship", enterTime: 62.8, exitTime: 70},
+    {id:23, speaker:'weaver', text:"years ago straight from my parents’ farm shortly after my apprenticeship", enterTime: 64.5, exitTime: 68.1},
 
 
-    {id:24, speaker:'weaver', text:"with the village weaver ended, and I’ve been here since with only quick", enterTime: 66, exitTime: 73.4},
+    {id:24, speaker:'weaver', text:"with the village weaver ended, and I’ve been here since with only quick", enterTime: 67.7, exitTime: 71.6},
 
 
-    {id:25, speaker:'weaver', text:"trips back to see my family. This is my workshop and through there is my", enterTime: 69.4, exitTime: 77.4},
+    {id:25, speaker:'weaver', text:"trips back to see my family. This is my workshop and through there is my", enterTime: 71.2, exitTime: 75.6},
 
 
-    {id:26, speaker:'weaver', text:"home. My biggest dream is to go to the sea, I don’t even have to leave the", enterTime: 73.4, exitTime: 81.2},
+    {id:26, speaker:'weaver', text:"home. My biggest dream is to go to see the sea, I don’t even have to leave the", enterTime: 75.2, exitTime: 79.4},
 
 
-    {id:27, speaker:'weaver', text:"country for that. I’m no traveler. You said your last question was about the,", enterTime: 77.2, exitTime: 85.7},
+    {id:27, speaker:'weaver', text:"country for that. I’m no traveler. You said your last question was about the,", enterTime: 79, exitTime: 83.8},
 
 
-    {id:28, speaker:'weaver', text:"the raw fibre in the yarn. I gave you a good guess and answered several more", enterTime: 81.7, exitTime: 89.8},
+    {id:28, speaker:'weaver', text:"the raw fibre in the yarn. I gave you a good guess and answered several more", enterTime: 83.4, exitTime: 88},
 
 
-    {id:29, speaker:'weaver', text:"questions too. I just really need to focus to get this done.", enterTime: 85.8, exitTime: 93.2},
+    {id:29, speaker:'weaver', text:"questions too. I just really need to focus to get this done.", enterTime: 87.6, exitTime: 91.31},
 
 
-    {id:30, speaker:'narrator', text:"You feel your phone buzz. You look. An email from your boss.", enterTime: 90, exitTime: 98.5},
+    {id:30, speaker:'narrator', text:"You feel your phone buzz. You look. An email from your boss.", enterTime: 91.3, exitTime: 96.61},
 
 
-    {id:31, speaker:'narrator', text:"Subject: Test Results of Third Weaver Apprehended", enterTime: 95, exitTime: 103.1},
+    {id:31, speaker:'narrator', text:"Subject: Test Results of Third Weaver Apprehended", enterTime: 96.6, exitTime: 101.41},
 
 
-    {id:32, speaker:'narrator', text:"The lab has concluded that the material used to weave the carpet squares from the weaver apprehended in the northwest end of the city two days ago is predominantly made from human hair same as the other two.", enterTime: 99.7, exitTime: 116.6},
+    {id:32, speaker:'narrator', text:"The lab has concluded that the material used to weave the carpet squares from the weaver apprehended in the northwest end of the city two days ago is predominantly made from human hair same as the other two.", enterTime: 101.4, exitTime: 115.21},
 
 
-    {id:33, speaker:'narrator', text:"Continue interrogations and confront weavers with these facts. If you deem it reasonable, arrest them and bring them into the station.", enterTime: 113.7, exitTime: 126.4},
+    {id:33, speaker:'narrator', text:"Continue interrogations and confront weavers with these facts. If you deem it reasonable, arrest them and bring them into the station.", enterTime: 115.2, exitTime: 124.91},
 
 
-    {id:34, speaker:'narrator', text:"You put your phone away.", enterTime: 123.4, exitTime: 129.1},
+    {id:34, speaker:'narrator', text:"You put your phone away.", enterTime: 124.9, exitTime: 127.61},
 
 
-    {id:35, speaker:'investigator', text:"Why do you think I’m here?", enterTime: 126.9, exitTime: 132.3},
+    {id:35, speaker:'investigator', text:"Why do you think I’m here?", enterTime: 127.6, exitTime: 130.6},
 
 
-    {id:36, speaker:'weaver', text:"I honestly have no idea.", enterTime: 128.9, exitTime: 134.5},
+    {id:36, speaker:'weaver', text:"I honestly have no idea.", enterTime: 130.2, exitTime: 132.9},
 
 
-    {id:37, speaker:'investigator', text: "I’m here to investigate the carpets", enterTime: 130.9, exitTime: 137.1},
+    {id:37, speaker:'investigator', text: "I’m here to investigate the carpets", enterTime: 132.5, exitTime: 135.5},
 
 
-    {id:38, speaker:'weaver', text:"The carpets? Why? Why would the new government be against carpets?", enterTime: 133.7, exitTime: 142},
+    {id:38, speaker:'weaver', text:"The carpets? Why? Why would the new government be against carpets?", enterTime: 135.1, exitTime: 140.1},
 
 
-    {id:39, speaker:'weaver', text:"I didn’t realize flooring was a divisive political issue. (chuckles and coughs)", enterTime: 138, exitTime: 145.1},
+    {id:39, speaker:'weaver', text:"I didn’t realize flooring was a divisive political issue. (chuckles and coughs)", enterTime: 139.7, exitTime: 144.3},
 
 
-    {id:40, speaker:'investigator', text:"You think this is funny?", enterTime: 142.1, exitTime: 147.8},
+    {id:40, speaker:'investigator', text:"You think this is funny?", enterTime: 144, exitTime: 145.9},
 
 
-    {id:41, speaker:'weaver', text:"It’s weird, I don’t know, I just don’t understand. Again, are you telling me", enterTime: 144.1, exitTime: 152.4},
+    {id:41, speaker:'weaver', text:"It’s weird, I don’t know, I just don’t understand. Again, are you telling me", enterTime: 145.8, exitTime: 150.7},
 
 
-    {id:42, speaker:'weaver', text:"this contract is cancelled?", enterTime: 148.4, exitTime: 152.7},
+    {id:42, speaker:'weaver', text:"this contract is cancelled?", enterTime: 150.3, exitTime: 151.9},
 
 
-    {id:43, speaker:'investigator', text:"No, I honestly don’t know if it is or not", enterTime: 148.7, exitTime: 156.5},
+    {id:43, speaker:'investigator', text:"No, I honestly don’t know if it is or not", enterTime: 151.5, exitTime: 154.9},
 
 
-    {id:44, speaker:'weaver', text:"Right, if you don’t know if the contract is cancelled or not, then I’m not sure", enterTime: 152.5, exitTime: 160.2},
+    {id:44, speaker:'weaver', text:"Right, if you don’t know if the contract is cancelled or not, then I’m not sure", enterTime: 154.5, exitTime: 158.4},
 
 
-    {id:45, speaker:'weaver', text:"what you’re trying to say.", enterTime: 156.2, exitTime: 161.3},
+    {id:45, speaker:'weaver', text:"what you’re trying to say.", enterTime: 158, exitTime: 159.5},
 
 
-    {id:46, speaker:'investigator', text:"These carpets are made from human hair.", enterTime: 157.3, exitTime: 163.8},
+    {id:46, speaker:'investigator', text:"These carpets are made from human hair.", enterTime: 159.1, exitTime: 161.9},
 
 
-    {id:47, speaker:'investigator', text:"Hair collected by the old government", enterTime: 159.8, exitTime: 166.2},
+    {id:47, speaker:'investigator', text:"Hair collected by the old government", enterTime: 161.5, exitTime: 164.4},
 
 
-    {id:48, speaker:'narrator', text:"(Weaver pauses in their work.)", enterTime: 162.7, exitTime: 167.7},
+    {id:48, speaker:'narrator', text:"(Weaver pauses in their work.)", enterTime: 164.2, exitTime: 166},
 
 
-    {id:49, speaker:'weaver', text:" …wh, what?", enterTime: 163.2, exitTime: 168.7},
+    {id:49, speaker:'weaver', text:" …wh, what?", enterTime: 165.6, exitTime: 166.9},
 
 
-    {id:50, speaker:'investigator', text:"People from Konauzec, Vukelongo, this is", enterTime: 164.7, exitTime: 171.6},
+    {id:50, speaker:'investigator', text:"People from Konauzec, Vukelongo, this is", enterTime: 166.5, exitTime: 169.9},
 
 
-    {id:51, speaker:'investigator', text:"their hair", enterTime: 167.6, exitTime: 172.5},
+    {id:51, speaker:'investigator', text:"their hair", enterTime: 169.5, exitTime: 170.7},
 
 
-    {id:52, speaker:'weaver', text:"Who, who told you that?", enterTime: 168, exitTime: 173.7},
+    {id:52, speaker:'weaver', text:"Who, who told you that?", enterTime: 170.3, exitTime: 171.9},
 
 
-    {id:53, speaker:'investigator', text:"It’s been discovered by the WCIC", enterTime: 171.7, exitTime: 176.2},
+    {id:53, speaker:'investigator', text:"It’s been discovered by the WCIC", enterTime: 171.7, exitTime: 174.4},
 
 
-    {id:54, speaker:'weaver', text:"And, and who started the W, WCI, council, or whoever is doing this", enterTime: 172.2, exitTime: 181.6},
+    {id:54, speaker:'weaver', text:"And, and who started the W, WCI, council, or whoever is doing this", enterTime: 174.1, exitTime: 179.8},
 
 
-    {id:55, speaker:'weaver', text:"investigation?", enterTime: 177.6, exitTime: 182.4},
+    {id:55, speaker:'weaver', text:"investigation?", enterTime: 179.4, exitTime: 180.7},
 
 
-    {id:56, speaker:'investigator', text:"WCIC. Like I told you, the new government", enterTime: 178.4, exitTime: 186},
+    {id:56, speaker:'investigator', text:"WCIC. Like I told you, the new government", enterTime: 180.3, exitTime: 184.2},
 
 
-    {id:57, speaker:'investigator', text:"and their allies set up the PRC who set up", enterTime: 182, exitTime: 188.6},
+    {id:57, speaker:'investigator', text:"and their allies set up the PRC who set up", enterTime: 183.8, exitTime: 186.9},
 
 
-    {id:58, speaker:'investigator', text:"the council", enterTime: 184.6, exitTime: 189.4},
+    {id:58, speaker:'investigator', text:"the council", enterTime: 186.5, exitTime: 187.41},
 
 
-    {id:59, speaker:'weaver', text:"Right. Sounds like a political stunt to me.", enterTime: 185.8, exitTime: 192.8},
+    {id:59, speaker:'weaver', text:"Right. Sounds like a political stunt to me.", enterTime: 187.4, exitTime: 190.9},
 
 
-    {id:60, speaker:'narrator', text:"(begins weaving again)", enterTime: 188.8, exitTime: 195.3},
+    {id:60, speaker:'narrator', text:"(begins weaving again)", enterTime: 190.5, exitTime: 191.4},
 
 
-    {id:61, speaker:'weaver', text:"Aren’t politicians always doing that to each other? The more sensational, ", enterTime: 189.2, exitTime: 196.3},
+    {id:61, speaker:'weaver', text:"Aren’t politicians always doing that to each other? The more sensational, ", enterTime: 191, exitTime: 194.7},
 
 
-    {id:62, speaker:'weaver', text:"the more distracting. (coughs) People won’t believe this one though, it’s too", enterTime: 192.3, exitTime: 200.6},
+    {id:62, speaker:'weaver', text:"the more distracting. (coughs) People won’t believe this one though, it’s too", enterTime: 194.3, exitTime: 198.8},
 
 
-    {id:63, speaker:'weaver', text:"outlandish", enterTime: 196.6, exitTime: 201.5},
+    {id:63, speaker:'weaver', text:"outlandish", enterTime: 198.4, exitTime: 199.8},
 
 
-    {id:64, speaker:'investigator', text:"Do you have an extra mask?", enterTime: 201.9, exitTime: 203.4},
+    {id:64, speaker:'investigator', text:"Do you have an extra mask?", enterTime: 199.5, exitTime: 201.4},
 
 
-    {id:65, speaker:'weaver', text:"No, only have the one mask, sorry.", enterTime: 199.4, exitTime: 205.5},
+    {id:65, speaker:'weaver', text:"No, only have the one mask, sorry.", enterTime: 201.1, exitTime: 203.7},
 
 
-    {id:66, speaker:'investigator', text:"It’s not rumours or a lie", enterTime: 201.8, exitTime: 207.5},
+    {id:66, speaker:'investigator', text:"It’s not rumours or a lie", enterTime: 203.6, exitTime: 205.6},
 
 
-    {id:67, speaker:'weaver', text:"You’ve seen proof?", enterTime: 203.6, exitTime: 208.6},
+    {id:67, speaker:'weaver', text:"You’ve seen proof?", enterTime: 205.2, exitTime: 206.9},
 
 
-    {id:68, speaker:'investigator', text:"Yes. Lab results proving this is human hair", enterTime: 204.6, exitTime: 211.7},
+    {id:68, speaker:'investigator', text:"Yes. Lab results proving this is human hair", enterTime: 206.5, exitTime: 210.01},
 
 
-    {id:69, speaker:'weaver', text:"Alright.", enterTime: 208.4, exitTime: 213.2},
+    {id:69, speaker:'weaver', text:"Alright.", enterTime: 210, exitTime: 211.4},
 
 
-    {id:70, speaker:'investigator', text:"What do you mean, 'Alright'", enterTime: 209.2, exitTime: 214.8},
+    {id:70, speaker:'investigator', text:"What do you mean, 'Alright'", enterTime: 211, exitTime: 213.11},
 
 
-    {id:71, speaker:'weaver', text:"I…I don’t know… I, I suppose I should believe you, but… well,", enterTime: 211.5, exitTime: 220.7},
+    {id:71, speaker:'weaver', text:"I…I don’t know… I, I suppose I should believe you, but… well,", enterTime: 213.1, exitTime: 218.6},
 
 
-    {id:72, speaker:'weaver', text:"you haven’t tested these, so…", enterTime: 216.7, exitTime: 222.6},
+    {id:72, speaker:'weaver', text:"you haven’t tested these, so…", enterTime: 218.2, exitTime: 221},
 
 
-    {id:73, speaker:'investigator', text:"Look closely –", enterTime: 218.4, exitTime: 223.6},
+    {id:73, speaker:'investigator', text:"Look closely –", enterTime: 220.6, exitTime: 221.9},
 
 
-    {id:74, speaker:'weaver', text:"I look at it enough, trust me, that’s why I can’t, (coughs) why I’m having", enterTime: 219.7, exitTime: 228.6},
+    {id:74, speaker:'weaver', text:"I look at it enough, trust me, that’s why I can’t, (coughs) why I’m having", enterTime: 221.5, exitTime: 227},
 
 
-    {id:75, speaker:'weaver', text:"trouble accepting, it doesn’t seem likely –", enterTime: 224.6, exitTime: 231.6},
+    {id:75, speaker:'weaver', text:"trouble accepting, it doesn’t seem likely –", enterTime: 226.6, exitTime: 229.8},
 
 
-    {id:76, speaker:'investigator', text:"Why not?", enterTime: 227.2, exitTime: 232.1},
+    {id:76, speaker:'investigator', text:"Why not?", enterTime: 229.2, exitTime: 230.41},
 
 
-    {id:77, speaker:'weaver', text:"It would be wiry and rough.", enterTime: 228.7, exitTime: 234.4},
+    {id:77, speaker:'weaver', text:"It would be wiry and rough.", enterTime: 230.4, exitTime: 232.7},
 
 
-    {id:78, speaker:'investigator', text:"You said it was rough, don’t you remember?", enterTime: 230.4, exitTime: 236.9},
+    {id:78, speaker:'investigator', text:"You said it was rough, don’t you remember?", enterTime: 232.3, exitTime: 235.1},
 
 
-    {id:79, speaker:'weaver', text:"Oh, yes, I guess I did, but that's –", enterTime: 233.3, exitTime: 239.4},
+    {id:79, speaker:'weaver', text:"Oh, yes, I guess I did, but that's –", enterTime: 235, exitTime: 237.8},
 
 
-    {id:80, speaker:'investigator', text:"And that it wasn’t the best quality right?", enterTime: 235.4, exitTime: 241.7},
+    {id:80, speaker:'investigator', text:"And that it wasn’t the best quality right?", enterTime: 237, exitTime: 240},
 
 
-    {id:81, speaker:'weaver', text:"I did –", enterTime: 238, exitTime: 243},
+    {id:81, speaker:'weaver', text:"I did –", enterTime: 239.9, exitTime: 241.2},
 
 
-    {id:82, speaker:'investigator', text:"Other fibres would strengthen it, you said it", enterTime: 239, exitTime: 245.2},
+    {id:82, speaker:'investigator', text:"Other fibres would strengthen it, you said it", enterTime: 240.9, exitTime: 243.5},
 
 
-    {id:83, speaker:'investigator', text:"was mixed fibres, doesn’t that mean it’s", enterTime: 241.2, exitTime: 247.5},
+    {id:83, speaker:'investigator', text:"was mixed fibres, doesn’t that mean it’s", enterTime: 243.1, exitTime: 245.6},
 
 
-    {id:84, speaker:'investigator', text:"possible", enterTime: 243.5, exitTime: 248.2},
+    {id:84, speaker:'investigator', text:"possible", enterTime: 245.2, exitTime: 246.6},
 
 
-    {id:85, speaker:'weaver', text:"Fine, yes I admit if you mixed fibres, sure. (coughs) You could make a yarn", enterTime: 244.7, exitTime: 254},
+    {id:85, speaker:'weaver', text:"Fine, yes I admit if you mixed fibres, sure. (coughs) You could make a yarn", enterTime: 246.4, exitTime: 252.1},
 
 
-    {id:86, speaker:'weaver', text:"that…well…", enterTime: 250, exitTime: 255.4},
+    {id:86, speaker:'weaver', text:"that…well…", enterTime: 251.7, exitTime: 253.6},
 
 
-    {id:87, speaker:'investigator', text:"Is made of human hair", enterTime: 251.4, exitTime: 257.6},
+    {id:87, speaker:'investigator', text:"Is made of human hair", enterTime: 253.2, exitTime: 255.61},
 
 
-    {id:88, speaker:'weaver', text:"Yes. I’m not saying that it is though. I really don’t think it is.", enterTime: 253.9, exitTime: 262.1},
+    {id:88, speaker:'weaver', text:"Yes. I’m not saying that it is though. I really don’t think it is.", enterTime: 255.6, exitTime: 260.5},
 
 
-    {id:89, speaker:'investigator', text:"Why not", enterTime: 258.5, exitTime: 263.1},
+    {id:89, speaker:'investigator', text:"Why not", enterTime: 260.1, exitTime: 261.31},
 
 
-    {id:90, speaker:'weaver', text:"It’s not effective or practical. It makes no sense, that’s why.", enterTime: 259.7, exitTime: 267.5},
+    {id:90, speaker:'weaver', text:"It’s not effective or practical. It makes no sense, that’s why.", enterTime: 261.3, exitTime: 265.6},
 
 
-    {id:91, speaker:'investigator', text:"When you have a lot of hair it makes some", enterTime: 263.5, exitTime: 269.8},
+    {id:91, speaker:'investigator', text:"When you have a lot of hair it makes some", enterTime: 265.2, exitTime: 267.9},
 
 
-    {id:92, speaker:'investigator', text:"type of sense. The colour is the same, it /", enterTime: 265.8, exitTime: 272.6},
+    {id:92, speaker:'investigator', text:"type of sense. The colour is the same, it /", enterTime: 267.5, exitTime: 270.8},
 
 
-    {id:93, speaker:'investigator', text:"must be –", enterTime: 268.6, exitTime: 273.3},
+    {id:93, speaker:'investigator', text:"must be –", enterTime: 270.4, exitTime: 271.6},
 
 
-    {id:94, speaker:'weaver', text:"Plenty of other wool is the same colour, it also might have been dyed. I don’t", enterTime: 268.3, exitTime: 276.5},
+    {id:94, speaker:'weaver', text:"Plenty of other wool is the same colour, it also might have been dyed. I don’t", enterTime: 270.41, exitTime: 274.9},
 
 
-    {id:95, speaker:'weaver', text:"know, I didn’t spin this together. (coughs) I really couldn’t tell you for sure.", enterTime: 272.5, exitTime: 280.5},
+    {id:95, speaker:'weaver', text:"know, I didn’t spin this together. (coughs) I really couldn’t tell you for sure.", enterTime: 274.5, exitTime: 278.7},
 
 
-    {id:96, speaker:'weaver', text:"Why don’t you go ask them, the spinners?", enterTime: 276.5, exitTime: 282.9},
+    {id:96, speaker:'weaver', text:"Why don’t you go ask them, the spinners?", enterTime: 278.3, exitTime: 281.1},
 
 
-    {id:97, speaker:'investigator', text:"We're investigating them too. Everyone", enterTime: 278.9, exitTime: 285.2},
+    {id:97, speaker:'investigator', text:"We're investigating them too. Everyone", enterTime: 280.7, exitTime: 283.4},
 
 
-    {id:98, speaker:'investigator', text:"involved and implicated in the findings of", enterTime: 281.2, exitTime: 287.4},
+    {id:98, speaker:'investigator', text:"involved and implicated in the findings of", enterTime: 283, exitTime: 285.7},
 
 
-    {id:99, speaker:'investigator', text:"the tests", enterTime: 283.4, exitTime: 288.3},
+    {id:99, speaker:'investigator', text:"the tests", enterTime: 285.3, exitTime: 286.41},
 
 
-    {id:100, speaker:'weaver', text:"Alright, well, say that your team does find that, that, the report, the tests", enterTime: 284.8, exitTime: 294.7},
+    {id:100, speaker:'weaver', text:"Alright, well, say that your team does find that, that, the report, the tests", enterTime: 286.4, exitTime: 293},
 
 
-    {id:101, speaker:'weaver', text:"were right. So? What does that have to do with me? I’m just the weaver. I", enterTime: 290.7, exitTime: 299.2},
+    {id:101, speaker:'weaver', text:"were right. So? What does that have to do with me? I’m just the weaver. I", enterTime: 292.6, exitTime: 297.6},
 
 
-    {id:102, speaker:'weaver', text:"don’t own the, the yarn, I don’t sell the product, I’m just paid for the output.", enterTime: 295.2, exitTime: 304},
+    {id:102, speaker:'weaver', text:"don’t own the, the yarn, I don’t sell the product, I’m just paid for the output.", enterTime: 297.2, exitTime: 302.2},
 
 
-    {id:103, speaker:'investigator', text:"You really don’t believe this is human hair?", enterTime: 300, exitTime: 306.9},
+    {id:103, speaker:'investigator', text:"You really don’t believe this is human hair?", enterTime: 301.8, exitTime: 305},
 
 
-    {id:104, speaker:'weaver', text:"No, I really don’t think it is.", enterTime: 302.9, exitTime: 309.5},
+    {id:104, speaker:'weaver', text:"No, I really don’t think it is.", enterTime: 304.6, exitTime: 307.71},
 
 
-    {id:105, speaker:'narrator', text:"Weaver keeps weaving the hair.", enterTime: 306.4, exitTime: 312.2},
+    {id:105, speaker:'narrator', text:"Weaver keeps weaving the hair.", enterTime: 307.7, exitTime: 311.01},
 
 
-    {id:106, speaker:'narrator', text:"You try not to think about the piles of it you saw at Konauzec or the shaved heads in the graves.", enterTime: 309.3, exitTime: 319.1},
+    {id:106, speaker:'narrator', text:"You try not to think about the piles of it you saw at Konauzec or the shaved heads in the graves.", enterTime: 311, exitTime: 317.71},
 
 
-    {id:107, speaker:'narrator', text:"Was life here in the Capital so sheltered that this is outlandish to the weaver?", enterTime: 316.1, exitTime: 325.3},
+    {id:107, speaker:'narrator', text:"Was life here in the Capital so sheltered that this is outlandish to the weaver?", enterTime: 317.7, exitTime: 323.71},
 
 
-    {id:108, speaker:'narrator', text:"Do you think the weaver is telling the truth?", enterTime: 323.1, exitTime: 3600},
+    {id:108, speaker:'narrator', text:"Do you think the weaver is telling the truth?", enterTime: 323.7, exitTime: 3600},
 
 
-    {id:109, speaker:'choice', text:"Yes, you believe the weaver really doesn’t know and you’ll have to break it down to make the weaver realize so that more questions can be answered", enterTime: 327, exitTime: 3600},
+    {id:109, speaker:'choice', text:"Yes, you believe the weaver really doesn’t know and you’ll have to break it down to make the weaver realize so that more questions can be answered", enterTime: 329.4, exitTime: 3600},
 
 
-    {id:110, speaker:'choice', text:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", enterTime: 327.01, exitTime: 3600},
+    {id:110, speaker:'choice', text:"No, the weaver must have known, you’ll need to apply more pressure to get the truth, to get a confession.", enterTime: 329.4, exitTime: 3600},
 
 
 
@@ -493,7 +492,7 @@ export const nonBinaryMorePressureTextTiming =[
     {id:16, speaker:'investigator', text:"It was that easy?", enterTime: 39.00, exitTime: 42.49},
     {id:17, speaker:'weaver', text:"I just stopped thinking about it.", enterTime: 40.09, exitTime: 46.30},
     {id:18, speaker:'investigator', text:"So it never crossed your mind?", enterTime: 42.00, exitTime: 47.80},
-    {id:19, speaker:'weaver', text:"I – Look, hypothetically, say it is. (coughs) I’m not saying it is or I know,", enterTime: 43.80, exitTime: 43.20},
+    {id:19, speaker:'weaver', text:"I – Look, hypothetically, say it is. (coughs) I’m not saying it is or I know,", enterTime: 43.80, exitTime: 48.20},
     {id:20, speaker:'weaver', text:"because I don’t, but, if it is. It’s, it’s really not any different from any other", enterTime: 50.20, exitTime: 58},
     {id:21, speaker:'weaver', text:"material. It’s not, it’s no more unusual than wool really. Wool is hair grown", enterTime: 55.5, exitTime: 61.50},
     {id:22, speaker:'weaver', text:"from animals, humans are animals, but can communicate, so probably,", enterTime: 60.0, exitTime: 66.21},
