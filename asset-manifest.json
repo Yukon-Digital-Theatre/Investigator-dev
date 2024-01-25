@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Investigator-dev/static/css/main.8b563b73.css",
-    "main.js": "/Investigator-dev/static/js/main.e6b41c98.js",
+    "main.css": "/Investigator-dev/static/css/main.9d783418.css",
+    "main.js": "/Investigator-dev/static/js/main.135498c0.js",
     "static/media/THE INVESTIGATOR female 18 230531 small.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR female 18 230531 small.b5596a727be0dc4e9084.mp3",
     "static/media/THE INVESTIGATOR non binary 11 230407 small.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR non binary 11 230407 small.b29778a20cbfdce0f6d6.mp3",
     "static/media/THE INVESTIGATOR female 11 230407 small.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR female 11 230407 small.99a28ea7b70cd91e2aea.mp3",
@@ -67,22 +67,19 @@
     "static/media/THE INVESTIGATOR narrator 24 230407.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR narrator 24 230407.5758fa9329646f3636fb.mp3",
     "static/media/Meredith Pritchard.jpeg": "/Investigator-dev/static/media/Meredith Pritchard.804fbbdd2d0e3dde31b4.jpeg",
     "static/media/THE INVESTIGATOR narrator 23 230407.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR narrator 23 230407.bfabcaeb8c08ae66d004.mp3",
-    "static/media/YDTC Mountain Logo Light-100.jpg": "/Investigator-dev/static/media/YDTC Mountain Logo Light-100.aac6e06226eeeaa40d3d.jpg",
     "static/media/THE INVESTIGATOR narrator 01 230407.mp3": "/Investigator-dev/static/media/THE INVESTIGATOR narrator 01 230407.e6cd7cf62e988f0adcc7.mp3",
-    "static/media/CCA_RGB_colour_e.jpg": "/Investigator-dev/static/media/CCA_RGB_colour_e.9c94ba7508ffa777d05d.jpg",
-    "static/media/YAC Residency Logo.png": "/Investigator-dev/static/media/YAC Residency Logo.c6734a89897f3453d9ca.png",
-    "static/media/Yukon Gov Logo.png": "/Investigator-dev/static/media/Yukon Gov Logo.7c6bcff7f1949751375e.png",
+    "static/media/LogosBanner.png": "/Investigator-dev/static/media/LogosBanner.9a26a023984cc5b0721c.png",
     "static/media/lni_lni-volume-medium.svg": "/Investigator-dev/static/media/lni_lni-volume-medium.de86c494434dd2dc7414cd01080cac5b.svg",
     "static/media/lni_lni-volume-mute.svg": "/Investigator-dev/static/media/lni_lni-volume-mute.0303c157e548c8b7625631ba6a147a49.svg",
     "static/media/pause.svg": "/Investigator-dev/static/media/pause.add01dfe0b0964e7272a63a27d0b71a0.svg",
     "index.html": "/Investigator-dev/index.html",
     "static/media/lni_lni-play.svg": "/Investigator-dev/static/media/lni_lni-play.af8c2c96a9715d048c1b40496fcb5cb2.svg",
     "static/media/lni_lni-chevron-right.svg": "/Investigator-dev/static/media/lni_lni-chevron-right.829d5b643f0f56c1e54868dcce4d12bb.svg",
-    "main.8b563b73.css.map": "/Investigator-dev/static/css/main.8b563b73.css.map",
-    "main.e6b41c98.js.map": "/Investigator-dev/static/js/main.e6b41c98.js.map"
+    "main.9d783418.css.map": "/Investigator-dev/static/css/main.9d783418.css.map",
+    "main.135498c0.js.map": "/Investigator-dev/static/js/main.135498c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b563b73.css",
-    "static/js/main.e6b41c98.js"
+    "static/css/main.9d783418.css",
+    "static/js/main.135498c0.js"
   ]
 }
