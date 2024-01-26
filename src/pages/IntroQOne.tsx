@@ -21,7 +21,7 @@ function helper(){
 function helper2(){
   dispatch(updateNarratorAudioDelivery(false));
   dispatch(updateTextDelivery(true));
-  dispatch(updatePage("Credits"));
+  dispatch(updatePage("IntroQTwo"));
 
 }
 
